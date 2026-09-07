@@ -11,7 +11,11 @@ checks apply on top of a Stage classification.
 ## Stage2 hold/trim baseline
 
 - **Stage 2 confirmed** (Trend Template 7-8/8, RS ≥ 70, price within 25% of
-  52-week high) → hold, core position stays on.
+  52-week high) → hold, core position stays on. RS here means an actual
+  **1-99 percentile rank** of the IBD-style weighted return
+  (40% × 3-month + 20% each × 6/9/12-month) against a real multi-name
+  universe — not "outperformed SPY by N points", which flatters names whose
+  relative strength has quietly faded to mid-pack.
 - **Trend Template slipping to 5-6/8** → Stage 1↔2 transition, needs a
   chart read (base + breakout on volume) before trusting it.
 - **Criteria 1, 2, or 4 failing (50/150/200-SMA order inverted)** → Stage
@@ -26,13 +30,28 @@ Only ever pyramid a position that is **already a confirmed Stage 2 holding**
    if any of criteria 1/2/4 have slipped, do not add (that's a trim signal,
    not a pyramid signal).
 2. **Add trigger, not just "it's up."** Only add on:
-   - a new pivot breakout (price clears a prior high / VCP pivot on volume
-     ≥ 40-50% above the 50-day average volume), or
+   - a new pivot breakout — price clears the **highest intraday high** of
+     the base (not the highest close) on volume ≥ 40-50% above the 50-day
+     average volume, measured **on the breakout day itself**, or
    - a low-volume pullback to and hold of the rising 50-day SMA followed by
      a resumption of the uptrend.
-3. **Don't chase.** Skip the add if price is already more than ~5-10%
-   above the breakout pivot, or more than ~10% above the 50-day SMA, with
-   no fresh base — that's extended, not a clean add point.
+
+   Prefer a base whose successive pullbacks are **contracting** (a real VCP,
+   e.g. 12% → 8% → 6% → 4%). Contractions that are *widening* (e.g.
+   5% → 6% → 16%) mean volatility is expanding — that is late-stage
+   behaviour, not a base, and disqualifies the add.
+3. **Don't chase — measure extension against the pivot and in ATR.** Skip
+   the add if either:
+   - price is more than ~5% above the breakout pivot — for a breakout
+     entry the **pivot** is the reference point, not the 50-day SMA; or
+   - price is more than **4 × ATR(14) above the 50-day SMA**.
+
+   Use the ATR test, not a raw "% above the 50-day SMA" cap: a fixed
+   percentage wrongly rejects high-volatility leaders breaking out of a
+   sound base, and wrongly waves through low-volatility names that are
+   genuinely stretched. **5+ ATR above the 50-day SMA is climax
+   territory** — not an add, and a reason to consider taking partial
+   profits.
 4. **Size down each add** (classic 50/30/20 scaling): initial position =
    full base size; first add ≤ 50% of the base size; second add ≤ 25-30%
    of the base size. No more than two pyramid adds on a single name.
