@@ -13,6 +13,20 @@ checks apply on top of a Stage classification.
 - **Stage 2 confirmed** (Trend Template 7-8/8, RS ≥ 70, price within 25% of
   52-week high) → hold, core position stays on.
 
+- **Trend Template slipping to 5-6/8** → Stage 1↔2 transition, needs a
+  chart read (base + breakout on volume) before trusting it. Check *which*
+  criteria failed before calling it weak: **criterion 2 (150-SMA above
+  200-SMA) and criterion 6 (25% above the 52-week low) fail mechanically
+  for a stock that has just broken out of a long base**, because it has not
+  advanced far enough yet — that is the signature of an early Stage 2
+  entry, not of a laggard. A near-miss on criterion 2 (the two averages
+  within a fraction of a percent, i.e. an imminent golden cross) with price
+  above the 50-SMA and near its 52-week high is a *young* base breakout.
+  Size it as such (IBD's own convention: half-size starter) rather than
+  flagging it for replacement.
+- **Criteria 1, 2, or 4 failing (50/150/200-SMA order inverted)** → Stage
+  3/4. Not a hold. Trim or exit.
+
 ### RS Rating — use IBD's number, and never fake it
 
 The "RS ≥ 70" threshold is defined against **IBD's full ~6,000-name
@@ -42,19 +56,13 @@ different scale and **must not be compared to that threshold.**
 
 Never overrule a live IBD/market fact the user supplies with a home-grown
 proxy. If the two disagree, the proxy is what needs explaining.
-- **Trend Template slipping to 5-6/8** → Stage 1↔2 transition, needs a
-  chart read (base + breakout on volume) before trusting it. Check *which*
-  criteria failed before calling it weak: **criterion 2 (150-SMA above
-  200-SMA) and criterion 6 (25% above the 52-week low) fail mechanically
-  for a stock that has just broken out of a long base**, because it has not
-  advanced far enough yet — that is the signature of an early Stage 2
-  entry, not of a laggard. A near-miss on criterion 2 (the two averages
-  within a fraction of a percent, i.e. an imminent golden cross) with price
-  above the 50-SMA and near its 52-week high is a *young* base breakout.
-  Size it as such (IBD's own convention: half-size starter) rather than
-  flagging it for replacement.
-- **Criteria 1, 2, or 4 failing (50/150/200-SMA order inverted)** → Stage
-  3/4. Not a hold. Trim or exit.
+
+**Proxy error is not uniform — it scales with how unlike the universe the
+holding is.** Against a large-cap growth basket, NVDA's proxy came in at 66
+vs IBD's actual 73 (off by 7), while XLF, a low-beta sector ETF, came in at
+39 vs IBD's 90 (off by 51). The further a holding sits from the universe's
+character, the more the proxy misprices it — so ETFs and defensive names are
+exactly where a proxy must never be trusted.
 
 ## Pyramiding conditions (adding to an existing winner)
 
@@ -71,10 +79,30 @@ Only ever pyramid a position that is **already a confirmed Stage 2 holding**
    - a low-volume pullback to and hold of the rising 50-day SMA followed by
      a resumption of the uptrend.
 
+   **Classify the day, don't just compare the close.** Three different
+   outcomes get three different readings:
+   - intraday high *and* close above the pivot → breakout;
+   - intraday high above the pivot but the close back below it → a
+     **failed breakout attempt**, and if it closes near the day's low on
+     unremarkable volume that is a warning, not an entry;
+   - intraday high never reached the pivot → still under resistance.
+
    Prefer a base whose successive pullbacks are **contracting** (a real VCP,
-   e.g. 12% → 8% → 6% → 4%). Contractions that are *widening* (e.g.
-   5% → 6% → 16%) mean volatility is expanding — that is late-stage
-   behaviour, not a base, and disqualifies the add.
+   e.g. 12% → 8% → 6% → 4%). But before calling a *widening* sequence a
+   late-stage warning, **check when the deepest leg formed and whether
+   price has recovered from it**: a deep leg that formed months ago and has
+   since been repaired is the **cup of a base**, not deterioration. Only a
+   deep leg that is recent and still unrecovered is an actual expansion
+   warning.
+
+   > Learned the hard way (2026-09-07): NVDA's contraction sequence read
+   > 13% → 5% → 10% → 19.7% and was called "volatility expanding, late
+   > stage". The 19.7% leg ran 5/14→6/29 and was fully repaired — IBD
+   > identified the same structure as a cup with two handles, and the
+   > pivot it produced (230.47) matched ours to the cent. ERO's 16.3% leg,
+   > by contrast, ran 8/26→9/3 and had not recovered — there the warning
+   > was real. Same number, opposite meaning; the timestamp is what
+   > separates them.
 3. **Don't chase — measure extension against the pivot and in ATR.** Skip
    the add if either:
    - price is more than ~5% above the breakout pivot — for a breakout
