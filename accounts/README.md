@@ -14,7 +14,8 @@ applied on top of the Stage classification.
 
 Currently tracked here:
 
-- [`vanguard_roth_ira_33171515/`](vanguard_roth_ira_33171515) — mid-term account
+- [`vanguard_roth_ira_33171515/`](vanguard_roth_ira_33171515) — mid-term account (Jooyoung Park)
+- [`vanguard_roth_ira_59087753/`](vanguard_roth_ira_59087753) — mid-term account (Yeunshik Park)
 
 ## How updates flow
 

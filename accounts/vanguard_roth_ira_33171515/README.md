@@ -7,8 +7,8 @@ screening rules applied to these holdings, and [`../STRATEGY.md`](../STRATEGY.md
 for the shared hold/trim/pyramid rules the morning check applies to current
 positions.
 
-The second Vanguard Roth IRA account is tracked separately once its
-holdings snapshot is provided (not yet set up).
+The second Vanguard Roth IRA account (59087753, Yeunshik Park) is tracked
+separately under [`../vanguard_roth_ira_59087753/`](../vanguard_roth_ira_59087753).
 
 ## Files
 
