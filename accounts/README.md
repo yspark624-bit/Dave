@@ -8,7 +8,7 @@ its verdicts in these terms — never a generic "buy/sell".
 |---|---|---|---|---|---|
 | 단기 스윙 (short-term swing) | Webull | Margin #5JF28979 | live (Webull MCP) | **daily** | Fresh Stage 2 / VCP breakouts, tightest stops, smallest size |
 | 중기 (mid-term) | Vanguard | Roth IRA #59087753 (V-7753) | manual snapshot | **daily** | Established Stage 2, strong RS, core holds through normal pullbacks |
-| 중기 (mid-term) | Vanguard | Roth IRA #1515* (V-1515) | **pending data** | **daily** | Same tier rules as above |
+| 중기 (mid-term) | Vanguard | Roth IRA #1515* (V-1515) | manual snapshot | **daily** | Same tier rules as above |
 | 장기 (long-term) | Principal | 401(k) | **pending data** | quarterly | Mutual funds rebalanced quarterly — fundamentals-first, excluded from the daily Routine |
 | 장기 (long-term) | Ascensus | 401(k) | **pending data** | quarterly | Mutual funds rebalanced quarterly — fundamentals-first, excluded from the daily Routine |
 

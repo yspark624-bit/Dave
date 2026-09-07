@@ -1,12 +1,31 @@
 {
   "account": {
-    "owner": "Yeunshik Park",
+    "owner": "Jooyoung Park",
     "broker": "Vanguard",
     "account_type": "Roth IRA (Brokerage)",
-    "account_number_masked": "1515*",
+    "account_number_masked": "33171515*",
     "tier": "mid-term",
-    "status": "pending_data",
-    "note": "Second Vanguard Roth IRA account (V-1515), reviewed daily alongside V-7753 and the Webull swing account. No holdings snapshot has been provided yet. Paste the current statement (holdings table + cash balance) to populate this file, following the same shape as accounts/vanguard-roth-ira-59087753/holdings.json."
+    "as_of": "2026-09-04T19:00:00-04:00",
+    "total_value_usd": 52112.41,
+    "settlement_fund": {
+      "symbol": "VMFXX",
+      "name": "Vanguard Federal Money Market Fund",
+      "balance_usd": 11969.63,
+      "available_for_purchase_usd": 18548.89,
+      "available_to_withdraw_usd": 10816.33,
+      "unsettled_credits_debits_usd": 6579.26
+    }
   },
-  "holdings": []
+  "holdings": [
+    {"symbol": "VOO", "type": "ETF", "name": "Vanguard S&P 500 Index ETF", "quantity": 4.025, "price": 708.01, "day_change": 2.71, "day_change_pct": 0.38, "unrealized_gain_usd": 285.66, "unrealized_gain_pct": 11.14, "current_balance_usd": 2849.74},
+    {"symbol": "OIH", "type": "ETF", "name": "VanEck Oil Services ETF", "quantity": 6.0, "price": 427.53, "day_change": 2.28, "day_change_pct": 0.53, "unrealized_gain_usd": 12.00, "unrealized_gain_pct": 0.47, "current_balance_usd": 2565.18},
+    {"symbol": "QQQM", "type": "ETF", "name": "Invesco Nasdaq 100 ETF", "quantity": 22.156, "price": 296.07, "day_change": 0.56, "day_change_pct": 0.19, "unrealized_gain_usd": 1682.96, "unrealized_gain_pct": 34.51, "current_balance_usd": 6559.73},
+    {"symbol": "CF", "type": "Stock", "name": "CF Industries Holdings Inc", "quantity": 40.0, "price": 133.35, "day_change": 4.46, "day_change_pct": 3.24, "unrealized_gain_usd": 83.60, "unrealized_gain_pct": 1.54, "current_balance_usd": 5334.00},
+    {"symbol": "ERO", "type": "Stock", "name": "Ero Copper Corp", "quantity": 70.0, "price": 34.90, "day_change": 0.42, "day_change_pct": 1.19, "unrealized_gain_usd": 390.32, "unrealized_gain_pct": 13.78, "current_balance_usd": 2443.00},
+    {"symbol": "GH", "type": "Stock", "name": "Guardant Health Inc", "quantity": 27.0, "price": 161.41, "day_change": 0.37, "day_change_pct": 0.23, "unrealized_gain_usd": 61.27, "unrealized_gain_pct": 1.43, "current_balance_usd": 4358.07},
+    {"symbol": "HNGE", "type": "Stock", "name": "Hinge Health Inc Cl A", "quantity": 40.0, "price": 92.37, "day_change": 1.61, "day_change_pct": 1.77, "unrealized_gain_usd": 821.05, "unrealized_gain_pct": 28.57, "current_balance_usd": 3694.80},
+    {"symbol": "NVDA", "type": "Stock", "name": "Nvidia Corp", "quantity": 25.0, "price": 230.36, "day_change": 1.91, "day_change_pct": 0.84, "unrealized_gain_usd": 163.14, "unrealized_gain_pct": 2.92, "current_balance_usd": 5759.00}
+  ],
+  "total_unrealized_gain_usd": 2528.16,
+  "note": "LLY (Eli Lilly) appeared as a zero-quantity/zero-balance row on the statement (fully sold) and is omitted here. Manually captured from the Vanguard web statement -- update after every trade."
 }
