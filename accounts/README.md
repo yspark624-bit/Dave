@@ -4,13 +4,17 @@ Yeunshik Park (yspark624@gmail.com) trades across four accounts on three time
 horizons. Every screen in this repo (`stage2-momentum-screener` skill) frames
 its verdicts in these terms — never a generic "buy/sell".
 
-| Tier | Broker | Account | Data source | Role |
-|---|---|---|---|---|
-| 단기 스윙 (short-term swing) | Webull | Margin #5JF28979 | live (Webull MCP) | Fresh Stage 2 / VCP breakouts, tightest stops, smallest size |
-| 중기 (mid-term) | Vanguard | Roth IRA #59087753 | manual snapshot | Established Stage 2, strong RS, core holds through normal pullbacks |
-| 중기 (mid-term) | Vanguard | Roth IRA (2nd account) | **pending data** | Same tier rules as above |
-| 장기 (long-term) | Principal | 401(k) | **pending data** | Fundamentals-first, low-volatility compounders / fund menu |
-| 장기 (long-term) | Ascensus | 401(k) | **pending data** | Fundamentals-first, low-volatility compounders / fund menu |
+| Tier | Broker | Account | Data source | Review cadence | Role |
+|---|---|---|---|---|---|
+| 단기 스윙 (short-term swing) | Webull | Margin #5JF28979 | live (Webull MCP) | **daily** | Fresh Stage 2 / VCP breakouts, tightest stops, smallest size |
+| 중기 (mid-term) | Vanguard | Roth IRA #59087753 (V-7753) | manual snapshot | **daily** | Established Stage 2, strong RS, core holds through normal pullbacks |
+| 중기 (mid-term) | Vanguard | Roth IRA #1515* (V-1515) | **pending data** | **daily** | Same tier rules as above |
+| 장기 (long-term) | Principal | 401(k) | **pending data** | quarterly | Mutual funds rebalanced quarterly — fundamentals-first, excluded from the daily Routine |
+| 장기 (long-term) | Ascensus | 401(k) | **pending data** | quarterly | Mutual funds rebalanced quarterly — fundamentals-first, excluded from the daily Routine |
+
+The daily Stage2/CANSLIM Routine covers only the three daily-cadence rows
+above (V-7753, V-1515, Webull) — the 401(k) accounts hold mutual funds on a
+quarterly rebalance cycle and don't need a daily technical read.
 
 Webull also has a second, currently-empty Individual Cash account
 (#CUV86FB6) that isn't tracked here since it holds no positions.

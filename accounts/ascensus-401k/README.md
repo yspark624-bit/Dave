@@ -3,9 +3,10 @@
 **Status: pending data.** No holdings snapshot has been provided for this
 account yet.
 
-Per `../README.md`, this tier prioritizes CANSLIM fundamentals over precise
-technical timing, and many 401(k) plans restrict picks to a fund menu —
-paste the current statement and, if available, the plan's fund menu so
-recommendations can be mapped to what's actually purchasable here.
-
-Until data is provided, the daily routine skips this account.
+**Review cadence: quarterly, not daily.** This account holds mutual funds
+rebalanced quarterly — unlike the Roth IRA and Webull accounts, it is
+intentionally **excluded from the daily Stage2/CANSLIM Routine**. Per
+`../README.md`, this tier prioritizes CANSLIM fundamentals over precise
+technical timing, and 401(k) plans are usually restricted to a fund menu —
+paste the current statement and, if available, the plan's fund menu
+whenever a quarterly review is due.
