@@ -4,13 +4,16 @@ Yeunshik Park (yspark624@gmail.com) trades across four accounts on three time
 horizons. Every screen in this repo (`stage2-momentum-screener` skill) frames
 its verdicts in these terms — never a generic "buy/sell".
 
-| Tier | Broker | Account | Role |
-|---|---|---|---|
-| 단기 스윙 (short-term swing) | Webull | — | Fresh Stage 2 / VCP breakouts, tightest stops, smallest size |
-| 중기 (mid-term) | Vanguard | Roth IRA #59087753 | Established Stage 2, strong RS, core holds through normal pullbacks |
-| 중기 (mid-term) | Vanguard | Roth IRA (2nd account) | Same tier rules as above |
-| 장기 (long-term) | Principal | 401(k) | Fundamentals-first, low-volatility compounders / fund menu |
-| 장기 (long-term) | Ascensus | 401(k) | Fundamentals-first, low-volatility compounders / fund menu |
+| Tier | Broker | Account | Data source | Role |
+|---|---|---|---|---|
+| 단기 스윙 (short-term swing) | Webull | Margin #5JF28979 | live (Webull MCP) | Fresh Stage 2 / VCP breakouts, tightest stops, smallest size |
+| 중기 (mid-term) | Vanguard | Roth IRA #59087753 | manual snapshot | Established Stage 2, strong RS, core holds through normal pullbacks |
+| 중기 (mid-term) | Vanguard | Roth IRA (2nd account) | **pending data** | Same tier rules as above |
+| 장기 (long-term) | Principal | 401(k) | **pending data** | Fundamentals-first, low-volatility compounders / fund menu |
+| 장기 (long-term) | Ascensus | 401(k) | **pending data** | Fundamentals-first, low-volatility compounders / fund menu |
+
+Webull also has a second, currently-empty Individual Cash account
+(#CUV86FB6) that isn't tracked here since it holds no positions.
 
 ## Layout
 

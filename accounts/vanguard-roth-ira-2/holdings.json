@@ -1,0 +1,12 @@
+{
+  "account": {
+    "owner": "Yeunshik Park",
+    "broker": "Vanguard",
+    "account_type": "Roth IRA (Brokerage)",
+    "account_number_masked": "PENDING",
+    "tier": "mid-term",
+    "status": "pending_data",
+    "note": "Second Vanguard Roth IRA account referenced in user preferences (2 Roth IRA accounts total) but no holdings snapshot has been provided yet. Paste the current statement (holdings table + cash balance) to populate this file, following the same shape as accounts/vanguard-roth-ira-59087753/holdings.json."
+  },
+  "holdings": []
+}

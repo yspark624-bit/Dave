@@ -1,0 +1,12 @@
+{
+  "account": {
+    "owner": "Yeunshik Park",
+    "broker": "Principal",
+    "account_type": "401(k)",
+    "account_number_masked": "PENDING",
+    "tier": "long-term",
+    "status": "pending_data",
+    "note": "401(k) plans are usually restricted to a fund menu rather than open stock picking. Paste the current statement (fund holdings + balances) and, if available, the plan's available fund menu, so recommendations can be mapped to what's actually purchasable in this account."
+  },
+  "holdings": []
+}
