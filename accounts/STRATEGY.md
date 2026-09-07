@@ -58,11 +58,34 @@ Never overrule a live IBD/market fact the user supplies with a home-grown
 proxy. If the two disagree, the proxy is what needs explaining.
 
 **Proxy error is not uniform — it scales with how unlike the universe the
-holding is.** Against a large-cap growth basket, NVDA's proxy came in at 66
-vs IBD's actual 73 (off by 7), while XLF, a low-beta sector ETF, came in at
-39 vs IBD's 90 (off by 51). The further a holding sits from the universe's
-character, the more the proxy misprices it — so ETFs and defensive names are
-exactly where a proxy must never be trusted.
+holding is**, and against a mega-cap-tech basket it ran one way only:
+
+| Holding | Proxy | Actual IBD RS | Error | Character |
+|---|---|---|---|---|
+| XLK | 67 | 68 | +1 | tech sector ETF |
+| NVDA | 66 | 73 | +7 | mega-cap tech |
+| QQQM | 42 | 60 | +18 | Nasdaq-100 |
+| VOO | 41 | 80 | **+39** | broad S&P |
+| XLF | 39 | 90 | **+51** | financials |
+
+Two things follow, and both matter operationally:
+
+1. **The bias was low every single time.** So a proxy that says a holding
+   is *strong* is safe — the real rating is at least that. A proxy that
+   *fails* a holding is worthless. Weight the conclusions accordingly:
+   never sell or downgrade on a failing proxy, only on a real IBD rating.
+2. **The error tracks distance from the universe's character.** Tech names
+   scored fairly against a tech-heavy basket; financials and broad-market
+   ETFs were crushed. Sector ETFs, defensives, and anything outside the
+   universe's style are exactly where a proxy must never be trusted.
+
+**A skewed universe also corrupts the market read, not just the names.**
+The same basket made SPY look mid-pack and produced the conclusion
+"leadership is narrow, favour individual leaders over index sleeves". The
+real IBD ratings said the opposite — XLF 90 > VOO 80 > NVDA 73 > XLK 68 >
+QQQM 60, i.e. financials and the broad market *leading* mega-cap tech,
+which is broadening, not narrowing. Before drawing any breadth or rotation
+conclusion, check it against ratings you did not compute yourself.
 
 ## Pyramiding conditions (adding to an existing winner)
 
