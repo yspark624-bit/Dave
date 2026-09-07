@@ -3,6 +3,8 @@
 Tracks Jooyoung's brokerage/retirement accounts so Claude can run the
 [Stage2 momentum screener](../.claude/skills/stage2-momentum-screener) against
 real holdings and route recommendations to the right account by time horizon.
+See [`STRATEGY.md`](STRATEGY.md) for the shared hold/trim/pyramid rules
+applied on top of the Stage classification.
 
 | Tier | Account | Role |
 |---|---|---|

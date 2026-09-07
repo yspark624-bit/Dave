@@ -3,7 +3,12 @@
 Auto-trading linkage source for the daily morning Stage2 check. This account
 is buy-and-hold on Stage 2 trend-following names (William O'Neil / Mark
 Minervini methodology) — see the `stage2-momentum-screener` skill for the
-screening rules applied to these holdings.
+screening rules applied to these holdings, and [`../STRATEGY.md`](../STRATEGY.md)
+for the shared hold/trim/pyramid rules the morning check applies to current
+positions.
+
+The second Vanguard Roth IRA account is tracked separately once its
+holdings snapshot is provided (not yet set up).
 
 ## Files
 
@@ -30,7 +35,9 @@ once EST resumes in November) runs on weekday mornings before market open.
 It reads `holdings/latest.json` and,
 for every position with quantity > 0, runs the Stage2/CANSLIM screen:
 
-- **Stage 2 confirmed** → hold / consider adding.
+- **Stage 2 confirmed** → hold; check the pyramiding conditions in
+  [`../STRATEGY.md`](../STRATEGY.md) to see if it's also an add-to-position
+  candidate.
 - **Stage 3/4 or trend template failing** → flag for review (possible trim).
 - Notes Fundamental (earnings/sales growth, ROE, RS rating) and Technical
   (trend template, moving averages, volume) read for each name.
