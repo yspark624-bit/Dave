@@ -1,0 +1,31 @@
+{
+  "_note": "Durable investor profile and per-position policy. Kept OUTSIDE holdings/latest.json on purpose: the nightly snapshot is overwritten from the pasted Vanguard dashboard, which would wipe anything stored in it. The morning Routine reads this file alongside the snapshot.",
+  "_updated": "2026-09-07",
+
+  "investor_profile": {
+    "risk_posture": "moderately aggressive",
+    "stated_by_user": "2026-09-07",
+    "what_this_means": [
+      "Prefers earlier entries (VCP pivot, early Stage 2 breakout) over waiting for full confirmation.",
+      "Tolerates deeper drawdowns and higher volatility on trend-managed positions.",
+      "Comfortable with concentration; does not want size trimmed purely for diversification.",
+      "Does NOT mean abandoning stop discipline on trend-managed positions — only that the tolerance band is wider."
+    ]
+  },
+
+  "policies": {
+    "trend": "Default. Fully governed by STRATEGY.md — hold/trim/pyramid rules and the 50-day sell rule all apply.",
+    "sitting": "Long-term core hold the user has explicitly exempted from the sell rules. Report its condition for information, but NEVER raise it as a trim/sell/replace action item, and do not count it as a rule violation. Pyramiding rules still apply if the user asks about adding."
+  },
+
+  "positions": {
+    "33171515": {
+      "QQQM": {
+        "policy": "sitting",
+        "stated_by_user": "2026-09-07",
+        "note": "Long-held legacy position, user is deliberately sitting on it. User has stated he will not sell even if price loses the 50-day moving average. Do not flag for trim on RS, on a 50-day undercut, or on the VOO/QQQM relative-strength spread — that comparison was already raised and declined."
+      }
+    },
+    "59087753": {}
+  }
+}

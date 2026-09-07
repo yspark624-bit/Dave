@@ -13,9 +13,15 @@ separately under [`../vanguard_roth_ira_59087753/`](../vanguard_roth_ira_5908775
 ## Files
 
 - `holdings/latest.json` — current snapshot (balances + positions). This is
-  what the morning Routine reads.
+  what the morning Routine reads. **Overwritten every evening**, so nothing
+  durable may be stored here.
 - `holdings/history/<YYYY-MM-DD>.json` — end-of-day archive, one file per
   evening update.
+- [`../position_policy.json`](../position_policy.json) — investor profile
+  and per-position policy, kept outside the snapshot so the nightly
+  overwrite cannot wipe it. **QQQM here is `sitting`** — a long-held core
+  position the user holds through a loss of the 50-day line; it is never
+  flagged for trim.
 
 ## Update process
 

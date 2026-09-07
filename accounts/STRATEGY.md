@@ -8,6 +8,30 @@ Trend Template); this file adds the position-management rules — hold,
 trim, and pyramid (add to a winning position) — that the daily/morning
 checks apply on top of a Stage classification.
 
+## Investor profile and position policy
+
+Read [`position_policy.json`](position_policy.json) **before** classifying
+anything. It holds the investor profile and the per-position policy, and it
+lives outside `holdings/latest.json` deliberately — the nightly snapshot is
+overwritten from the pasted dashboard and would wipe it.
+
+- **Risk posture: moderately aggressive.** Earlier entries are preferred
+  over waiting for full confirmation, deeper drawdowns and higher
+  volatility are tolerated, and concentration is acceptable — do not
+  propose trimming a position for diversification alone. This widens the
+  tolerance band; it does not suspend stop discipline on trend-managed
+  positions.
+- **Two position policies.** `trend` (the default) is fully governed by
+  the rules below. **`sitting` is a long-term core hold the user has
+  explicitly exempted from the sell rules** — report how it is doing, but
+  never raise it as a trim, sell, or replace action item and never count
+  it as a rule violation. QQQM in account 33171515 is `sitting`: a
+  long-held position the user is deliberately holding through a loss of
+  the 50-day line.
+
+A judgement the user has already made and declined is not re-raised each
+morning. Repeating a rejected recommendation daily is noise, not analysis.
+
 ## Stage2 hold/trim baseline
 
 - **Stage 2 confirmed** (Trend Template 7-8/8, RS ≥ 70, price within 25% of
