@@ -24,8 +24,10 @@ holdings table) into the chat. Claude:
 
 ## Morning check
 
-A scheduled Routine ("Vanguard Roth IRA Morning Stage2 Check") runs on
-weekday mornings before market open. It reads `holdings/latest.json` and,
+A scheduled Routine ("Vanguard Roth IRA Morning Stage2 Check", cron
+`0 12 * * 1-5` = 8:00 AM ET weekdays, currently EDT — shift to 7:00 AM ET
+once EST resumes in November) runs on weekday mornings before market open.
+It reads `holdings/latest.json` and,
 for every position with quantity > 0, runs the Stage2/CANSLIM screen:
 
 - **Stage 2 confirmed** → hold / consider adding.
