@@ -11,13 +11,48 @@ checks apply on top of a Stage classification.
 ## Stage2 hold/trim baseline
 
 - **Stage 2 confirmed** (Trend Template 7-8/8, RS ≥ 70, price within 25% of
-  52-week high) → hold, core position stays on. RS here means an actual
-  **1-99 percentile rank** of the IBD-style weighted return
-  (40% × 3-month + 20% each × 6/9/12-month) against a real multi-name
-  universe — not "outperformed SPY by N points", which flatters names whose
-  relative strength has quietly faded to mid-pack.
+  52-week high) → hold, core position stays on.
+
+### RS Rating — use IBD's number, and never fake it
+
+The "RS ≥ 70" threshold is defined against **IBD's full ~6,000-name
+universe**. A percentile computed against any other universe is on a
+different scale and **must not be compared to that threshold.**
+
+1. **The user is an IBD member. IBD's published RS Rating is authoritative
+   — ask for it or use the one supplied, and prefer it over any computed
+   proxy.**
+2. Only if no IBD rating is available, compute a proxy: percentile rank of
+   the IBD-style weighted return (40% × 3-month + 20% each × 6/9/12-month).
+   When you do, you must:
+   - rank against a **breadth-representative** universe (small and mid caps
+     included), never a hand-picked large-cap basket;
+   - **sanity-check the scale with SPY.** If SPY lands near the middle of
+     your universe, the universe is stacked with winners and every
+     percentile from it is depressed — a real market has most stocks below
+     the index in a narrow-leadership tape;
+   - label the number as a proxy and **state its universe**, and do not
+     apply the ≥70 pass/fail to it.
+
+> Learned the hard way (2026-09-07): XLF was scored RS 39 against a 96-name
+> large-cap basket whose median 12-month return (+24.9%) beat SPY's (+20.0%),
+> and was then failed against the ≥70 line and called the portfolio's weakest
+> holding. Its actual IBD RS Rating was **90**. SPY scored 40 on that same
+> scale — the tell that the scale, not the holding, was wrong.
+
+Never overrule a live IBD/market fact the user supplies with a home-grown
+proxy. If the two disagree, the proxy is what needs explaining.
 - **Trend Template slipping to 5-6/8** → Stage 1↔2 transition, needs a
-  chart read (base + breakout on volume) before trusting it.
+  chart read (base + breakout on volume) before trusting it. Check *which*
+  criteria failed before calling it weak: **criterion 2 (150-SMA above
+  200-SMA) and criterion 6 (25% above the 52-week low) fail mechanically
+  for a stock that has just broken out of a long base**, because it has not
+  advanced far enough yet — that is the signature of an early Stage 2
+  entry, not of a laggard. A near-miss on criterion 2 (the two averages
+  within a fraction of a percent, i.e. an imminent golden cross) with price
+  above the 50-SMA and near its 52-week high is a *young* base breakout.
+  Size it as such (IBD's own convention: half-size starter) rather than
+  flagging it for replacement.
 - **Criteria 1, 2, or 4 failing (50/150/200-SMA order inverted)** → Stage
   3/4. Not a hold. Trim or exit.
 
