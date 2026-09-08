@@ -81,27 +81,56 @@ different scale and **must not be compared to that threshold.**
 Never overrule a live IBD/market fact the user supplies with a home-grown
 proxy. If the two disagree, the proxy is what needs explaining.
 
-**Proxy error is not uniform — it scales with how unlike the universe the
-holding is**, and against a mega-cap-tech basket it ran one way only:
+**The proxy is not directionally reliable. Do not use it for anything.**
+All 14 holdings measured against their real IBD ratings:
 
-| Holding | Proxy | Actual IBD RS | Error | Character |
-|---|---|---|---|---|
-| XLK | 67 | 68 | +1 | tech sector ETF |
-| NVDA | 66 | 73 | +7 | mega-cap tech |
-| QQQM | 42 | 60 | +18 | Nasdaq-100 |
-| VOO | 41 | 80 | **+39** | broad S&P |
-| XLF | 39 | 90 | **+51** | financials |
+| Holding | Proxy | Actual IBD RS | Error |
+|---|---|---|---|
+| SMH | 81 | 66 | **−15** |
+| ERO | 86 | 82 | **−4** |
+| RVMD 97 / XLK 67 | | 98 / 68 | +1 |
+| MRX 93 / MPC 92 / GH 89 | | 98 / 98 / 95 | +5 … +6 |
+| HNGE 90 / NVDA 66 | | 97 / 73 | +7 |
+| CF | 77 | 89 | +12 |
+| QQQM | 42 | 60 | +18 |
+| XBI | 79 | 99 | +20 |
+| VOO | 41 | 80 | **+39** |
+| XLF | 39 | 90 | **+51** |
 
-Two things follow, and both matter operationally:
+Errors run **−15 to +51 with no consistent direction**, so there is no
+correction factor and no safe half of the range.
 
-1. **The bias was low every single time.** So a proxy that says a holding
-   is *strong* is safe — the real rating is at least that. A proxy that
-   *fails* a holding is worthless. Weight the conclusions accordingly:
-   never sell or downgrade on a failing proxy, only on a real IBD rating.
-2. **The error tracks distance from the universe's character.** Tech names
-   scored fairly against a tech-heavy basket; financials and broad-market
-   ETFs were crushed. Sector ETFs, defensives, and anything outside the
-   universe's style are exactly where a proxy must never be trusted.
+> An earlier version of this file claimed "the bias was low every single
+> time, so a proxy that says a holding is strong is safe." That was written
+> on five data points and **falsified on the next two** — SMH proxied 81
+> against an actual 66, ERO 86 against 82. Both were overstatements, and
+> SMH is a holding the overstatement would have kept.
+>
+> The lesson is about method, not about RS: **do not turn a small sample
+> into a rule, and do not build an operating shortcut on top of a
+> measurement already known to be unreliable.** When the real number is
+> obtainable, get the real number.
+
+So: **ask for the IBD rating.** If it is genuinely unavailable, say the RS
+criterion is unscored — an honest gap beats a fabricated percentile.
+
+### ROE and the other CANSLIM ratios are ANNUAL figures
+
+Webull's `get_financial_indicators` returns **quarterly** `roe`, `roa` and
+margins. O'Neil's thresholds (ROE ≥ 17%) are **annual**. Reading one as the
+other understates every company by roughly 3-4×.
+
+> Learned the hard way (2026-09-07): CF was written up as "ROE 8.5%, low"
+> and ERO as "ROE 7.7%" — both used to mark the holdings down. Their real
+> IBD **Annual ROE** figures are **39.19%** and **30.56%**: both comfortably
+> above O'Neil's bar, and the criticism was withdrawn.
+
+Do not fix this by multiplying the quarterly figure by four — that happened
+to land near CF and ERO but was far off for MPC (83.6% computed vs 47.88%
+actual), MRX and HNGE. Use IBD's **Annual ROE**, **SMR Rating** and
+**EPS Rating** for the fundamental side, and use Webull's quarterly series
+only for the *trend* (accelerating or decelerating), which is what it is
+actually good for.
 
 **A skewed universe also corrupts the market read, not just the names.**
 The same basket made SPY look mid-pack and produced the conclusion
