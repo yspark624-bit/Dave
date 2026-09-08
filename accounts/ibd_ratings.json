@@ -37,7 +37,12 @@
     "QQQM": { "rs": 60, "acc_dist": "D", "up_down_vol": 0.86,
               "off_52w_high_pct": -3.94, "vs_50dma_pct": 1.12, "ibd_leaders": null,
               "_policy": "sitting — see position_policy.json, never flag for trim" },
-    "OIH":  { "_missing": "No IBD data supplied yet. Ask the user before scoring the RS criterion." }
+    "OIH":  { "rs": 75, "acc_dist": "B-", "up_down_vol": 0.94,
+              "off_52w_high_pct": -6.91, "vs_50dma_pct": 8.38,
+              "funds_owning_chg_pct": 0, "qtrs_increasing_fund_ownership": 0,
+              "ibd_leaders": "half position from 2026-08-31 at 432.57",
+              "entry": 428.75, "buy_zone_top": 450.19,
+              "_note": "Fails Trend Template criterion 4 (SMA50 394.48 < SMA150 402.34), but price is +8.38% ABOVE a 50-SMA that has turned up (+2.05 last month after -24.62 the month before). Lagging average on a base breakout, not a breakdown. Do NOT flag as trim on criterion 4 alone." }
   },
 
   "59087753": {

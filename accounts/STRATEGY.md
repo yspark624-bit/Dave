@@ -48,8 +48,29 @@ morning. Repeating a rejected recommendation daily is noise, not analysis.
   above the 50-SMA and near its 52-week high is a *young* base breakout.
   Size it as such (IBD's own convention: half-size starter) rather than
   flagging it for replacement.
-- **Criteria 1, 2, or 4 failing (50/150/200-SMA order inverted)** → Stage
-  3/4. Not a hold. Trim or exit.
+- **Criteria 1, 2, or 4 failing (50/150/200-SMA order inverted)** → check
+  **where price sits and which way the 50-SMA is moving** before calling it
+  Stage 3/4:
+  - price **below** a **falling** 50-SMA → genuine breakdown. Trim or exit.
+  - price **above** a **rising** 50-SMA, with the 50-SMA merely still under
+    the 150-SMA → the average is *lagging a recovery*, not rolling over.
+    A sharp earlier drop dragged the 50-SMA down; the rally has outrun it
+    and the crossover simply has not happened yet. That is a base breakout,
+    and it is a hold — potentially an early Stage 2 entry.
+
+> Learned the hard way (2026-09-07): OIH failed criterion 4 (SMA50 394.48 <
+> SMA150 402.34) and was flagged "trim watch". But price sat **+8.38% above**
+> the 50-SMA, which had turned up (**+2.05 over the last month after −24.62
+> the month before**), it was +79.4% off its 52-week low and only −6.91% off
+> its high. IBD had added it to **Leaders as a half position on Aug 31**.
+> The criterion failed; the conclusion drawn from it did not follow.
+
+**The recurring mistake, three times over.** Criteria 2 and 6 (XLF),
+criterion 4 (OIH) — each time a criterion was read as a verdict instead of
+as a symptom whose cause needed diagnosing. The Trend Template confirms an
+**already-established** uptrend; a stock emerging from a long base fails
+parts of it *because it has not advanced yet*, which is the opposite of
+weakness. **Always ask why a criterion failed before acting on it.**
 
 ### RS Rating — use IBD's number, and never fake it
 
