@@ -1,23 +1,27 @@
 {
-  "account": {
-    "owner": "Yeunshik Park",
-    "broker": "Webull",
-    "account_type": "Individual Margin",
-    "account_number_masked": "5JF28979",
-    "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
-    "tier": "short-term swing",
-    "data_source": "live via Webull MCP (get_account_positions / get_account_balance)",
-    "as_of": "2026-09-07T05:00:00Z",
-    "total_net_liquidation_value_usd": 18423.98,
-    "total_market_value_usd": 6992.40,
-    "cash_balance_usd": 11431.58,
-    "day_buying_power_usd": 64203.35
-  },
-  "holdings": [
-    {"symbol": "DRAM", "type": "Stock", "quantity": 40, "cost_price": 58.34, "last_price": 59.69, "market_value": 2381.60, "unrealized_pl_usd": 48.00, "unrealized_pl_pct": 2.06},
-    {"symbol": "HOOD", "type": "Stock", "quantity": 10, "cost_price": 123.78, "last_price": 122.11, "market_value": 1221.00, "unrealized_pl_usd": -16.80, "unrealized_pl_pct": -1.36},
-    {"symbol": "NVDA", "type": "Stock", "quantity": 10, "cost_price": 228.52, "last_price": 230.36, "market_value": 2295.00, "unrealized_pl_usd": 9.80, "unrealized_pl_pct": 0.43},
-    {"symbol": "ZETA", "type": "Stock", "quantity": 35, "cost_price": 32.05, "last_price": 31.35, "market_value": 1094.80, "unrealized_pl_usd": -26.95, "unrealized_pl_pct": -2.40}
+  "account_name": "Webull Individual Margin",
+  "account_number_masked": "5JF28979",
+  "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
+  "broker": "Webull",
+  "tier": "short-term swing",
+  "data_source": "live via Webull MCP (get_account_positions / get_account_balance)",
+  "as_of": "2026-09-09T12:30:00Z",
+  "total_net_liquidation_value_usd": 18312.98,
+  "total_market_value_usd": 10322.85,
+  "cash_balance_usd": 7990.13,
+  "day_buying_power_usd": 59215.72,
+  "total_unrealized_pl_usd": -96.94,
+  "_changes_since_2026_09_07": [
+    "NEW POSITION: TSM, 5 shares at cost 440.73.",
+    "ADDED: DRAM 40 -> 60 shares (cost price 58.34 -> 59.52).",
+    "Cash fell 11431.58 -> 7990.13.",
+    "All five positions now show an unrealized loss except DRAM."
   ],
-  "note": "This account has a live Webull MCP connection, unlike the Vanguard accounts. The daily routine can re-pull positions/balance directly via get_account_positions instead of relying on a hand-maintained snapshot -- this file is a point-in-time cache for reference."
+  "holdings": [
+    {"symbol": "DRAM", "type": "Stock", "quantity": 60, "cost_price": 59.52, "last_price": 60.59, "market_value": 3635.40, "unrealized_pl_usd": 64.01, "unrealized_pl_pct": 1.79},
+    {"symbol": "TSM", "type": "Stock", "quantity": 5, "cost_price": 440.73, "last_price": 432.44, "market_value": 2162.20, "unrealized_pl_usd": -41.45, "unrealized_pl_pct": -1.88},
+    {"symbol": "NVDA", "type": "Stock", "quantity": 10, "cost_price": 228.52, "last_price": 224.65, "market_value": 2246.50, "unrealized_pl_usd": -38.70, "unrealized_pl_pct": -1.69},
+    {"symbol": "HOOD", "type": "Stock", "quantity": 10, "cost_price": 123.78, "last_price": 119.48, "market_value": 1194.80, "unrealized_pl_usd": -43.00, "unrealized_pl_pct": -3.47},
+    {"symbol": "ZETA", "type": "Stock", "quantity": 35, "cost_price": 32.05, "last_price": 30.97, "market_value": 1083.95, "unrealized_pl_usd": -37.80, "unrealized_pl_pct": -3.37}
+  ]
 }
