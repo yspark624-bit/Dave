@@ -1,0 +1,103 @@
+{
+  "account_name": "Yeunshik Park — Roth IRA Brokerage Account",
+  "account_number_masked": "59087753",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-04T19:00:00-04:00",
+  "total_value_usd": 45120.05,
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 12385.83
+  },
+  "available_for_purchase_usd": 12385.83,
+  "available_to_withdraw_usd": 12385.83,
+  "total_credits_debits_usd": 0.0,
+  "total_unrealized_gain_usd": 4255.15,
+  "holdings": [
+    {
+      "symbol": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "asset_type": "ETF",
+      "price": 567.01,
+      "day_change": 14.41,
+      "day_change_pct": 2.61,
+      "quantity": 10.021,
+      "unrealized_gain_usd": 1939.66,
+      "unrealized_gain_pct": 51.83,
+      "current_balance_usd": 5682.01
+    },
+    {
+      "symbol": "XBI",
+      "name": "SPDR S&P Biotech ETF",
+      "asset_type": "ETF",
+      "price": 163.81,
+      "day_change": 0.57,
+      "day_change_pct": 0.35,
+      "quantity": 45.014,
+      "unrealized_gain_usd": 468.88,
+      "unrealized_gain_pct": 6.79,
+      "current_balance_usd": 7373.74
+    },
+    {
+      "symbol": "XLF",
+      "name": "SPDR Financial Select Sector ETF",
+      "asset_type": "ETF",
+      "price": 58.1,
+      "day_change": 0.46,
+      "day_change_pct": 0.79,
+      "quantity": 60.0,
+      "unrealized_gain_usd": 92.9,
+      "unrealized_gain_pct": 2.74,
+      "current_balance_usd": 3486.0
+    },
+    {
+      "symbol": "XLK",
+      "name": "SPDR Technology Select Sector ETF",
+      "asset_type": "ETF",
+      "price": 187.28,
+      "day_change": 1.31,
+      "day_change_pct": 0.7,
+      "quantity": 7.0,
+      "unrealized_gain_usd": 12.53,
+      "unrealized_gain_pct": 0.97,
+      "current_balance_usd": 1310.96
+    },
+    {
+      "symbol": "MPC",
+      "name": "Marathon Petroleum Corp",
+      "asset_type": "Stock",
+      "price": 388.9,
+      "day_change": 1.19,
+      "day_change_pct": 0.31,
+      "quantity": 8.0,
+      "unrealized_gain_usd": 568.72,
+      "unrealized_gain_pct": 22.37,
+      "current_balance_usd": 3111.2
+    },
+    {
+      "symbol": "MRX",
+      "name": "Marex Group Ltd",
+      "asset_type": "Stock",
+      "price": 78.27,
+      "day_change": 2.62,
+      "day_change_pct": 3.46,
+      "quantity": 35.0,
+      "unrealized_gain_usd": 145.6,
+      "unrealized_gain_pct": 5.61,
+      "current_balance_usd": 2739.45
+    },
+    {
+      "symbol": "RVMD",
+      "name": "Revolution Medicines Inc",
+      "asset_type": "Stock",
+      "price": 210.02,
+      "day_change": 0.85,
+      "day_change_pct": 0.4,
+      "quantity": 43.0,
+      "unrealized_gain_usd": 1026.86,
+      "unrealized_gain_pct": 12.83,
+      "current_balance_usd": 9030.86
+    }
+  ]
+}

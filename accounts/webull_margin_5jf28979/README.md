@@ -7,7 +7,7 @@ not tracked here).
 Unlike the Vanguard accounts, this account has a **live MCP connection**
 (`mcp__https_api_webull_com_mcp__*`) — `get_account_positions` and
 `get_account_balance` pull real-time positions instead of a hand-maintained
-snapshot. `holdings.json` is a point-in-time cache; the daily routine should
+snapshot. `holdings/latest.json` is a point-in-time cache; the daily routine should
 re-pull live data rather than trust the file if the two disagree.
 
 ## Tier rules (short-term swing)

@@ -1,42 +1,52 @@
 # Accounts
 
-Yeunshik Park (yspark624@gmail.com) trades across four accounts on three time
-horizons. Every screen in this repo (`stage2-momentum-screener` skill) frames
-its verdicts in these terms — never a generic "buy/sell".
+Tracks the household's brokerage/retirement accounts so Claude can run the
+`stage2-momentum-screener` skill (O'Neil CANSLIM + Minervini Trend Template)
+against real holdings and route recommendations to the right account by time
+horizon. See [`STRATEGY.md`](STRATEGY.md) for the shared hold/trim/pyramid
+rules and [`position_policy.json`](position_policy.json) for the investor
+profile and per-position exemptions — **read both before classifying
+anything**.
 
-| Tier | Broker | Account | Data source | Review cadence | Role |
-|---|---|---|---|---|---|
-| 단기 스윙 (short-term swing) | Webull | Margin #5JF28979 | live (Webull MCP) | **daily** | Fresh Stage 2 / VCP breakouts, tightest stops, smallest size |
-| 중기 (mid-term) | Vanguard | Roth IRA #59087753 (V-7753) | manual snapshot | **daily** | Established Stage 2, strong RS, core holds through normal pullbacks |
-| 중기 (mid-term) | Vanguard | Roth IRA #1515* (V-1515) | manual snapshot | **daily** | Same tier rules as above |
-| 장기 (long-term) | Principal | 401(k) | **pending data** | quarterly | Mutual funds rebalanced quarterly — fundamentals-first, excluded from the daily Routine |
-| 장기 (long-term) | Ascensus | 401(k) | **pending data** | quarterly | Mutual funds rebalanced quarterly — fundamentals-first, excluded from the daily Routine |
+| Tier | Broker | Account | Data source | Review cadence |
+|---|---|---|---|---|
+| 단기 스윙 (short-term swing) | Webull | Margin #5JF28979 | live (Webull MCP) | daily |
+| 중기 (mid-term) | Vanguard | Roth IRA #59087753 — Yeunshik Park | manual snapshot | daily |
+| 중기 (mid-term) | Vanguard | Roth IRA #33171515 — Jooyoung Park | manual snapshot | daily |
+| 장기 (long-term) | Principal | 401(k) | pending data | quarterly |
+| 장기 (long-term) | Ascensus | 401(k) | pending data | quarterly |
 
-The daily Stage2/CANSLIM Routine covers only the three daily-cadence rows
-above (V-7753, V-1515, Webull) — the 401(k) accounts hold mutual funds on a
-quarterly rebalance cycle and don't need a daily technical read.
-
-Webull also has a second, currently-empty Individual Cash account
-(#CUV86FB6) that isn't tracked here since it holds no positions.
+The 401(k) accounts hold mutual funds rebalanced quarterly, so they are
+**excluded from the daily Routine** — they get reviewed on their own cadence.
+Webull also has a second, currently-empty Individual Cash account (#CUV86FB6)
+that isn't tracked here since it holds no positions.
 
 ## Layout
 
-Each account gets its own directory: `accounts/<broker>-<account-type>-<id>/`.
+Each account directory holds:
 
-- `holdings.json` — hand-captured snapshot of positions (no brokerage API is
-  wired up in this repo, so update this file whenever a trade fills).
-- `README.md` — account-specific notes (methodology reminders, restrictions
-  such as a 401(k) fund menu).
-- `reports/YYYY-MM-DD.md` — dated output from the daily Stage2/CANSLIM
-  screen, so today's call and the reasoning behind it stay auditable and the
-  agent can compare today's read against its own prior calls (closed-loop
-  review, not just a fresh take every morning).
+- `holdings/latest.json` — current snapshot (pasted dashboard for Vanguard,
+  live `get_account_positions` for Webull).
+- `holdings/history/<date>.json` — the prior snapshot, archived on each update.
+- `README.md` — account-specific notes and restrictions.
+- `reports/<date>.md` / `.pdf` — dated Stage2/CANSLIM screens, so each call and
+  its reasoning stay auditable and today's read can be compared against prior
+  ones (closed-loop review, not a fresh take every morning).
 
-## Methodology
+## How updates flow
 
-All screens use William O'Neil's CANSLIM + Mark Minervini's 8-point Trend
-Template — see the `stage2-momentum-screener` skill for the full checklist,
-the Weinstein 4-stage model, and position-management-by-stage guidance
-(including pyramiding rules: add only near a valid low-risk trigger — a VCP
-breakout on volume or a pullback to a rising 50-day SMA — never chase a name
-already extended past its pivot).
+1. **Evening (user):** the current Vanguard dashboard is pasted into chat.
+   Claude parses it, updates that account's `holdings/latest.json`, archives the
+   previous snapshot under `holdings/history/<date>.json`, and commits.
+   The Webull account needs no paste — it is pulled live via MCP.
+2. **Morning (automated):** a scheduled Routine reads the latest snapshot plus
+   `STRATEGY.md` / `position_policy.json`, runs the Stage2/CANSLIM screen on
+   every holding, and reports hold / trim / pyramid per position.
+
+If an evening update is missed, the morning check uses the last available
+snapshot and calls out how stale it is.
+
+## Rendering reports
+
+`scripts/md_to_pdf.py` renders a dated report to PDF with full Hangul support
+(Noto Sans CJK KR) — see `scripts/README.md`.
