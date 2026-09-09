@@ -75,6 +75,7 @@
               "entry": 56.59, "buy_zone_top": 59.42 },
     "XLK":  { "rs": 68, "acc_dist": "D", "up_down_vol": 0.84,
               "off_52w_high_pct": -5.76, "vs_50dma_pct": 2.56, "ibd_leaders": null },
+    "ANET": { "_missing": "New position opened 2026-09-08. No IBD data supplied yet — report RS as UNSCORED and ask the user for the IBD Stock Checklist before scoring criterion 8 or making any RS-based call." },
     "SMH":  { "rs": 66, "acc_dist": "E", "up_down_vol": 0.77,
               "off_52w_high_pct": -15.6, "vs_50dma_pct": -1.21, "ibd_leaders": null }
   }
