@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "mcp__https_api_webull_com_mcp__get_stock_snapshot",
+      "mcp__https_api_webull_com_mcp__get_stock_bars",
+      "mcp__https_api_webull_com_mcp__get_stock_quotes",
+      "mcp__https_api_webull_com_mcp__get_52_week_high_low",
+      "mcp__https_api_webull_com_mcp__get_company_profile",
+      "mcp__https_api_webull_com_mcp__get_income_statement",
+      "mcp__https_api_webull_com_mcp__get_financial_indicators",
+      "mcp__https_api_webull_com_mcp__get_analyst_rating",
+      "mcp__https_api_webull_com_mcp__get_market_sectors",
+      "mcp__https_api_webull_com_mcp__get_instruments"
+    ]
+  }
+}
