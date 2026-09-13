@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""스크리닝 결과를 PDF로 인쇄 가능한 한글 HTML 리포트로 변환.
+"""스크리닝 결과를 한글 HTML 리포트로 변환 (로컬 열람용, 선택 사항).
 
-외부 라이브러리 불필요. 브라우저에서 열고 Ctrl+P -> "PDF로 저장" 하면 끝.
-(reportlab/weasyprint 설치 없이도 PDF를 얻는 가장 확실한 무료 경로)
+기본 산출물은 터미널 표다. 이 스크립트는 넓은 화면에서 한 번에 보고 싶을 때만 쓴다.
+외부 라이브러리 불필요.
 
 사용법:
     python3 scripts/make_report.py                       # out/screen.csv -> out/report.html
@@ -125,7 +125,7 @@ def main(argv):
         fh.write(doc)
 
     print("리포트 생성 완료: %s" % dst)
-    print("PDF로 저장하려면: 브라우저로 열기 -> Ctrl+P (Mac: Cmd+P) -> 대상 'PDF로 저장'")
+    print("브라우저로 열어 확인하세요.")
     return 0
 
 
