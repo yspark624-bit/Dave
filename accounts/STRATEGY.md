@@ -212,6 +212,31 @@ Only ever pyramid a position that is **already a confirmed Stage 2 holding**
    genuinely stretched. **5+ ATR above the 50-day SMA is climax
    territory** — not an add, and a reason to consider taking partial
    profits.
+
+   **These are rules for ADDS, not for initial entries.** An initial
+   buy is judged against the base's pivot and IBD's 5% buy zone. Do not
+   apply the ATR-above-the-50-day test to a first purchase.
+
+   > Learned the hard way (2026-09-15): CRM was bought at a 248.78
+   > average and written up twice as "a place you should not have
+   > bought — 4.12 ATR above the 50-day, past the chase line." Its IBD
+   > pivot was **238.22 with a buy zone to 250.13**; the purchase was
+   > **inside the zone, +4.43% above the pivot**. The stock had gapped
+   > on an 80.49% earnings surprise, which is exactly the case the
+   > paragraph above warns about — the 50-day had not caught up, so
+   > measuring extension against it manufactured a violation that did
+   > not exist. Worse, the resulting advice ("raise the stop to
+   > breakeven") would have put the stop where normal retracement takes
+   > it out.
+   >
+   > Two failures, and the second is the one that matters: the ATR test
+   > was applied to the wrong kind of trade, and a criterion was again
+   > read as a verdict without diagnosing *why* it failed — the same
+   > error this file already records for XLF (criteria 2/6), OIH
+   > (criterion 4) and NVDA (contraction legs). Writing the rule down
+   > did not stop it from happening a fourth time. **Before calling any
+   > entry a rule violation, check the position against the pivot and
+   > the published buy zone first.**
 4. **Size down each add** (classic 50/30/20 scaling): initial position =
    full base size; first add ≤ 50% of the base size; second add ≤ 25-30%
    of the base size. No more than two pyramid adds on a single name.
