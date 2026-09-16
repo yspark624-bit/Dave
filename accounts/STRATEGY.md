@@ -135,6 +135,26 @@ correction factor and no safe half of the range.
 So: **ask for the IBD rating.** If it is genuinely unavailable, say the RS
 criterion is unscored — an honest gap beats a fabricated percentile.
 
+### The same deference applies to "% off 52-week high"
+
+Criterion 7 (price within 25% of the 52-week high) is a **pass/fail gate on
+Stage 2 membership**, and the number it turns on differs by method. Our
+scorer takes the 52-week high from **closing** prices; IBD takes it from the
+**intraday** high, which is always the larger drawdown. When IBD publishes
+`% Off 52 Week High`, use IBD's figure for the criterion.
+
+> Learned the hard way (2026-09-16): MU scored 7/7 with the 52-week
+> drawdown read as **−23.6%**, inside the gate. IBD's own checklist said
+> **−25.98%** — outside it. The position had been written up for two days
+> as a Stage 2 holding that had merely "regained its 50-day line"; on
+> IBD's number it was **not Stage 2 at all**, and IBD had already cut its
+> own position to a quarter. A 2.4-point methodology gap sat directly on
+> top of a hold/exit decision.
+
+The general rule, third instance now: **where IBD publishes the number a
+criterion turns on, that number wins.** A locally computed value is a
+stand-in for a missing figure, never an override of a published one.
+
 ### ROE and the other CANSLIM ratios are ANNUAL figures
 
 Webull's `get_financial_indicators` returns **quarterly** `roe`, `roa` and

@@ -3,32 +3,29 @@
   "account_number_masked": "33171515",
   "broker": "Vanguard",
   "tier": "mid-term",
-  "as_of": "2026-09-15T10:14:00-04:00",
-  "_as_of_note": "Intraday dashboard paste (market open ~44 minutes). Prices are live, not closes.",
-  "total_value_usd": 51226.77,
-  "settlement_fund": {
-    "symbol": "VMFXX",
-    "name": "Vanguard Federal Money Market Fund",
-    "value_usd": 13855.28
-  },
-  "available_for_purchase_usd": 13855.28,
-  "available_to_withdraw_usd": 13855.28,
-  "total_credits_debits_usd": 0.00,
-  "total_unrealized_gain_usd": 2014.26,
-  "_changes_since_2026_09_08": [
-    "SOLD OUT: ERO, all 70 shares. Settlement fund 11969.63 -> 13855.28 and credits/debits 1482.56 -> 0.00 are consistent with the ERO proceeds (~2276, i.e. ~32.5/share) less the MU add, plus the previously unsettled balance clearing.",
-    "ADDED: MU 3 -> 5 shares (+2).",
-    "No other position changed quantity. Everything is now settled (total credits & debits 0.00)."
+  "as_of": "2026-09-16T10:21:00-04:00",
+  "_as_of_note": "Intraday dashboard paste (~51 minutes after the open). Prices are live, not closes.",
+  "total_value_usd": 51495.26,
+  "settlement_fund": {"symbol": "VMFXX", "name": "Vanguard Federal Money Market Fund", "value_usd": 13855.28},
+  "available_for_purchase_usd": 9093.98,
+  "available_to_withdraw_usd": 9093.98,
+  "total_credits_debits_usd": -4761.30,
+  "total_unrealized_gain_usd": 2282.76,
+  "_changes_since_2026_09_15": [
+    "ADDED: GH 27 -> 47 shares (+20, a 74% increase). GH is now the largest position in the account at 16.0%.",
+    "NEW POSITION: TWLO 5 shares at ~242.2 (~1211). First time held; not covered by any prior report.",
+    "Available for purchase 13855.28 -> 9093.98 with credits/debits at -4761.30, consistent with both buys pending settlement (GH ~3512 + TWLO ~1211 = ~4723).",
+    "No other position changed quantity."
   ],
-  "_cost_basis_note": "Vanguard's reported unrealized gain implies an average MU cost near 850.62/share (4686.54 - 433.44 = 4253.10 over 5 shares), which does not match a 09-08 purchase at ~1000/share. Earlier snapshots inferred MU's cost from an unsettled row showing '-' for P/L; that inference was unreliable. Use Vanguard's own gain/loss figures, not reconstructed cost bases.",
   "holdings": [
-    {"symbol": "VOO", "name": "Vanguard S&P 500 Index ETF", "asset_type": "ETF", "price": 696.69, "day_change": 2.62, "day_change_pct": 0.37, "quantity": 4.025, "unrealized_gain_usd": 240.08, "unrealized_gain_pct": 9.36, "current_balance_usd": 2804.16},
-    {"symbol": "OIH", "name": "VanEck Oil Services ETF", "asset_type": "ETF", "price": 407.83, "day_change": 5.77, "day_change_pct": 1.44, "quantity": 6.0, "unrealized_gain_usd": 130.20, "unrealized_gain_pct": 5.05, "current_balance_usd": 2446.98},
-    {"symbol": "QQQM", "name": "Invesco Nasdaq 100 ETF", "asset_type": "ETF", "price": 291.08, "day_change": 0.94, "day_change_pct": 0.32, "quantity": 22.156, "unrealized_gain_usd": 1572.29, "unrealized_gain_pct": 32.24, "current_balance_usd": 6449.06},
-    {"symbol": "CF", "name": "CF Industries Holdings Inc", "asset_type": "Stock", "price": 132.23, "day_change": 0.99, "day_change_pct": 0.75, "quantity": 55.0, "unrealized_gain_usd": 180.15, "unrealized_gain_pct": 2.42, "current_balance_usd": 7272.65},
-    {"symbol": "GH", "name": "Guardant Health Inc", "asset_type": "Stock", "price": 171.59, "day_change": 3.75, "day_change_pct": 2.23, "quantity": 27.0, "unrealized_gain_usd": 336.00, "unrealized_gain_pct": 7.82, "current_balance_usd": 4632.80},
-    {"symbol": "HNGE", "name": "Hinge Health Inc Cl A", "asset_type": "Stock", "price": 94.17, "day_change": 0.62, "day_change_pct": 0.65, "quantity": 40.0, "unrealized_gain_usd": 893.05, "unrealized_gain_pct": 31.08, "current_balance_usd": 3766.80},
-    {"symbol": "MU", "name": "Micron Technology Inc", "asset_type": "Stock", "price": 937.31, "day_change": 13.28, "day_change_pct": 1.44, "quantity": 5.0, "unrealized_gain_usd": 433.44, "unrealized_gain_pct": 8.47, "current_balance_usd": 4686.54},
-    {"symbol": "NVDA", "name": "Nvidia Corp", "asset_type": "Stock", "price": 212.50, "day_change": 1.54, "day_change_pct": 0.73, "quantity": 25.0, "unrealized_gain_usd": 283.36, "unrealized_gain_pct": 5.06, "current_balance_usd": 5312.50}
+    {"symbol": "VOO", "name": "Vanguard S&P 500 Index ETF", "asset_type": "ETF", "price": 697.95, "day_change": 1.75, "day_change_pct": 0.25, "quantity": 4.025, "unrealized_gain_usd": 245.16, "unrealized_gain_pct": 9.56, "current_balance_usd": 2809.24},
+    {"symbol": "OIH", "name": "VanEck Oil Services ETF", "asset_type": "ETF", "price": 408.29, "day_change": 3.22, "day_change_pct": 0.78, "quantity": 6.0, "unrealized_gain_usd": 127.44, "unrealized_gain_pct": 4.94, "current_balance_usd": 2449.74},
+    {"symbol": "QQQM", "name": "Invesco Nasdaq 100 ETF", "asset_type": "ETF", "price": 292.31, "day_change": 2.22, "day_change_pct": 0.77, "quantity": 22.156, "unrealized_gain_usd": 1599.65, "unrealized_gain_pct": 32.80, "current_balance_usd": 6476.42},
+    {"symbol": "CF", "name": "CF Industries Holdings Inc", "asset_type": "Stock", "price": 133.48, "day_change": 2.06, "day_change_pct": 1.52, "quantity": 55.0, "unrealized_gain_usd": 111.40, "unrealized_gain_pct": 1.49, "current_balance_usd": 7341.40},
+    {"symbol": "GH", "name": "Guardant Health Inc", "asset_type": "Stock", "price": 175.63, "day_change": 0.02, "day_change_pct": 0.01, "quantity": 47.0, "unrealized_gain_usd": 400.41, "unrealized_gain_pct": 5.10, "current_balance_usd": 8254.61},
+    {"symbol": "HNGE", "name": "Hinge Health Inc Cl A", "asset_type": "Stock", "price": 95.19, "day_change": 2.80, "day_change_pct": 3.03, "quantity": 40.0, "unrealized_gain_usd": 933.85, "unrealized_gain_pct": 32.50, "current_balance_usd": 3807.60},
+    {"symbol": "MU", "name": "Micron Technology Inc", "asset_type": "Stock", "price": 933.70, "day_change": 6.10, "day_change_pct": 0.66, "quantity": 5.0, "unrealized_gain_usd": 451.51, "unrealized_gain_pct": 8.82, "current_balance_usd": 4668.48},
+    {"symbol": "NVDA", "name": "Nvidia Corp", "asset_type": "Stock", "price": 215.26, "day_change": 3.09, "day_change_pct": 1.46, "quantity": 25.0, "unrealized_gain_usd": 214.36, "unrealized_gain_pct": 3.83, "current_balance_usd": 5381.50},
+    {"symbol": "TWLO", "name": "Twilio Inc Cl A", "asset_type": "Stock", "price": 242.46, "day_change": 0.30, "day_change_pct": 0.12, "quantity": 5.0, "unrealized_gain_usd": 8.39, "unrealized_gain_pct": 0.70, "current_balance_usd": 1212.29, "note": "New 2026-09-16. No IBD rating on file — RS unscored."}
   ]
 }
