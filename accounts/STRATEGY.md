@@ -155,6 +155,29 @@ The general rule, third instance now: **where IBD publishes the number a
 criterion turns on, that number wins.** A locally computed value is a
 stand-in for a missing figure, never an override of a published one.
 
+### A computed pivot is an upper bound, not the entry
+
+The pivot in `analyze.py` is the **highest intraday high of the last 60
+sessions**. That finds the prior high and nothing else. IBD routinely
+publishes an actionable entry *below* it — a handle, a trendline entry, an
+early entry — so a computed pivot is systematically **too high**, and
+advice built on it systematically says *wait* when the buy zone is already
+open.
+
+> Learned the hard way (2026-09-16): TWLO was bought at ~242.2 and the
+> morning report said the entry had "no trigger — neither a breakout of
+> the pivot (258.35) nor a pullback to the 50-day," then set the add at a
+> 258.35 close. IBD's entry was **238.48 with the zone to 250.40**; the
+> fill was inside it, 1.6% above the pivot, and IBD had opened its own
+> quarter position the day before at 243.51. Waiting for 258.35 would have
+> meant sitting out the entire buy zone. This is the **CRM mistake from
+> the day before, repeated** — same error, different number.
+
+So: when no IBD buy point is on file, say the actionable entry is
+**unknown** and label any computed level provisional. Do not publish a
+computed pivot as *the* trigger. Naming the gap is cheap; a number that
+sends the user past the buy zone is not.
+
 ### ROE and the other CANSLIM ratios are ANNUAL figures
 
 Webull's `get_financial_indicators` returns **quarterly** `roe`, `roa` and

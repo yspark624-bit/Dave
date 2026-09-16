@@ -3,27 +3,27 @@
   "account_number_masked": "59087753",
   "broker": "Vanguard",
   "tier": "mid-term",
-  "as_of": "2026-09-16T10:23:00-04:00",
-  "_as_of_note": "Intraday dashboard paste (~53 minutes after the open). Prices are live, not closes.",
-  "total_value_usd": 43759.47,
+  "as_of": "2026-09-16T19:00:00-04:00",
+  "_as_of_note": "Post-close dashboard paste. Prices are 2026-09-16 closes.",
+  "total_value_usd": 43724.23,
   "settlement_fund": {"symbol": "VMFXX", "name": "Vanguard Federal Money Market Fund", "value_usd": 3396.32},
-  "available_for_purchase_usd": 10297.50,
+  "available_for_purchase_usd": 17785.30,
   "available_to_withdraw_usd": 10297.50,
-  "total_credits_debits_usd": 6901.18,
-  "total_unrealized_gain_usd": 2890.25,
-  "_changes_since_2026_09_15": [
-    "SOLD OUT: XBI, all 45.014 shares (dashboard still lists the row at quantity 0). Credits/debits of +6901.18 imply roughly 153.3/share.",
-    "Cash available for purchase 3396.32 -> 10297.50 (23.5% of the account), which restores the cash buffer the 09-16 report asked for.",
-    "SMH was NOT sold and remains held at 10.021 shares. It has been the account's trim-watch name since 09-11 (IBD RS 66, below a falling 50-SMA); XBI carried the account's highest IBD RS at 99.",
-    "No other position changed quantity."
+  "total_credits_debits_usd": 14388.98,
+  "total_unrealized_gain_usd": 2837.33,
+  "_changes_since_2026_09_16_intraday": [
+    "SOLD OUT: XLF, all 60 shares at ~55.9 on a -1.62% day. Realized +1.10% (+37.30).",
+    "TRIMMED: RVMD 43 -> 22 shares (-21, about half) on a -4.36% day. This matches the trim the 09-16 IBD report asked for (Acc/Dist B- -> D, -3.77% on +55% volume, closed below the 50-SMA).",
+    "Credits/debits 6901.18 -> 14388.98, consistent with ~3360 (XLF) + ~4116 (RVMD) of proceeds.",
+    "SMH still held at 10.021 shares — sixth consecutive session on trim watch.",
+    "Cash available for purchase is now 17785.30 (40.7% of the account)."
   ],
   "holdings": [
-    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF", "price": 550.97, "day_change": 8.86, "day_change_pct": 1.63, "quantity": 10.021, "unrealized_gain_usd": 1778.92, "unrealized_gain_pct": 47.53, "current_balance_usd": 5521.27},
-    {"symbol": "XLF", "name": "Financial Select Sector SPDR ETF", "asset_type": "ETF", "price": 56.42, "day_change": -0.44, "day_change_pct": -0.77, "quantity": 60.0, "unrealized_gain_usd": 8.20, "unrealized_gain_pct": 0.24, "current_balance_usd": 3384.90},
-    {"symbol": "XLK", "name": "Technology Select Sector SPDR ETF", "asset_type": "ETF", "price": 185.45, "day_change": 1.70, "day_change_pct": 0.93, "quantity": 7.0, "unrealized_gain_usd": 0.32, "unrealized_gain_pct": 0.02, "current_balance_usd": 1298.12},
-    {"symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock", "price": 197.17, "day_change": 4.33, "day_change_pct": 2.25, "quantity": 31.0, "unrealized_gain_usd": 50.71, "unrealized_gain_pct": 0.82, "current_balance_usd": 6112.27},
-    {"symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock", "price": 408.50, "day_change": 2.34, "day_change_pct": 0.57, "quantity": 15.020, "unrealized_gain_usd": 758.66, "unrealized_gain_pct": 14.11, "current_balance_usd": 6135.67},
-    {"symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock", "price": 69.12, "day_change": 0.72, "day_change_pct": 1.05, "quantity": 35.0, "unrealized_gain_usd": 174.65, "unrealized_gain_pct": 6.73, "current_balance_usd": 2419.20},
-    {"symbol": "RVMD", "name": "Revolution Medicines Inc", "asset_type": "Stock", "price": 199.78, "day_change": -5.08, "day_change_pct": -2.48, "quantity": 43.0, "unrealized_gain_usd": 586.54, "unrealized_gain_pct": 7.33, "current_balance_usd": 8590.54}
+    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF", "price": 545.56, "day_change": 3.45, "day_change_pct": 0.64, "quantity": 10.021, "unrealized_gain_usd": 1724.71, "unrealized_gain_pct": 46.09, "current_balance_usd": 5467.06},
+    {"symbol": "XLK", "name": "Technology Select Sector SPDR ETF", "asset_type": "ETF", "price": 183.93, "day_change": 0.19, "day_change_pct": 0.10, "quantity": 7.0, "unrealized_gain_usd": 10.92, "unrealized_gain_pct": 0.84, "current_balance_usd": 1287.51},
+    {"symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock", "price": 197.54, "day_change": 4.70, "day_change_pct": 2.44, "quantity": 31.0, "unrealized_gain_usd": 39.24, "unrealized_gain_pct": 0.64, "current_balance_usd": 6123.74},
+    {"symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock", "price": 413.92, "day_change": 3.08, "day_change_pct": 0.75, "quantity": 15.020, "unrealized_gain_usd": 840.07, "unrealized_gain_pct": 15.62, "current_balance_usd": 6217.08},
+    {"symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock", "price": 72.38, "day_change": 3.98, "day_change_pct": 5.82, "quantity": 35.0, "unrealized_gain_usd": 60.55, "unrealized_gain_pct": 2.33, "current_balance_usd": 2533.30},
+    {"symbol": "RVMD", "name": "Revolution Medicines Inc", "asset_type": "Stock", "price": 195.92, "day_change": -8.94, "day_change_pct": -4.36, "quantity": 22.0, "unrealized_gain_usd": 420.56, "unrealized_gain_pct": 5.25, "current_balance_usd": 4310.24}
   ]
 }
