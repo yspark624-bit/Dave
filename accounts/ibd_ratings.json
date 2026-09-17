@@ -1,6 +1,6 @@
 {
   "_note": "IBD Stock Checklist ratings supplied by the user (an IBD member). These are AUTHORITATIVE and override any computed proxy. Refresh when the user pastes newer IBD data. Entries marked _exited are positions the user has since sold — kept for reference, not scored. Entries marked _missing need the user's IBD checklist before RS can be scored at all.",
-  "_as_of": "2026-09-04 (older names); 2026-09-17 (MU, NTAP, TWLO, AUGO)",
+  "_as_of": "2026-09-04 (older names); 2026-09-17 (MU, NTAP, TWLO, AUGO, ANET) — all 16 live positions now scored",
   "_market": {
     "stock_market_exposure": "60%-80%"
   },
@@ -316,7 +316,35 @@
       "ibd_leaders": null
     },
     "ANET": {
-      "_missing": "New position opened 2026-09-08. No IBD data supplied yet — report RS as UNSCORED and ask the user for the IBD Stock Checklist before scoring criterion 8 or making any RS-based call."
+      "rs": 91,
+      "composite": 98,
+      "eps_rating": 96,
+      "smr": "A",
+      "group_rank": 15,
+      "group_rs": "A",
+      "acc_dist": "D",
+      "up_down_vol": 1.56,
+      "annual_roe": 31.4,
+      "debt_equity_pct": 0,
+      "annual_pretax_margin": 47.19,
+      "eps_chg_last_qtr_pct": 40,
+      "last_3q_avg_eps_growth_pct": 33.2,
+      "qtrs_eps_acceleration": 3,
+      "last_qtr_surprise_pct": 15.14,
+      "eps_growth_3yr_pct": 33.0,
+      "consecutive_yrs_eps_growth": 5,
+      "sales_chg_last_qtr_pct": 37.69,
+      "sales_growth_3yr_pct": 25.0,
+      "off_52w_high_pct": -7.15,
+      "vs_50dma_pct": 6.57,
+      "eps_due": "2026-11-02",
+      "funds_owning_chg_pct": 4,
+      "qtrs_increasing_fund_ownership": 5,
+      "ibd_leaders": null,
+      "entry": 177.48,
+      "buy_zone_top": 186.35,
+      "ibd_sell_rule": "Falls more than 8% below the 164.94 entry, or undercuts the 50-day line",
+      "_note": "Best fundamental profile in either account: Composite 98, EPS Rating 96, SMR A, annual pre-tax margin 47.19, annual ROE 31.40, DEBT/EQUITY 0%, and 5 consecutive years of annual EPS growth — the longest streak held. Price 199.53 is ABOVE the 186.35 buy-zone top, so it is not at a buy point. A/D of D is the one soft reading, though Up/Down 1.56 and 5 quarters of increasing fund ownership point the other way."
     },
     "SMH": {
       "rs": 66,
