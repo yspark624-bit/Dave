@@ -3,27 +3,26 @@
   "account_number_masked": "59087753",
   "broker": "Vanguard",
   "tier": "mid-term",
-  "as_of": "2026-09-16T19:00:00-04:00",
-  "_as_of_note": "Post-close dashboard paste. Prices are 2026-09-16 closes.",
-  "total_value_usd": 43724.23,
-  "settlement_fund": {"symbol": "VMFXX", "name": "Vanguard Federal Money Market Fund", "value_usd": 3396.32},
-  "available_for_purchase_usd": 17785.30,
-  "available_to_withdraw_usd": 10297.50,
-  "total_credits_debits_usd": 14388.98,
-  "total_unrealized_gain_usd": 2837.33,
-  "_changes_since_2026_09_16_intraday": [
-    "SOLD OUT: XLF, all 60 shares at ~55.9 on a -1.62% day. Realized +1.10% (+37.30).",
-    "TRIMMED: RVMD 43 -> 22 shares (-21, about half) on a -4.36% day. This matches the trim the 09-16 IBD report asked for (Acc/Dist B- -> D, -3.77% on +55% volume, closed below the 50-SMA).",
-    "Credits/debits 6901.18 -> 14388.98, consistent with ~3360 (XLF) + ~4116 (RVMD) of proceeds.",
-    "SMH still held at 10.021 shares — sixth consecutive session on trim watch.",
-    "Cash available for purchase is now 17785.30 (40.7% of the account)."
+  "as_of": "2026-09-17T16:15:00-04:00",
+  "_as_of_note": "Post-close dashboard paste. Prices are 2026-09-17 closes.",
+  "total_value_usd": 44165.81,
+  "settlement_fund": {"symbol": "VMFXX", "name": "Vanguard Federal Money Market Fund", "value_usd": 10297.50},
+  "available_for_purchase_usd": 15149.82,
+  "available_to_withdraw_usd": 15149.82,
+  "total_credits_debits_usd": 4852.32,
+  "total_unrealized_gain_usd": 2794.11,
+  "_changes_since_2026_09_16": [
+    "NEW POSITION: AUGO (Aura Minerals) 30 shares at ~88.71, 2661.30 = 6.0% of the account. No IBD rating on file — RS unscored. Scored 6/7 on the Trend Template; criterion 4 fails because the 50-SMA still sits under the 150-SMA after a 56% drawdown (04-17 to 07-17), the documented lagging-average case, not a breakdown.",
+    "SMH still held at 10.021 shares — eighth consecutive session on trim watch. It closed +2.76% but on 0.65x volume, the third straight advance on roughly two-thirds of average volume, and is still 0.9% below a 50-SMA falling 25.34/month.",
+    "Cash available for purchase is 15149.82 (34.3%)."
   ],
   "holdings": [
-    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF", "price": 545.56, "day_change": 3.45, "day_change_pct": 0.64, "quantity": 10.021, "unrealized_gain_usd": 1724.71, "unrealized_gain_pct": 46.09, "current_balance_usd": 5467.06},
-    {"symbol": "XLK", "name": "Technology Select Sector SPDR ETF", "asset_type": "ETF", "price": 183.93, "day_change": 0.19, "day_change_pct": 0.10, "quantity": 7.0, "unrealized_gain_usd": 10.92, "unrealized_gain_pct": 0.84, "current_balance_usd": 1287.51},
-    {"symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock", "price": 197.54, "day_change": 4.70, "day_change_pct": 2.44, "quantity": 31.0, "unrealized_gain_usd": 39.24, "unrealized_gain_pct": 0.64, "current_balance_usd": 6123.74},
-    {"symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock", "price": 413.92, "day_change": 3.08, "day_change_pct": 0.75, "quantity": 15.020, "unrealized_gain_usd": 840.07, "unrealized_gain_pct": 15.62, "current_balance_usd": 6217.08},
-    {"symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock", "price": 72.38, "day_change": 3.98, "day_change_pct": 5.82, "quantity": 35.0, "unrealized_gain_usd": 60.55, "unrealized_gain_pct": 2.33, "current_balance_usd": 2533.30},
-    {"symbol": "RVMD", "name": "Revolution Medicines Inc", "asset_type": "Stock", "price": 195.92, "day_change": -8.94, "day_change_pct": -4.36, "quantity": 22.0, "unrealized_gain_usd": 420.56, "unrealized_gain_pct": 5.25, "current_balance_usd": 4310.24}
+    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF", "price": 560.61, "day_change": 15.05, "day_change_pct": 2.76, "quantity": 10.021, "unrealized_gain_usd": 1875.52, "unrealized_gain_pct": 50.12, "current_balance_usd": 5617.87},
+    {"symbol": "XLK", "name": "Technology Select Sector SPDR ETF", "asset_type": "ETF", "price": 188.06, "day_change": 4.13, "day_change_pct": 2.25, "quantity": 7.0, "unrealized_gain_usd": 17.99, "unrealized_gain_pct": 1.39, "current_balance_usd": 1316.42},
+    {"symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock", "price": 199.53, "day_change": 1.99, "day_change_pct": 1.01, "quantity": 31.0, "unrealized_gain_usd": 22.45, "unrealized_gain_pct": 0.36, "current_balance_usd": 6185.43},
+    {"symbol": "AUGO", "name": "Aura Minerals Inc", "asset_type": "Stock", "price": 88.71, "day_change": 2.75, "day_change_pct": 3.20, "quantity": 30.0, "unrealized_gain_usd": null, "unrealized_gain_pct": null, "current_balance_usd": 2661.30, "note": "New 2026-09-17, unsettled. No IBD rating — RS unscored."},
+    {"symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock", "price": 421.96, "day_change": 8.04, "day_change_pct": 1.94, "quantity": 15.020, "unrealized_gain_usd": 960.83, "unrealized_gain_pct": 17.87, "current_balance_usd": 6337.84},
+    {"symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock", "price": 73.27, "day_change": 0.89, "day_change_pct": 1.23, "quantity": 35.0, "unrealized_gain_usd": 29.40, "unrealized_gain_pct": 1.13, "current_balance_usd": 2564.45},
+    {"symbol": "RVMD", "name": "Revolution Medicines Inc", "asset_type": "Stock", "price": 196.94, "day_change": 1.02, "day_change_pct": 0.52, "quantity": 22.0, "unrealized_gain_usd": 53.28, "unrealized_gain_pct": 1.21, "current_balance_usd": 4332.68}
   ]
 }
