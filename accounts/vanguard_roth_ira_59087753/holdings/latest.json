@@ -3,10 +3,14 @@
   "account_number_masked": "59087753",
   "broker": "Vanguard",
   "tier": "mid-term",
-  "as_of": "2026-09-17T16:15:00-04:00",
-  "_as_of_note": "Post-close dashboard paste. Prices are 2026-09-17 closes.",
+  "as_of": "2026-09-17T18:30:00-04:00",
+  "_as_of_note": "Post-close dashboard paste (18:30 ET), confirmed identical to the 16:15 ET paste — no after-hours settlement changes. Prices are 2026-09-17 closes.",
   "total_value_usd": 44165.81,
-  "settlement_fund": {"symbol": "VMFXX", "name": "Vanguard Federal Money Market Fund", "value_usd": 10297.50},
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 10297.5
+  },
   "available_for_purchase_usd": 15149.82,
   "available_to_withdraw_usd": 15149.82,
   "total_credits_debits_usd": 4852.32,
@@ -17,12 +21,90 @@
     "Cash available for purchase is 15149.82 (34.3%)."
   ],
   "holdings": [
-    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF", "price": 560.61, "day_change": 15.05, "day_change_pct": 2.76, "quantity": 10.021, "unrealized_gain_usd": 1875.52, "unrealized_gain_pct": 50.12, "current_balance_usd": 5617.87},
-    {"symbol": "XLK", "name": "Technology Select Sector SPDR ETF", "asset_type": "ETF", "price": 188.06, "day_change": 4.13, "day_change_pct": 2.25, "quantity": 7.0, "unrealized_gain_usd": 17.99, "unrealized_gain_pct": 1.39, "current_balance_usd": 1316.42},
-    {"symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock", "price": 199.53, "day_change": 1.99, "day_change_pct": 1.01, "quantity": 31.0, "unrealized_gain_usd": 22.45, "unrealized_gain_pct": 0.36, "current_balance_usd": 6185.43},
-    {"symbol": "AUGO", "name": "Aura Minerals Inc", "asset_type": "Stock", "price": 88.71, "day_change": 2.75, "day_change_pct": 3.20, "quantity": 30.0, "unrealized_gain_usd": null, "unrealized_gain_pct": null, "current_balance_usd": 2661.30, "note": "New 2026-09-17, unsettled. No IBD rating — RS unscored."},
-    {"symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock", "price": 421.96, "day_change": 8.04, "day_change_pct": 1.94, "quantity": 15.020, "unrealized_gain_usd": 960.83, "unrealized_gain_pct": 17.87, "current_balance_usd": 6337.84},
-    {"symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock", "price": 73.27, "day_change": 0.89, "day_change_pct": 1.23, "quantity": 35.0, "unrealized_gain_usd": 29.40, "unrealized_gain_pct": 1.13, "current_balance_usd": 2564.45},
-    {"symbol": "RVMD", "name": "Revolution Medicines Inc", "asset_type": "Stock", "price": 196.94, "day_change": 1.02, "day_change_pct": 0.52, "quantity": 22.0, "unrealized_gain_usd": 53.28, "unrealized_gain_pct": 1.21, "current_balance_usd": 4332.68}
+    {
+      "symbol": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "asset_type": "ETF",
+      "price": 560.61,
+      "day_change": 15.05,
+      "day_change_pct": 2.76,
+      "quantity": 10.021,
+      "unrealized_gain_usd": 1875.52,
+      "unrealized_gain_pct": 50.12,
+      "current_balance_usd": 5617.87
+    },
+    {
+      "symbol": "XLK",
+      "name": "Technology Select Sector SPDR ETF",
+      "asset_type": "ETF",
+      "price": 188.06,
+      "day_change": 4.13,
+      "day_change_pct": 2.25,
+      "quantity": 7.0,
+      "unrealized_gain_usd": 17.99,
+      "unrealized_gain_pct": 1.39,
+      "current_balance_usd": 1316.42
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks Inc",
+      "asset_type": "Stock",
+      "price": 199.53,
+      "day_change": 1.99,
+      "day_change_pct": 1.01,
+      "quantity": 31.0,
+      "unrealized_gain_usd": 22.45,
+      "unrealized_gain_pct": 0.36,
+      "current_balance_usd": 6185.43
+    },
+    {
+      "symbol": "AUGO",
+      "name": "Aura Minerals Inc",
+      "asset_type": "Stock",
+      "price": 88.71,
+      "day_change": 2.75,
+      "day_change_pct": 3.2,
+      "quantity": 30.0,
+      "unrealized_gain_usd": null,
+      "unrealized_gain_pct": null,
+      "current_balance_usd": 2661.3,
+      "note": "New 2026-09-17, unsettled. No IBD rating — RS unscored."
+    },
+    {
+      "symbol": "MPC",
+      "name": "Marathon Petroleum Corp",
+      "asset_type": "Stock",
+      "price": 421.96,
+      "day_change": 8.04,
+      "day_change_pct": 1.94,
+      "quantity": 15.02,
+      "unrealized_gain_usd": 960.83,
+      "unrealized_gain_pct": 17.87,
+      "current_balance_usd": 6337.84
+    },
+    {
+      "symbol": "MRX",
+      "name": "Marex Group Ltd",
+      "asset_type": "Stock",
+      "price": 73.27,
+      "day_change": 0.89,
+      "day_change_pct": 1.23,
+      "quantity": 35.0,
+      "unrealized_gain_usd": 29.4,
+      "unrealized_gain_pct": 1.13,
+      "current_balance_usd": 2564.45
+    },
+    {
+      "symbol": "RVMD",
+      "name": "Revolution Medicines Inc",
+      "asset_type": "Stock",
+      "price": 196.94,
+      "day_change": 1.02,
+      "day_change_pct": 0.52,
+      "quantity": 22.0,
+      "unrealized_gain_usd": 53.28,
+      "unrealized_gain_pct": 1.21,
+      "current_balance_usd": 4332.68
+    }
   ]
 }
