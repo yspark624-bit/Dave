@@ -4,83 +4,27 @@
   "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
   "broker": "Webull",
   "tier": "short-term swing",
-  "as_of": "2026-09-16T12:20:00Z",
-  "source": "live via Webull MCP (get_account_positions / get_account_balance / get_open_orders)",
-  "_price_note": "Queried 08:20 ET Tuesday, i.e. PRE-MARKET. last_price values are pre-market quotes, not the 2026-09-14 close. All Trend Template / ATR / pivot math in the report uses 2026-09-14 daily closes.",
-  "total_net_liquidation_value_usd": 17960.11,
-  "total_market_value_usd": 7794.73,
-  "total_cash_balance_usd": 10165.38,
-  "total_unrealized_profit_loss_usd": 32.92,
-  "maintenance_margin_usd": 2160.88,
+  "as_of": "2026-09-17T12:15:00Z",
+  "source": "live via Webull MCP (get_account_positions / get_account_balance)",
+  "_price_note": "Queried 08:15 ET Thursday, PRE-MARKET. last_price values are pre-market quotes. Trend Template / ATR / pivot math in the report uses 2026-09-16 closes.",
+  "total_net_liquidation_value_usd": 17844.13,
+  "total_market_value_usd": 6704.13,
+  "total_cash_balance_usd": 11140.00,
+  "total_unrealized_profit_loss_usd": -63.46,
+  "maintenance_margin_usd": 1837.47,
   "open_margin_calls": [],
+  "_changes_since_2026_09_16": [
+    "SOLD OUT: MSFT, both shares at ~487.31 vs 497.11 cost -> about -19.60 (-1.97%). Cash 10165.38 -> 11140.00 confirms the proceeds. MSFT closed 490.30 on 09-16, so the fill was slightly below that.",
+    "Cash is now 62.4% of net liquidation, held in three positions.",
+    "ZETA GTC bracket (stop 29.30 / limit 34.42) still open."
+  ],
   "open_orders": [
-    {
-      "symbol": "ZETA",
-      "side": "SELL",
-      "type": "STOP_LOSS",
-      "quantity": 35,
-      "stop_price": 29.3,
-      "tif": "GTC",
-      "status": "SUBMITTED"
-    },
-    {
-      "symbol": "ZETA",
-      "side": "SELL",
-      "type": "LIMIT",
-      "quantity": 35,
-      "limit_price": 34.42,
-      "tif": "GTC",
-      "status": "SUBMITTED"
-    }
+    {"symbol": "ZETA", "side": "SELL", "type": "STOP_LOSS", "quantity": 35, "stop_price": 29.30, "tif": "GTC", "status": "SUBMITTED"},
+    {"symbol": "ZETA", "side": "SELL", "type": "LIMIT", "quantity": 35, "limit_price": 34.42, "tif": "GTC", "status": "SUBMITTED"}
   ],
   "holdings": [
-    {
-      "symbol": "AAPL",
-      "quantity": 8,
-      "cost_price": 332.56,
-      "cost_usd": 2660.48,
-      "last_price": 331.45,
-      "market_value_usd": 2651.6,
-      "unrealized_gain_usd": -8.88,
-      "unrealized_gain_pct": -0.33,
-      "proportion": 0.3402
-    },
-    {
-      "symbol": "CRM",
-      "quantity": 12,
-      "cost_price": 248.78,
-      "cost_usd": 2985.36,
-      "last_price": 255.59,
-      "market_value_usd": 3067.08,
-      "unrealized_gain_usd": 81.72,
-      "unrealized_gain_pct": 2.74,
-      "proportion": 0.3935
-    },
-    {
-      "symbol": "MSFT",
-      "quantity": 2,
-      "cost_price": 497.11,
-      "cost_usd": 994.22,
-      "last_price": 496.05,
-      "market_value_usd": 992.1,
-      "unrealized_gain_usd": -2.12,
-      "unrealized_gain_pct": -0.21,
-      "proportion": 0.1273
-    },
-    {
-      "symbol": "ZETA",
-      "quantity": 35,
-      "cost_price": 32.05,
-      "cost_usd": 1121.75,
-      "last_price": 30.97,
-      "market_value_usd": 1083.95,
-      "unrealized_gain_usd": -37.8,
-      "unrealized_gain_pct": -3.37,
-      "proportion": 0.1391
-    }
-  ],
-  "_changes_since_2026_09_15": [
-    "No trades. Positions, quantities and cash are unchanged; only marks moved.",
-    "ZETA GTC bracket (stop 29.30 / limit 34.42) still open."
+    {"symbol": "AAPL", "quantity": 8,  "cost_price": 332.56, "cost_usd": 2660.48, "last_price": 334.05, "market_value_usd": 2672.40, "unrealized_gain_usd": 11.92,  "unrealized_gain_pct": 0.45,  "proportion": 0.3986},
+    {"symbol": "CRM",  "quantity": 12, "cost_price": 248.78, "cost_usd": 2985.36, "last_price": 246.29, "market_value_usd": 2955.48, "unrealized_gain_usd": -29.88, "unrealized_gain_pct": -1.00, "proportion": 0.4408},
+    {"symbol": "ZETA", "quantity": 35, "cost_price": 32.05,  "cost_usd": 1121.75, "last_price": 30.75,  "market_value_usd": 1076.25, "unrealized_gain_usd": -45.50, "unrealized_gain_pct": -4.06, "proportion": 0.1605}
   ]
 }
