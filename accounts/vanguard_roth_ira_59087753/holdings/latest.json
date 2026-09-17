@@ -3,119 +3,80 @@
   "account_number_masked": "59087753",
   "broker": "Vanguard",
   "tier": "mid-term",
-  "as_of": "2026-09-08T19:00:00-04:00",
-  "total_value_usd": 44916.44,
+  "as_of": "2026-09-17T16:15:00-04:00",
+  "total_value_usd": 44165.81,
   "settlement_fund": {
     "symbol": "VMFXX",
     "name": "Vanguard Federal Money Market Fund",
-    "value_usd": 12385.83
+    "value_usd": 10297.5
   },
-  "available_for_purchase_usd": 9223.75,
-  "available_to_withdraw_usd": 9223.75,
-  "total_credits_debits_usd": -3162.08,
-  "total_unrealized_gain_usd": 4094.26,
-  "_changes_since_2026_09_04": [
-    "NEW POSITION: ANET, 16 shares. Cash debit -3162.08 implies a fill near 197.63/share; the dashboard still shows '—' for its unrealized P/L because the trade has not settled. At the 194.96 close that is roughly -42.72 (-1.35%).",
-    "Cash available for purchase fell 12385.83 -> 9223.75; the settlement fund balance itself is unchanged pending settlement.",
-    "No other position changed quantity."
+  "available_for_purchase_usd": 15149.82,
+  "available_to_withdraw_usd": 15149.82,
+  "total_credits_debits_usd": 4852.32,
+  "total_unrealized_gain_usd": 2794.11,
+  "_changes_since_2026_09_08": [
+    "EXITED: XBI (45.014 -> 0, dropped from the table) and XLF (60 -> 0; still listed at 0).",
+    "TRIMMED: RVMD 43 -> 22 (-21, about half). Reported average cost rose 186.14 -> 194.52, i.e. the cheaper lots were sold — no tax consequence inside a Roth IRA.",
+    "ADDED: ANET 16 -> 31 (+15). MPC 8 -> 15.020 (+7.02).",
+    "NEW: AUGO (Aura Minerals) 30 shares.",
+    "UNCHANGED: SMH 10.021, XLK 7, MRX 35.",
+    "Cash: settlement 12,385.83 -> 10,297.50, but available for purchase rose 9,223.75 -> 15,149.82; net credits/debits +4,852.32 (sales exceeded purchases)."
   ],
   "holdings": [
     {
-      "symbol": "SMH",
-      "name": "VanEck Semiconductor ETF",
-      "asset_type": "ETF",
-      "price": 573.73,
-      "day_change": 6.72,
-      "day_change_pct": 1.19,
-      "quantity": 10.021,
-      "unrealized_gain_usd": 2007.0,
-      "unrealized_gain_pct": 53.63,
-      "current_balance_usd": 5749.35
+      "symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF",
+      "price": 560.61, "day_change": 15.05, "day_change_pct": 2.76,
+      "quantity": 10.021, "unrealized_gain_usd": 1875.52, "unrealized_gain_pct": 50.12,
+      "current_balance_usd": 5617.87,
+      "note": "Still below a falling 50-day SMA (565.48, -0.86%). IBD RS 66, A/D E, Up/Down 0.77 — weakest holding in this account."
     },
     {
-      "symbol": "XBI",
-      "name": "SPDR S&P Biotech ETF",
-      "asset_type": "ETF",
-      "price": 161.93,
-      "day_change": -1.88,
-      "day_change_pct": -1.15,
-      "quantity": 45.014,
-      "unrealized_gain_usd": 384.26,
-      "unrealized_gain_pct": 5.57,
-      "current_balance_usd": 7289.12
+      "symbol": "XLK", "name": "SPDR Technology Select Sector ETF", "asset_type": "ETF",
+      "price": 188.06, "day_change": 4.13, "day_change_pct": 2.25,
+      "quantity": 7.0, "unrealized_gain_usd": 17.99, "unrealized_gain_pct": 1.39,
+      "current_balance_usd": 1316.42
     },
     {
-      "symbol": "XLF",
-      "name": "SPDR Financial Select Sector ETF",
-      "asset_type": "ETF",
-      "price": 57.3,
-      "day_change": -0.8,
-      "day_change_pct": -1.38,
-      "quantity": 60.0,
-      "unrealized_gain_usd": 44.9,
-      "unrealized_gain_pct": 1.32,
-      "current_balance_usd": 3438.0
+      "symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock",
+      "price": 199.53, "day_change": 1.99, "day_change_pct": 1.01,
+      "quantity": 31.0, "unrealized_gain_usd": 22.45, "unrealized_gain_pct": 0.36,
+      "current_balance_usd": 6185.43,
+      "note": "Added 15 shares since 2026-09-08; average cost now ~198.81. No IBD ratings on file — RS UNSCORED."
     },
     {
-      "symbol": "XLK",
-      "name": "SPDR Technology Select Sector ETF",
-      "asset_type": "ETF",
-      "price": 187.87,
-      "day_change": 0.59,
-      "day_change_pct": 0.32,
-      "quantity": 7.0,
-      "unrealized_gain_usd": 16.66,
-      "unrealized_gain_pct": 1.28,
-      "current_balance_usd": 1315.09
+      "symbol": "AUGO", "name": "Aura Minerals Inc", "asset_type": "Stock",
+      "price": 88.71, "day_change": 2.75, "day_change_pct": 3.2,
+      "quantity": 30.0, "unrealized_gain_usd": null, "unrealized_gain_pct": null,
+      "current_balance_usd": 2661.3,
+      "note": "NEW position, dashboard shows no P/L yet (unsettled). No IBD ratings on file — RS UNSCORED. Trend Template 6/7: fails criterion 4 (SMA50 71.76 < SMA150 74.44), but price is +23.6% above a rising 50-day — lagging average on a base breakout, per STRATEGY.md."
     },
     {
-      "symbol": "ANET",
-      "name": "Arista Networks Inc",
-      "asset_type": "Stock",
-      "price": 194.96,
-      "day_change": 1.18,
-      "day_change_pct": 0.61,
-      "quantity": 16.0,
-      "unrealized_gain_usd": null,
-      "unrealized_gain_pct": null,
-      "current_balance_usd": 3119.36,
-      "note": "New position opened 2026-09-08. Dashboard shows no P/L yet (unsettled). Implied cost ~197.63/share from the -3162.08 cash debit; ~-42.72 (-1.35%) at the close. No IBD ratings on file yet — RS is UNSCORED until supplied."
+      "symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock",
+      "price": 421.96, "day_change": 8.04, "day_change_pct": 1.94,
+      "quantity": 15.02, "unrealized_gain_usd": 960.83, "unrealized_gain_pct": 17.87,
+      "current_balance_usd": 6337.84,
+      "note": "Added 7.02 shares since 2026-09-08; average cost rose to ~357.99. Still +22.76% over the 50-day (5.9 ATR), but A/D A+ and Up/Down 2.79 — accumulation, not distribution."
     },
     {
-      "symbol": "MPC",
-      "name": "Marathon Petroleum Corp",
-      "asset_type": "Stock",
-      "price": 397.77,
-      "day_change": 8.87,
-      "day_change_pct": 2.28,
-      "quantity": 8.0,
-      "unrealized_gain_usd": 639.68,
-      "unrealized_gain_pct": 25.16,
-      "current_balance_usd": 3182.16
+      "symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock",
+      "price": 73.27, "day_change": 0.89, "day_change_pct": 1.23,
+      "quantity": 35.0, "unrealized_gain_usd": 29.4, "unrealized_gain_pct": 1.13,
+      "current_balance_usd": 2564.45,
+      "note": "Below IBD's 75.40 entry since 2026-09-11; no longer a pyramiding candidate. Trend intact (+7.25% over the 50-day)."
     },
     {
-      "symbol": "MRX",
-      "name": "Marex Group Ltd",
-      "asset_type": "Stock",
-      "price": 76.71,
-      "day_change": -1.56,
-      "day_change_pct": -1.99,
-      "quantity": 35.0,
-      "unrealized_gain_usd": 91.0,
-      "unrealized_gain_pct": 3.51,
-      "current_balance_usd": 2684.85
+      "symbol": "RVMD", "name": "Revolution Medicines Inc", "asset_type": "Stock",
+      "price": 196.94, "day_change": 1.02, "day_change_pct": 0.52,
+      "quantity": 22.0, "unrealized_gain_usd": 53.28, "unrealized_gain_pct": 1.21,
+      "current_balance_usd": 4332.68,
+      "note": "Halved from 43 shares. Now 9.8% of the account (was 20%). Just below the 50-day (199.11, -1.09%), which is still rising. IBD fundamentals remain the weakest in either account: EPS Rating 5, SMR E, annual ROE -79.09."
     },
     {
-      "symbol": "RVMD",
-      "name": "Revolution Medicines Inc",
-      "asset_type": "Stock",
-      "price": 207.32,
-      "day_change": -2.7,
-      "day_change_pct": -1.29,
-      "quantity": 43.0,
-      "unrealized_gain_usd": 910.76,
-      "unrealized_gain_pct": 11.38,
-      "current_balance_usd": 8914.76
+      "symbol": "XLF", "name": "SPDR Financial Select Sector ETF", "asset_type": "ETF",
+      "price": 55.88, "day_change": 0.05, "day_change_pct": 0.09,
+      "quantity": 0.0, "unrealized_gain_usd": null, "unrealized_gain_pct": null,
+      "current_balance_usd": 0.0,
+      "note": "EXITED. Still listed at 0 shares."
     }
   ]
 }

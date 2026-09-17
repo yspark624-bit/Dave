@@ -3,126 +3,92 @@
   "account_number_masked": "33171515",
   "broker": "Vanguard",
   "tier": "mid-term",
-  "as_of": "2026-09-04T19:00:00-04:00",
-  "total_value_usd": 52112.41,
+  "as_of": "2026-09-17T16:15:00-04:00",
+  "total_value_usd": 52266.09,
   "settlement_fund": {
     "symbol": "VMFXX",
     "name": "Vanguard Federal Money Market Fund",
-    "value_usd": 11969.63
+    "value_usd": 9093.98
   },
-  "available_for_purchase_usd": 18548.89,
-  "available_to_withdraw_usd": 10816.33,
-  "total_credits_debits_usd": 6579.26,
-  "total_unrealized_gain_usd": 2528.16,
+  "available_for_purchase_usd": 8593.39,
+  "available_to_withdraw_usd": 8593.39,
+  "total_credits_debits_usd": -500.59,
+  "total_unrealized_gain_usd": 3177.56,
+  "_changes_since_2026_09_04": [
+    "EXITED: OIH (6 -> 0 shares; still listed at 0) and ERO (70 -> 0, dropped from the table entirely).",
+    "ADDED: CF 40 -> 55 (+15). GH 27 -> 47 (+20).",
+    "NEW: MU 5 shares, NTAP 15 shares, TWLO 5 shares.",
+    "UNCHANGED: VOO 4.025, QQQM 22.156 (sitting), HNGE 40, NVDA 25.",
+    "LLY dropped from the table (was already 0 shares).",
+    "Cash: settlement 11,969.63 -> 9,093.98; net credits/debits -500.59 over the period."
+  ],
   "holdings": [
     {
-      "symbol": "VOO",
-      "name": "Vanguard S&P 500 Index ETF",
-      "asset_type": "ETF",
-      "price": 708.01,
-      "day_change": 2.71,
-      "day_change_pct": 0.38,
-      "quantity": 4.025,
-      "unrealized_gain_usd": 285.66,
-      "unrealized_gain_pct": 11.14,
-      "current_balance_usd": 2849.74
+      "symbol": "VOO", "name": "Vanguard S&P 500 Index ETF", "asset_type": "ETF",
+      "price": 701.03, "day_change": 7.79, "day_change_pct": 1.12,
+      "quantity": 4.025, "unrealized_gain_usd": 257.57, "unrealized_gain_pct": 10.05,
+      "current_balance_usd": 2821.65
     },
     {
-      "symbol": "OIH",
-      "name": "VanEck Oil Services ETF",
-      "asset_type": "ETF",
-      "price": 427.53,
-      "day_change": 2.28,
-      "day_change_pct": 0.53,
-      "quantity": 6.0,
-      "unrealized_gain_usd": 12.0,
-      "unrealized_gain_pct": 0.47,
-      "current_balance_usd": 2565.18
+      "symbol": "QQQM", "name": "Invesco NASDAQ 100 ETF", "asset_type": "ETF",
+      "price": 295.2, "day_change": 5.0, "day_change_pct": 1.72,
+      "quantity": 22.156, "unrealized_gain_usd": 1663.68, "unrealized_gain_pct": 34.11,
+      "current_balance_usd": 6540.45,
+      "note": "policy = sitting (see position_policy.json). Never flag for trim."
     },
     {
-      "symbol": "QQQM",
-      "name": "Invesco NASDAQ 100 ETF",
-      "asset_type": "ETF",
-      "price": 296.07,
-      "day_change": 0.56,
-      "day_change_pct": 0.19,
-      "quantity": 22.156,
-      "unrealized_gain_usd": 1682.96,
-      "unrealized_gain_pct": 34.51,
-      "current_balance_usd": 6559.73
+      "symbol": "CF", "name": "CF Industries Holdings Inc", "asset_type": "Stock",
+      "price": 133.82, "day_change": 1.83, "day_change_pct": 1.39,
+      "quantity": 55.0, "unrealized_gain_usd": 92.7, "unrealized_gain_pct": 1.24,
+      "current_balance_usd": 7360.1,
+      "note": "Added 15 shares since 2026-09-04."
     },
     {
-      "symbol": "CF",
-      "name": "CF Industries Holdings Inc",
-      "asset_type": "Stock",
-      "price": 133.35,
-      "day_change": 4.46,
-      "day_change_pct": 3.24,
-      "quantity": 40.0,
-      "unrealized_gain_usd": 83.6,
-      "unrealized_gain_pct": 1.54,
-      "current_balance_usd": 5334.0
+      "symbol": "GH", "name": "Guardant Health Inc", "asset_type": "Stock",
+      "price": 183.1, "day_change": 8.2, "day_change_pct": 4.69,
+      "quantity": 47.0, "unrealized_gain_usd": 751.5, "unrealized_gain_pct": 9.57,
+      "current_balance_usd": 8605.7,
+      "note": "Added 20 shares since 2026-09-04; now the account's largest position. IBD fundamentals remain weak (EPS Rating 15, SMR D, annual pre-tax margin -35.81)."
     },
     {
-      "symbol": "ERO",
-      "name": "Ero Copper Corp",
-      "asset_type": "Stock",
-      "price": 34.9,
-      "day_change": 0.42,
-      "day_change_pct": 1.19,
-      "quantity": 70.0,
-      "unrealized_gain_usd": 390.32,
-      "unrealized_gain_pct": 13.78,
-      "current_balance_usd": 2443.0
+      "symbol": "HNGE", "name": "Hinge Health Inc Cl A", "asset_type": "Stock",
+      "price": 94.72, "day_change": 0.99, "day_change_pct": 1.06,
+      "quantity": 40.0, "unrealized_gain_usd": 915.05, "unrealized_gain_pct": 31.84,
+      "current_balance_usd": 3788.8
     },
     {
-      "symbol": "GH",
-      "name": "Guardant Health Inc",
-      "asset_type": "Stock",
-      "price": 161.41,
-      "day_change": 0.37,
-      "day_change_pct": 0.23,
-      "quantity": 27.0,
-      "unrealized_gain_usd": 61.27,
-      "unrealized_gain_pct": 1.43,
-      "current_balance_usd": 4358.07
+      "symbol": "MU", "name": "Micron Technology Inc", "asset_type": "Stock",
+      "price": 977.5, "day_change": 50.95, "day_change_pct": 5.5,
+      "quantity": 5.0, "unrealized_gain_usd": 232.48, "unrealized_gain_pct": 4.54,
+      "current_balance_usd": 4887.5,
+      "note": "NEW position. No IBD ratings on file — RS is UNSCORED until supplied."
     },
     {
-      "symbol": "HNGE",
-      "name": "Hinge Health Inc Cl A",
-      "asset_type": "Stock",
-      "price": 92.37,
-      "day_change": 1.61,
-      "day_change_pct": 1.77,
-      "quantity": 40.0,
-      "unrealized_gain_usd": 821.05,
-      "unrealized_gain_pct": 28.57,
-      "current_balance_usd": 3694.8
+      "symbol": "NTAP", "name": "NetApp Inc", "asset_type": "Stock",
+      "price": 196.92, "day_change": 5.43, "day_change_pct": 2.84,
+      "quantity": 15.0, "unrealized_gain_usd": null, "unrealized_gain_pct": null,
+      "current_balance_usd": 2953.8,
+      "note": "NEW position, dashboard shows no P/L yet (unsettled). No IBD ratings on file — RS UNSCORED."
     },
     {
-      "symbol": "LLY",
-      "name": "Eli Lilly & Co",
-      "asset_type": "Stock",
-      "price": 1149.36,
-      "day_change": 10.24,
-      "day_change_pct": 0.88,
-      "quantity": 0.0,
-      "unrealized_gain_usd": null,
-      "unrealized_gain_pct": null,
+      "symbol": "NVDA", "name": "Nvidia Corp", "asset_type": "Stock",
+      "price": 219.34, "day_change": 5.44, "day_change_pct": 2.54,
+      "quantity": 25.0, "unrealized_gain_usd": 112.36, "unrealized_gain_pct": 2.01,
+      "current_balance_usd": 5483.5
+    },
+    {
+      "symbol": "TWLO", "name": "Twilio Inc Cl A", "asset_type": "Stock",
+      "price": 246.24, "day_change": 7.36, "day_change_pct": 3.08,
+      "quantity": 5.0, "unrealized_gain_usd": 27.3, "unrealized_gain_pct": 2.27,
+      "current_balance_usd": 1231.2,
+      "note": "NEW position. No IBD ratings on file — RS UNSCORED."
+    },
+    {
+      "symbol": "OIH", "name": "VanEck Oil Services ETF", "asset_type": "ETF",
+      "price": 400.6, "day_change": 0.75, "day_change_pct": 0.19,
+      "quantity": 0.0, "unrealized_gain_usd": null, "unrealized_gain_pct": null,
       "current_balance_usd": 0.0,
-      "note": "Position closed (quantity 0) as of this snapshot; kept for watchlist reference."
-    },
-    {
-      "symbol": "NVDA",
-      "name": "Nvidia Corp",
-      "asset_type": "Stock",
-      "price": 230.36,
-      "day_change": 1.91,
-      "day_change_pct": 0.84,
-      "quantity": 25.0,
-      "unrealized_gain_usd": 163.14,
-      "unrealized_gain_pct": 2.92,
-      "current_balance_usd": 5759.0
+      "note": "EXITED. Still listed at 0 shares."
     }
   ]
 }
