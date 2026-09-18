@@ -1,0 +1,23 @@
+{
+  "account": {
+    "owner": "Yeunshik Park",
+    "broker": "Webull",
+    "account_type": "Individual Margin",
+    "account_number_masked": "5JF28979",
+    "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
+    "tier": "short-term swing",
+    "data_source": "live via Webull MCP (get_account_positions / get_account_balance)",
+    "as_of": "2026-09-07T05:00:00Z",
+    "total_net_liquidation_value_usd": 18423.98,
+    "total_market_value_usd": 6992.40,
+    "cash_balance_usd": 11431.58,
+    "day_buying_power_usd": 64203.35
+  },
+  "holdings": [
+    {"symbol": "DRAM", "type": "Stock", "quantity": 40, "cost_price": 58.34, "last_price": 59.69, "market_value": 2381.60, "unrealized_pl_usd": 48.00, "unrealized_pl_pct": 2.06},
+    {"symbol": "HOOD", "type": "Stock", "quantity": 10, "cost_price": 123.78, "last_price": 122.11, "market_value": 1221.00, "unrealized_pl_usd": -16.80, "unrealized_pl_pct": -1.36},
+    {"symbol": "NVDA", "type": "Stock", "quantity": 10, "cost_price": 228.52, "last_price": 230.36, "market_value": 2295.00, "unrealized_pl_usd": 9.80, "unrealized_pl_pct": 0.43},
+    {"symbol": "ZETA", "type": "Stock", "quantity": 35, "cost_price": 32.05, "last_price": 31.35, "market_value": 1094.80, "unrealized_pl_usd": -26.95, "unrealized_pl_pct": -2.40}
+  ],
+  "note": "This account has a live Webull MCP connection, unlike the Vanguard accounts. The daily routine can re-pull positions/balance directly via get_account_positions instead of relying on a hand-maintained snapshot -- this file is a point-in-time cache for reference."
+}
