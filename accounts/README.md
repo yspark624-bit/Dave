@@ -30,3 +30,18 @@ Currently tracked here:
 
 If an evening update is missed, the morning check uses the last available
 snapshot and calls out how stale it is.
+
+## Reports
+
+Each day's write-up is kept under [`../reports/`](../reports) as a Korean
+markdown file plus the PDF rendered from it:
+
+```
+python3 scripts/md_to_pdf.py reports/<YYYY-MM-DD>_roth-ira_daily.md
+```
+
+`scripts/md_to_pdf.py` embeds Noto Sans KR, so Hangul renders rather than
+falling back to tofu boxes. It looks for the font in `~/.cache/dave-fonts`,
+in the system font directories and in `$CLAUDE_SCRATCHPAD`, and downloads it
+if none of those has it. Always open the rendered PDF and check the Hangul
+before sending it.
