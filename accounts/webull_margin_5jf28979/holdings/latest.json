@@ -4,27 +4,32 @@
   "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
   "broker": "Webull",
   "tier": "short-term swing",
-  "as_of": "2026-09-17T12:15:00Z",
-  "source": "live via Webull MCP (get_account_positions / get_account_balance)",
-  "_price_note": "Queried 08:15 ET Thursday, PRE-MARKET. last_price values are pre-market quotes. Trend Template / ATR / pivot math in the report uses 2026-09-16 closes.",
-  "total_net_liquidation_value_usd": 17844.13,
-  "total_market_value_usd": 6704.13,
-  "total_cash_balance_usd": 11140.00,
-  "total_unrealized_profit_loss_usd": -63.46,
-  "maintenance_margin_usd": 1837.47,
+  "as_of": "2026-09-18T12:20:00Z",
+  "source": "live via Webull MCP (get_account_positions / get_account_balance / get_open_orders / get_order_history)",
+  "_price_note": "Queried 08:20 ET Friday, PRE-MARKET. last_price values are pre-market quotes. Trend Template / ATR / pivot math in the report uses 2026-09-17 closes.",
+  "total_net_liquidation_value_usd": 17797.79,
+  "total_market_value_usd": 9142.39,
+  "total_cash_balance_usd": 8655.40,
+  "total_unrealized_profit_loss_usd": 29.38,
+  "maintenance_margin_usd": 3976.66,
   "open_margin_calls": [],
-  "_changes_since_2026_09_16": [
-    "SOLD OUT: MSFT, both shares at ~487.31 vs 497.11 cost -> about -19.60 (-1.97%). Cash 10165.38 -> 11140.00 confirms the proceeds. MSFT closed 490.30 on 09-16, so the fill was slightly below that.",
-    "Cash is now 62.4% of net liquidation, held in three positions.",
-    "ZETA GTC bracket (stop 29.30 / limit 34.42) still open."
+  "_changes_since_2026_09_17": [
+    "SOLD: CRM, all 12 shares at 242.26 (09-17 12:37 ET) vs 248.78 cost -> -78.24 (-2.62%). Its GTC bracket (stop 241.06 / limit 274.97, set 09-16) was cancelled first and the exit taken manually.",
+    "SOLD: ZETA, all 35 shares. The fill is not in the retrieved order history; reconciling the cash balance implies roughly 30.32/share vs 32.05 cost -> about -60.55 (-5.4%). Treat that price as INFERRED, not confirmed.",
+    "NEW: XP (XP Inc) 100 shares at 20.27 (09-17 11:58 ET).",
+    "NEW: NTAP 11 shares at 198.23 (09-17 13:02 ET) — inside IBD's 192.83-202.47 buy zone. NTAP is now held in BOTH this account and V-1515 (15 shares).",
+    "NEW: QLD (ProShares Ultra QQQ, 2x LEVERAGED) 25 shares at 89.82.",
+    "AAPL GTC bracket added 09-16: stop 322.37 / limit 365.00.",
+    "Cash 11140.00 -> 8655.40 (48.6% of net liquidation; invested 51.4%, still under IBD's 60%-80% band)."
   ],
   "open_orders": [
-    {"symbol": "ZETA", "side": "SELL", "type": "STOP_LOSS", "quantity": 35, "stop_price": 29.30, "tif": "GTC", "status": "SUBMITTED"},
-    {"symbol": "ZETA", "side": "SELL", "type": "LIMIT", "quantity": 35, "limit_price": 34.42, "tif": "GTC", "status": "SUBMITTED"}
+    {"symbol": "AAPL", "side": "SELL", "type": "STOP_LOSS", "quantity": 8, "stop_price": 322.37, "tif": "GTC", "status": "SUBMITTED"},
+    {"symbol": "AAPL", "side": "SELL", "type": "LIMIT", "quantity": 8, "limit_price": 365.00, "tif": "GTC", "status": "SUBMITTED"}
   ],
   "holdings": [
-    {"symbol": "AAPL", "quantity": 8,  "cost_price": 332.56, "cost_usd": 2660.48, "last_price": 334.05, "market_value_usd": 2672.40, "unrealized_gain_usd": 11.92,  "unrealized_gain_pct": 0.45,  "proportion": 0.3986},
-    {"symbol": "CRM",  "quantity": 12, "cost_price": 248.78, "cost_usd": 2985.36, "last_price": 246.29, "market_value_usd": 2955.48, "unrealized_gain_usd": -29.88, "unrealized_gain_pct": -1.00, "proportion": 0.4408},
-    {"symbol": "ZETA", "quantity": 35, "cost_price": 32.05,  "cost_usd": 1121.75, "last_price": 30.75,  "market_value_usd": 1076.25, "unrealized_gain_usd": -45.50, "unrealized_gain_pct": -4.06, "proportion": 0.1605}
+    {"symbol": "AAPL", "quantity": 8,   "cost_price": 332.56, "cost_usd": 2660.48, "last_price": 336.92, "market_value_usd": 2695.36, "unrealized_gain_usd": 34.88, "unrealized_gain_pct": 1.31,  "proportion": 0.2948},
+    {"symbol": "QLD",  "quantity": 25,  "cost_price": 89.82,  "cost_usd": 2245.50, "last_price": 90.19,  "market_value_usd": 2254.75, "unrealized_gain_usd": 9.25,  "unrealized_gain_pct": 0.41,  "proportion": 0.2466, "note": "2x LEVERAGED ETF (ProShares Ultra QQQ). No IBD rating exists for leveraged funds; daily-rebalance decay applies in choppy tape."},
+    {"symbol": "NTAP", "quantity": 11,  "cost_price": 198.23, "cost_usd": 2180.53, "last_price": 197.48, "market_value_usd": 2172.28, "unrealized_gain_usd": -8.25, "unrealized_gain_pct": -0.38, "proportion": 0.2376, "note": "Also held in V-1515 (15 shares). Combined 26 shares across accounts."},
+    {"symbol": "XP",   "quantity": 100, "cost_price": 20.27,  "cost_usd": 2026.50, "last_price": 20.20,  "market_value_usd": 2020.00, "unrealized_gain_usd": -6.50, "unrealized_gain_pct": -0.32, "proportion": 0.2209, "note": "No IBD rating on file — RS unscored."}
   ]
 }
