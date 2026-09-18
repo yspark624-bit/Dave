@@ -1,6 +1,6 @@
 {
   "_note": "IBD Stock Checklist ratings supplied by the user (an IBD member). These are AUTHORITATIVE and override any computed proxy. Refresh when the user pastes newer IBD data. Entries marked _exited are positions the user has since sold — kept for reference, not scored. Entries marked _missing need the user's IBD checklist before RS can be scored at all.",
-  "_as_of": "2026-09-04 (older names); 2026-09-17 (MU, NTAP, TWLO, AUGO, ANET) — all 16 live positions now scored",
+  "_as_of": "2026-09-04 (older names); 2026-09-17 (MU, NTAP, TWLO, AUGO, ANET) — all live positions scored; RVMD marked exited 2026-09-18",
   "_market": {
     "stock_market_exposure": "60%-80%"
   },
@@ -294,7 +294,8 @@
       "off_52w_high_pct": -6.37,
       "vs_50dma_pct": 6.72,
       "eps_due": "2026-11-11",
-      "ibd_leaders": null
+      "ibd_leaders": null,
+      "_exited": "Sold in full 2026-09-18 (43 -> 22 -> 0). Ratings below are the 2026-09-04 snapshot."
     },
     "XLF": {
       "rs": 90,
