@@ -161,6 +161,25 @@ QQQM 60, i.e. financials and the broad market *leading* mega-cap tech,
 which is broadening, not narrowing. Before drawing any breadth or rotation
 conclusion, check it against ratings you did not compute yourself.
 
+### The Vanguard dashboard's cost-basis columns are not reliable
+
+Quantities, prices and current balances reconcile every time. The
+**average cost and unrealized-gain columns do not**, and they have moved
+on days with no trade at all.
+
+> Learned the hard way (2026-09-21): with GH unchanged at 24 shares, the
+> implied cost basis went 155.35 → 171.99 overnight. MU (5 shares, no
+> trade) went 1,007.60 → 1,024.00 and NVDA (25 shares, no trade) 220.71 →
+> 223.83. On 09-18 the same account reported GH's gain in dollars and in
+> percent as two different cost bases (155.35 vs 167.11), and MRX's
+> implied fill of 78.31 fell outside the last two days' entire trading
+> ranges.
+
+So: **derive nothing from the cost columns.** Use quantity × price for
+position value, and when a fill price actually matters — a stop, a
+realized gain, a pyramid's average — say it is unverified and ask for the
+trade confirmation. Never report an implied fill as if it were the fill.
+
 ## Pyramiding conditions (adding to an existing winner)
 
 Only ever pyramid a position that is **already a confirmed Stage 2 holding**

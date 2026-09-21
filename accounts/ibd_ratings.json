@@ -1,6 +1,6 @@
 {
   "_note": "IBD Stock Checklist ratings supplied by the user (an IBD member). These are AUTHORITATIVE and override any computed proxy. Refresh when the user pastes newer IBD data. Entries marked _exited are positions the user has since sold — kept for reference, not scored. Entries marked _missing need the user's IBD checklist before RS can be scored at all.",
-  "_as_of": "2026-09-04 (older names); 2026-09-17 (MU, NTAP, TWLO, AUGO, ANET) — all live positions scored; RVMD marked exited 2026-09-18",
+  "_as_of": "2026-09-21. CF marked exited; IYW added as _missing pending its IBD checklist.",
   "_market": {
     "stock_market_exposure": "80%-100% (2026-09-21 기준, 직전 60%-80%에서 상향)",
     "_history": [
@@ -68,7 +68,8 @@
       "eps_due": "2026-11-04",
       "ibd_leaders": "half position from 2026-09-01 at 133.65",
       "entry": 132.54,
-      "buy_zone_top": 139.17
+      "buy_zone_top": 139.17,
+      "_exited": "Sold in full 2026-09-21 at roughly 124.48 (55 -> 30 -> 0), after the close lost the 50-day. Ratings below are the 2026-09-04 snapshot."
     },
     "ERO": {
       "rs": 82,
@@ -388,6 +389,10 @@
       "entry": 90.64,
       "buy_zone_top": 95.17,
       "_note": "FAILED BREAKOUT on the day of purchase: intraday high 93.49 cleared the 90.64 pivot, then closed 88.71 — below both the pivot and IBD's own 91.66 fill — on volume +68%. Institutional demand is real (funds owning +92%, 8 quarters of increasing ownership) but annual ROE is -32.47."
+    },
+    "IYW": {
+      "_missing": "NEW position opened 2026-09-21 (18 shares at 264.46). NO IBD Stock Checklist on file — RS, Composite, A/D and Up/Down are UNSCORED. Ask the user for IBD's checklist; do NOT substitute a computed proxy (see STRATEGY.md).",
+      "_overlap": "Overlaps heavily with XLK (RS 68) and, on the semiconductor sleeve, with SMH (RS 66). The three together are 42.0% of this account's stock value."
     }
   }
 }

@@ -1,0 +1,103 @@
+{
+  "account_name": "Yeunshik Park — Roth IRA Brokerage Account",
+  "account_number_masked": "59087753",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-18T16:15:00-04:00",
+  "total_value_usd": 44196.58,
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 17785.32
+  },
+  "available_for_purchase_usd": 18197.41,
+  "available_to_withdraw_usd": 14029.17,
+  "total_credits_debits_usd": 412.09,
+  "total_unrealized_gain_usd": 2888.14,
+  "_changes_since_2026_09_17": [
+    "EXITED: RVMD 22 -> 0, completing the wind-down (43 -> 22 -> 0). Sold into a -3.04% day on volume +219%, the heaviest in the account. This closes the position whose IBD fundamentals were the weakest held: EPS Rating 5, SMR E, annual ROE -79.09.",
+    "ADDED: MRX 35 -> 50 (+15). NOTE: the reported average cost implies a 78.31 fill for the new shares, which is outside both the 09-18 range (73.28-75.29) and the 09-17 range (71.10-74.11). The dashboard figure does not reconcile with an at-market fill — worth verifying against the trade confirmation.",
+    "UNCHANGED: SMH, XLK, ANET, AUGO, MPC.",
+    "XLF dropped from the table (was already 0 shares).",
+    "Cash: settlement 10,297.50 -> 17,785.32; available for purchase 15,149.82 -> 18,197.41."
+  ],
+  "holdings": [
+    {
+      "symbol": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "asset_type": "ETF",
+      "price": 573.0,
+      "day_change": 12.39,
+      "day_change_pct": 2.21,
+      "quantity": 10.021,
+      "unrealized_gain_usd": 1999.68,
+      "unrealized_gain_pct": 53.43,
+      "current_balance_usd": 5742.03,
+      "note": "Reclaimed the 50-day: +1.45% over 564.78, up from -0.86%. But the 50-day is still FALLING (-10.58 over 10 days) and the reclaim came on volume -30.7%. Same unconfirmed pattern as the 09-08 reclaim that failed. IBD RS 66, A/D E, Up/Down 0.77."
+    },
+    {
+      "symbol": "XLK",
+      "name": "SPDR Technology Select Sector ETF",
+      "asset_type": "ETF",
+      "price": 189.6,
+      "day_change": 1.54,
+      "day_change_pct": 0.82,
+      "quantity": 7.0,
+      "unrealized_gain_usd": 28.77,
+      "unrealized_gain_pct": 2.22,
+      "current_balance_usd": 1327.2
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks Inc",
+      "asset_type": "Stock",
+      "price": 199.39,
+      "day_change": -0.14,
+      "day_change_pct": -0.07,
+      "quantity": 31.0,
+      "unrealized_gain_usd": 18.11,
+      "unrealized_gain_pct": 0.29,
+      "current_balance_usd": 6181.09,
+      "note": "Opened 202.35 and faded to 199.39 on volume +62.1%. Above the 177.48-186.35 buy zone, so a hold not a buy. IBD's own sell rule is an undercut of the 50-day, now 187.53 (-6.0%). Best fundamentals held: Composite 98, EPS Rating 96, SMR A, D/E 0%."
+    },
+    {
+      "symbol": "AUGO",
+      "name": "Aura Minerals Inc",
+      "asset_type": "Stock",
+      "price": 88.25,
+      "day_change": -0.46,
+      "day_change_pct": -0.52,
+      "quantity": 30.0,
+      "unrealized_gain_usd": 12.0,
+      "unrealized_gain_pct": 0.46,
+      "current_balance_usd": 2647.5,
+      "note": "Second day below the 90.64 entry — the 09-17 breakout has not been repaired. Still +22.12% over the 50-day (3.4 ATR). IBD Composite 97, RS 94, funds owning +92%, but annual ROE -32.47."
+    },
+    {
+      "symbol": "MPC",
+      "name": "Marathon Petroleum Corp",
+      "asset_type": "Stock",
+      "price": 424.89,
+      "day_change": 2.93,
+      "day_change_pct": 0.69,
+      "quantity": 15.02,
+      "unrealized_gain_usd": 1004.84,
+      "unrealized_gain_pct": 18.69,
+      "current_balance_usd": 6381.85,
+      "note": "Volume +290.8%, the heaviest reading in either account today, on a +0.69% close. Still +22.60% over the 50-day (5.8 ATR). A/D A+ and Up/Down 2.79 keep this accumulation rather than distribution."
+    },
+    {
+      "symbol": "MRX",
+      "name": "Marex Group Ltd",
+      "asset_type": "Stock",
+      "price": 74.39,
+      "day_change": 1.12,
+      "day_change_pct": 1.53,
+      "quantity": 50.0,
+      "unrealized_gain_usd": 9.8,
+      "unrealized_gain_pct": 0.38,
+      "current_balance_usd": 3719.5,
+      "note": "Added 15 shares. Still BELOW IBD's 75.40 entry, so the add was made outside the buy zone. See _changes note: the reported cost basis implies a 78.31 fill that falls outside the last two days' trading ranges."
+    }
+  ]
+}
