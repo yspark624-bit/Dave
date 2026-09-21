@@ -2,7 +2,13 @@
   "_note": "IBD Stock Checklist ratings supplied by the user (an IBD member). These are AUTHORITATIVE and override any computed proxy. Refresh when the user pastes newer IBD data. Entries marked _exited are positions the user has since sold — kept for reference, not scored. Entries marked _missing need the user's IBD checklist before RS can be scored at all.",
   "_as_of": "2026-09-04 (older names); 2026-09-17 (MU, NTAP, TWLO, AUGO, ANET) — all live positions scored; RVMD marked exited 2026-09-18",
   "_market": {
-    "stock_market_exposure": "60%-80%"
+    "stock_market_exposure": "80%-100% (2026-09-21 기준, 직전 60%-80%에서 상향)",
+    "_history": [
+      "60%-80% (2026-09-04)",
+      "80%-100% (2026-09-21)"
+    ],
+    "ibd_model_portfolio_long_pct": 49.0,
+    "_as_of": "2026-09-21 (노출 권고); 포지션 요약은 2026-09-18 종가 기준"
   },
   "33171515": {
     "HNGE": {
