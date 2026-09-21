@@ -1,0 +1,30 @@
+{
+  "account_name": "Jooyoung Park — Roth IRA Brokerage Account",
+  "account_number_masked": "33171515",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-18T16:15:00-04:00",
+  "_as_of_note": "Post-close dashboard paste. Prices are 2026-09-18 closes. 09-18 was September quad-witching expiry — volume ratios that day are inflated market-wide and should not be read as clean accumulation/distribution signals.",
+  "total_value_usd": 52057.32,
+  "settlement_fund": {"symbol": "VMFXX", "name": "Vanguard Federal Money Market Fund", "value_usd": 11534.59},
+  "available_for_purchase_usd": 15900.40,
+  "available_to_withdraw_usd": 8593.39,
+  "total_credits_debits_usd": 4365.81,
+  "total_unrealized_gain_usd": 2992.62,
+  "_changes_since_2026_09_17": [
+    "TRIMMED: CF 55 -> 30 shares (-25, about 45%) on a -4.57% day. CF is still 8/8 with RS 93 and sits above a rising 50-SMA, so this was a reduction into weakness rather than a rule-driven exit.",
+    "TRIMMED: GH 47 -> 24 shares (-23, about 49%). This achieves the risk reduction the 09-17 and 09-18 reports kept asking for — they asked for a stop; halving the position takes the risk off directly. GH remains 8/8 at a 52-week high area.",
+    "Cash available for purchase 8593.39 -> 15900.40 (30.5%); invested 69.5%, inside IBD's 60%-80% band."
+  ],
+  "holdings": [
+    {"symbol": "VOO", "name": "Vanguard S&P 500 Index ETF", "asset_type": "ETF", "price": 701.78, "day_change": 0.75, "day_change_pct": 0.11, "quantity": 4.025, "unrealized_gain_usd": 260.58, "unrealized_gain_pct": 10.16, "current_balance_usd": 2824.66},
+    {"symbol": "QQQM", "name": "Invesco Nasdaq 100 ETF", "asset_type": "ETF", "price": 296.91, "day_change": 1.71, "day_change_pct": 0.58, "quantity": 22.156, "unrealized_gain_usd": 1701.57, "unrealized_gain_pct": 34.89, "current_balance_usd": 6578.34},
+    {"symbol": "CF", "name": "CF Industries Holdings Inc", "asset_type": "Stock", "price": 127.70, "day_change": -6.12, "day_change_pct": -4.57, "quantity": 30.0, "unrealized_gain_usd": 429.30, "unrealized_gain_pct": 5.76, "current_balance_usd": 3831.00},
+    {"symbol": "GH", "name": "Guardant Health Inc", "asset_type": "Stock", "price": 179.38, "day_change": -3.72, "day_change_pct": -2.03, "quantity": 24.0, "unrealized_gain_usd": 576.66, "unrealized_gain_pct": 7.34, "current_balance_usd": 4305.12},
+    {"symbol": "HNGE", "name": "Hinge Health Inc Cl A", "asset_type": "Stock", "price": 94.90, "day_change": 0.18, "day_change_pct": 0.19, "quantity": 40.0, "unrealized_gain_usd": 922.25, "unrealized_gain_pct": 32.09, "current_balance_usd": 3796.00},
+    {"symbol": "MU", "name": "Micron Technology Inc", "asset_type": "Stock", "price": 1015.80, "day_change": 38.30, "day_change_pct": 3.92, "quantity": 5.0, "unrealized_gain_usd": 40.98, "unrealized_gain_pct": 0.80, "current_balance_usd": 5079.00},
+    {"symbol": "NTAP", "name": "NetApp Inc", "asset_type": "Stock", "price": 197.79, "day_change": 0.87, "day_change_pct": 0.44, "quantity": 15.0, "unrealized_gain_usd": 25.65, "unrealized_gain_pct": 0.87, "current_balance_usd": 2966.85},
+    {"symbol": "NVDA", "name": "Nvidia Corp", "asset_type": "Stock", "price": 222.27, "day_change": 2.93, "day_change_pct": 1.34, "quantity": 25.0, "unrealized_gain_usd": 39.11, "unrealized_gain_pct": 0.70, "current_balance_usd": 5556.75},
+    {"symbol": "TWLO", "name": "Twilio Inc Cl A", "asset_type": "Stock", "price": 243.84, "day_change": -2.40, "day_change_pct": -0.97, "quantity": 5.0, "unrealized_gain_usd": 15.30, "unrealized_gain_pct": 1.27, "current_balance_usd": 1219.20}
+  ]
+}
