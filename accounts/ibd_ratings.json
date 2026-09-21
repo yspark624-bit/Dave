@@ -1,9 +1,21 @@
 {
   "_note": "IBD Stock Checklist ratings supplied by the user (an IBD member). These are AUTHORITATIVE and override any computed proxy. Refresh when the user pastes newer IBD data; treat as stale for entry timing after a few sessions, though ratings themselves move slowly.",
   "_as_of": "2026-09-17 (AUGO + market exposure raised to 60%-80%); 2026-09-16 (IBD Leaders export — MPC/CF/GH/HNGE/MRX/RVMD/TWLO/XLF, plus ANET, MU, NTAP); 2026-09-15 (Webull names); 2026-09-04 (remaining Vanguard names)",
-  "_market": { "stock_market_exposure": "60%-80%",
-               "_changed": "2026-09-17, RAISED from 40%-60% (which itself was a 09-15 cut from 60%-80%). IBD turned constructive again the day SPY and QQQ both reclaimed their 50-SMAs. Half-size sizing guidance issued 09-15..09-17 on the back of the 40%-60% reading should be re-read against this.",
-               "_history": ["60%-80% as of 2026-09-04", "40%-60% 2026-09-15", "60%-80% 2026-09-17"] },
+  "_market": { "stock_market_exposure": "80%-100%",
+               "_changed": "2026-09-21, RAISED again from 60%-80% (which was itself raised from 40%-60% on 09-17). Two upgrades in five sessions.",
+               "_history": ["60%-80% 2026-09-04", "40%-60% 2026-09-15", "60%-80% 2026-09-17", "80%-100% 2026-09-21"],
+               "_note": "IBD's OWN model portfolio was only 49.0% long as of the 09-18 close, well under its published guidance. Cite the guidance, but note the gap before telling the user to deploy cash." },
+  "_ibd_model_positions_2026_09_18": {
+    "_note": "IBD Leaders POSITIONS SUMMARY, data as of the 2026-09-18 close, supplied by the user 2026-09-21. size = IBD's own position sizing; weight_pct = share of IBD's single model portfolio. The user runs two separate mid-term accounts, so compare against per-account weight, not the combined total.",
+    "_invested_pct": 49.0,
+    "HNGE": { "size": "3/4", "weight_pct": 11.03, "added": "2026-05-29", "entry": 56.47, "return_pct": 68.05 },
+    "CF":   { "size": "FULL", "weight_pct": 10.18, "added": "2026-09-01", "entry": 133.65, "return_pct": -4.50 },
+    "GH":   { "size": "1/2", "weight_pct": 7.28, "added": "2026-05-27", "entry": 120.83, "return_pct": 48.46 },
+    "MPC":  { "size": "1/2", "weight_pct": 7.26, "added": "2026-08-10", "entry": 314.92, "return_pct": 34.92 },
+    "MRX":  { "size": "1/2", "weight_pct": 5.36, "added": "2026-09-03", "entry": 74.66, "return_pct": -0.36 },
+    "AUGO": { "size": "1/2", "weight_pct": 5.18, "added": "2026-09-17", "entry": 91.66, "return_pct": -3.72 },
+    "TWLO": { "size": "1/4", "weight_pct": 2.70, "added": "2026-09-15", "entry": 243.51, "return_pct": 0.14 }
+  },
 
   "33171515": {
     "HNGE": { "rs": 97, "composite": 41, "eps_rating": 38, "smr": "B", "group_rank": 10, "group_rs": "A+",
