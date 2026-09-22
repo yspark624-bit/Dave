@@ -4,32 +4,94 @@
   "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
   "broker": "Webull",
   "tier": "short-term swing",
-  "as_of": "2026-09-18T12:20:00Z",
-  "source": "live via Webull MCP (get_account_positions / get_account_balance / get_open_orders / get_order_history)",
-  "_price_note": "Queried 08:20 ET Friday, PRE-MARKET. last_price values are pre-market quotes. Trend Template / ATR / pivot math in the report uses 2026-09-17 closes.",
-  "total_net_liquidation_value_usd": 17797.79,
-  "total_market_value_usd": 9142.39,
-  "total_cash_balance_usd": 8655.40,
-  "total_unrealized_profit_loss_usd": 29.38,
-  "maintenance_margin_usd": 3976.66,
+  "as_of": "2026-09-22T12:45:00Z",
+  "source": "live via Webull MCP",
+  "_price_note": "Queried pre-market Tuesday; day_profit_loss all 0.00 so last_price reflects the 2026-09-21 close. Trend Template math uses 09-21 closes.",
+  "total_net_liquidation_value_usd": 18174.08,
+  "total_market_value_usd": 17299.6,
+  "total_cash_balance_usd": 874.48,
+  "total_unrealized_profit_loss_usd": 322.03,
+  "maintenance_margin_usd": 8747.8,
   "open_margin_calls": [],
-  "_changes_since_2026_09_17": [
-    "SOLD: CRM, all 12 shares at 242.26 (09-17 12:37 ET) vs 248.78 cost -> -78.24 (-2.62%). Its GTC bracket (stop 241.06 / limit 274.97, set 09-16) was cancelled first and the exit taken manually.",
-    "SOLD: ZETA, all 35 shares. The fill is not in the retrieved order history; reconciling the cash balance implies roughly 30.32/share vs 32.05 cost -> about -60.55 (-5.4%). Treat that price as INFERRED, not confirmed.",
-    "NEW: XP (XP Inc) 100 shares at 20.27 (09-17 11:58 ET).",
-    "NEW: NTAP 11 shares at 198.23 (09-17 13:02 ET) — inside IBD's 192.83-202.47 buy zone. NTAP is now held in BOTH this account and V-1515 (15 shares).",
-    "NEW: QLD (ProShares Ultra QQQ, 2x LEVERAGED) 25 shares at 89.82.",
-    "AAPL GTC bracket added 09-16: stop 322.37 / limit 365.00.",
-    "Cash 11140.00 -> 8655.40 (48.6% of net liquidation; invested 51.4%, still under IBD's 60%-80% band)."
-  ],
-  "open_orders": [
-    {"symbol": "AAPL", "side": "SELL", "type": "STOP_LOSS", "quantity": 8, "stop_price": 322.37, "tif": "GTC", "status": "SUBMITTED"},
-    {"symbol": "AAPL", "side": "SELL", "type": "LIMIT", "quantity": 8, "limit_price": 365.00, "tif": "GTC", "status": "SUBMITTED"}
+  "_changes_since_2026_09_18": [
+    "The account was rebuilt: AAPL and NTAP sold out, CIBR / SOXX / UPRO / ARKK opened, QLD raised 25 -> 40 shares. XP unchanged.",
+    "All six holdings are now ETFs or funds — no individual stocks. NONE carries an IBD RS rating (leveraged and actively managed funds are not rated), so the lessons.md rule 'Webull: RS 90 and above only' cannot be applied to any position.",
+    "LEVERAGE is now 40.2% of net liquidation: QLD (2x Nasdaq-100) 21.3% + UPRO (3x S&P 500) 17.0%.",
+    "Cash fell 11140.00 -> 874.48 = 4.8% of net liquidation. Maintenance margin 8747.80 is 48% of NLV.",
+    "Overlaps other accounts: SOXX duplicates V-7753's SMH (semiconductors); QLD is a 2x version of V-1515's QQQM."
   ],
   "holdings": [
-    {"symbol": "AAPL", "quantity": 8,   "cost_price": 332.56, "cost_usd": 2660.48, "last_price": 336.92, "market_value_usd": 2695.36, "unrealized_gain_usd": 34.88, "unrealized_gain_pct": 1.31,  "proportion": 0.2948},
-    {"symbol": "QLD",  "quantity": 25,  "cost_price": 89.82,  "cost_usd": 2245.50, "last_price": 90.19,  "market_value_usd": 2254.75, "unrealized_gain_usd": 9.25,  "unrealized_gain_pct": 0.41,  "proportion": 0.2466, "note": "2x LEVERAGED ETF (ProShares Ultra QQQ). No IBD rating exists for leveraged funds; daily-rebalance decay applies in choppy tape."},
-    {"symbol": "NTAP", "quantity": 11,  "cost_price": 198.23, "cost_usd": 2180.53, "last_price": 197.48, "market_value_usd": 2172.28, "unrealized_gain_usd": -8.25, "unrealized_gain_pct": -0.38, "proportion": 0.2376, "note": "Also held in V-1515 (15 shares). Combined 26 shares across accounts."},
-    {"symbol": "XP",   "quantity": 100, "cost_price": 20.27,  "cost_usd": 2026.50, "last_price": 20.20,  "market_value_usd": 2020.00, "unrealized_gain_usd": -6.50, "unrealized_gain_pct": -0.32, "proportion": 0.2209, "note": "No IBD rating on file — RS unscored."}
+    {
+      "symbol": "SOXX",
+      "quantity": 7,
+      "cost_price": 557.9,
+      "cost_usd": 3905.31,
+      "last_price": 559.34,
+      "market_value_usd": 3938.76,
+      "unrealized_gain_usd": 33.45,
+      "unrealized_gain_pct": 0.86,
+      "proportion": 0.2277,
+      "note": "Semiconductor ETF. Duplicates SMH in V-7753."
+    },
+    {
+      "symbol": "QLD",
+      "quantity": 40,
+      "cost_price": 91.46,
+      "cost_usd": 3658.2,
+      "last_price": 96.27,
+      "market_value_usd": 3867.2,
+      "unrealized_gain_usd": 209.0,
+      "unrealized_gain_pct": 5.71,
+      "proportion": 0.2235,
+      "note": "2x LEVERAGED Nasdaq-100. Daily-rebalance decay; no IBD rating."
+    },
+    {
+      "symbol": "UPRO",
+      "quantity": 20,
+      "cost_price": 152.64,
+      "cost_usd": 3052.8,
+      "last_price": 154.07,
+      "market_value_usd": 3085.6,
+      "unrealized_gain_usd": 32.8,
+      "unrealized_gain_pct": 1.07,
+      "proportion": 0.1784,
+      "note": "3x LEVERAGED S&P 500. A -5% index move is -15% here."
+    },
+    {
+      "symbol": "CIBR",
+      "quantity": 29,
+      "cost_price": 102.66,
+      "cost_usd": 2977.11,
+      "last_price": 103.09,
+      "market_value_usd": 2994.54,
+      "unrealized_gain_usd": 17.43,
+      "unrealized_gain_pct": 0.59,
+      "proportion": 0.1731,
+      "note": "Cybersecurity ETF. Cleared its 102.35 pivot on 09-21."
+    },
+    {
+      "symbol": "XP",
+      "quantity": 100,
+      "cost_price": 20.27,
+      "cost_usd": 2026.5,
+      "last_price": 20.78,
+      "market_value_usd": 2050.0,
+      "unrealized_gain_usd": 23.5,
+      "unrealized_gain_pct": 1.16,
+      "proportion": 0.1185,
+      "note": "No IBD rating — RS unscored."
+    },
+    {
+      "symbol": "ARKK",
+      "quantity": 15,
+      "cost_price": 90.51,
+      "cost_usd": 1357.65,
+      "last_price": 90.72,
+      "market_value_usd": 1363.5,
+      "unrealized_gain_usd": 5.85,
+      "unrealized_gain_pct": 0.43,
+      "proportion": 0.0788,
+      "note": "Actively managed innovation fund; holdings are mostly high-beta unprofitable names. Not a trend-following instrument."
+    }
   ]
 }
