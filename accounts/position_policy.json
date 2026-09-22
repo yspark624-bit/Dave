@@ -1,7 +1,6 @@
 {
   "_note": "Durable investor profile and per-position policy. Kept OUTSIDE holdings/latest.json on purpose: the nightly snapshot is overwritten from the pasted Vanguard dashboard, which would wipe anything stored in it. The morning Routine reads this file alongside the snapshot.",
-  "_updated": "2026-09-07",
-
+  "_updated": "2026-09-22",
   "investor_profile": {
     "risk_posture": "moderately aggressive",
     "stated_by_user": "2026-09-07",
@@ -12,12 +11,10 @@
       "Does NOT mean abandoning stop discipline on trend-managed positions — only that the tolerance band is wider."
     ]
   },
-
   "policies": {
     "trend": "Default. Fully governed by STRATEGY.md — hold/trim/pyramid rules and the 50-day sell rule all apply.",
     "sitting": "Long-term core hold the user has explicitly exempted from the sell rules. Report its condition for information, but NEVER raise it as a trim/sell/replace action item, and do not count it as a rule violation. Pyramiding rules still apply if the user asks about adding."
   },
-
   "positions": {
     "33171515": {
       "QQQM": {
@@ -26,6 +23,36 @@
         "note": "Long-held legacy position, user is deliberately sitting on it. User has stated he will not sell even if price loses the 50-day moving average. Do not flag for trim on RS, on a 50-day undercut, or on the VOO/QQQM relative-strength spread — that comparison was already raised and declined."
       }
     },
-    "59087753": {}
+    "59087753": {
+      "MPC": {
+        "policy": "trend",
+        "active_plan": "half-profit taken on the 2026-09-21 reversal day; the remainder is trend-managed to the levels below",
+        "decided_by_user": "2026-09-22",
+        "reference_close": 402.38,
+        "reference_date": "2026-09-21",
+        "levels": {
+          "sma10": 405.6,
+          "sma20": 389.4,
+          "sma50": 348.96,
+          "atr14": 15.02,
+          "atr_extension_over_sma50": 3.56,
+          "first_defense": "388-389: the 20-day SMA (389.40) and the 09-14 swing low (388.16) sit on top of each other",
+          "final_defense": "348.96 — the 50-day SMA; a close below it exits the rest in full",
+          "invalidation_upside": "a CLOSE above the 431.08 high on volume at least 40% over the 50-day average (2,572,543) voids the reversal-day signal"
+        },
+        "sell_triggers": [
+          "Close below 388-389 (20-day SMA / 09-14 low) -> cut the remainder in half again.",
+          "Close below the 50-day SMA (348.96) -> exit the remainder in full. This is the mid-term account's final line.",
+          "Three or more high-volume down days within two weeks -> cut the remainder in half.",
+          "A second failed push at 431.08 that again closes in the lower third of its range -> cut the remainder in half."
+        ],
+        "do_not": [
+          "Do not add. The reversal day stands until it is voided by the upside condition above.",
+          "Do not exit the remainder on the reversal day alone — the 50-day is rising steeply (+27.60 over ten sessions) and A/D A+ with Up/Down 2.79 still reads as accumulation."
+        ],
+        "cost_basis_caveat": "The dashboard implies an average cost near 358.00 (6,043.75 - 666.74 gain over 15.02 shares), and today that figure is internally consistent. It is still a dashboard-derived number — verify against the trade confirmation before relying on a realized-gain figure.",
+        "earnings": "2026-11-03"
+      }
+    }
   }
 }
