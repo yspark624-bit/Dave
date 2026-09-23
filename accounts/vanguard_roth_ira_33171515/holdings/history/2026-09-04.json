@@ -1,0 +1,128 @@
+{
+  "account_name": "Jooyoung Park — Roth IRA Brokerage Account",
+  "account_number_masked": "33171515",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-04T19:00:00-04:00",
+  "total_value_usd": 52112.41,
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 11969.63
+  },
+  "available_for_purchase_usd": 18548.89,
+  "available_to_withdraw_usd": 10816.33,
+  "total_credits_debits_usd": 6579.26,
+  "total_unrealized_gain_usd": 2528.16,
+  "holdings": [
+    {
+      "symbol": "VOO",
+      "name": "Vanguard S&P 500 Index ETF",
+      "asset_type": "ETF",
+      "price": 708.01,
+      "day_change": 2.71,
+      "day_change_pct": 0.38,
+      "quantity": 4.025,
+      "unrealized_gain_usd": 285.66,
+      "unrealized_gain_pct": 11.14,
+      "current_balance_usd": 2849.74
+    },
+    {
+      "symbol": "OIH",
+      "name": "VanEck Oil Services ETF",
+      "asset_type": "ETF",
+      "price": 427.53,
+      "day_change": 2.28,
+      "day_change_pct": 0.53,
+      "quantity": 6.0,
+      "unrealized_gain_usd": 12.0,
+      "unrealized_gain_pct": 0.47,
+      "current_balance_usd": 2565.18
+    },
+    {
+      "symbol": "QQQM",
+      "name": "Invesco NASDAQ 100 ETF",
+      "asset_type": "ETF",
+      "price": 296.07,
+      "day_change": 0.56,
+      "day_change_pct": 0.19,
+      "quantity": 22.156,
+      "unrealized_gain_usd": 1682.96,
+      "unrealized_gain_pct": 34.51,
+      "current_balance_usd": 6559.73
+    },
+    {
+      "symbol": "CF",
+      "name": "CF Industries Holdings Inc",
+      "asset_type": "Stock",
+      "price": 133.35,
+      "day_change": 4.46,
+      "day_change_pct": 3.24,
+      "quantity": 40.0,
+      "unrealized_gain_usd": 83.6,
+      "unrealized_gain_pct": 1.54,
+      "current_balance_usd": 5334.0
+    },
+    {
+      "symbol": "ERO",
+      "name": "Ero Copper Corp",
+      "asset_type": "Stock",
+      "price": 34.9,
+      "day_change": 0.42,
+      "day_change_pct": 1.19,
+      "quantity": 70.0,
+      "unrealized_gain_usd": 390.32,
+      "unrealized_gain_pct": 13.78,
+      "current_balance_usd": 2443.0
+    },
+    {
+      "symbol": "GH",
+      "name": "Guardant Health Inc",
+      "asset_type": "Stock",
+      "price": 161.41,
+      "day_change": 0.37,
+      "day_change_pct": 0.23,
+      "quantity": 27.0,
+      "unrealized_gain_usd": 61.27,
+      "unrealized_gain_pct": 1.43,
+      "current_balance_usd": 4358.07
+    },
+    {
+      "symbol": "HNGE",
+      "name": "Hinge Health Inc Cl A",
+      "asset_type": "Stock",
+      "price": 92.37,
+      "day_change": 1.61,
+      "day_change_pct": 1.77,
+      "quantity": 40.0,
+      "unrealized_gain_usd": 821.05,
+      "unrealized_gain_pct": 28.57,
+      "current_balance_usd": 3694.8
+    },
+    {
+      "symbol": "LLY",
+      "name": "Eli Lilly & Co",
+      "asset_type": "Stock",
+      "price": 1149.36,
+      "day_change": 10.24,
+      "day_change_pct": 0.88,
+      "quantity": 0.0,
+      "unrealized_gain_usd": null,
+      "unrealized_gain_pct": null,
+      "current_balance_usd": 0.0,
+      "note": "Position closed (quantity 0) as of this snapshot; kept for watchlist reference."
+    },
+    {
+      "symbol": "NVDA",
+      "name": "Nvidia Corp",
+      "asset_type": "Stock",
+      "price": 230.36,
+      "day_change": 1.91,
+      "day_change_pct": 0.84,
+      "quantity": 25.0,
+      "unrealized_gain_usd": 163.14,
+      "unrealized_gain_pct": 2.92,
+      "current_balance_usd": 5759.0
+    }
+  ]
+}

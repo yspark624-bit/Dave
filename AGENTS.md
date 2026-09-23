@@ -70,7 +70,11 @@ NousResearch `hermes-agent` 의 **폐쇄형 학습 루프**(행동 → 기록 �
 ## 3. 산출물 규칙
 
 - 모든 문서와 리포트는 **한글**로 작성한다. 용어는 한글(영문) 병기.
-- **PDF를 만들지 않는다.** PDF 스킬·라이브러리를 호출하지 않는다.
+- **PDF는 로컬 스크립트로만 만든다.** 사용자의 상시 지시가 "모든 파일을 PDF로
+  요약"이므로 PDF 자체는 금지하지 않는다. 다만 PDF 변환 **스킬**을 호출하지 말고
+  `scripts/md_to_pdf.py`(reportlab + Noto Sans KR)로 한글 리포트를 렌더링한다.
+  변환 비용이 모델 문맥에 들어가지 않아야 한다는 것이 이 규칙의 원래 취지다.
+  만든 PDF는 보내기 전에 열어 한글이 깨지지 않았는지 반드시 확인한다.
 - **결과를 Gmail·Notion 등 외부 서비스로 전송하지 않는다.** 사용자가 그때그때
   명시적으로 지시한 경우에만 예외로 한다.
 - 기본 산출물은 **터미널 표**다. 파일이 필요하면 `out/screen.csv`(데이터) 또는
@@ -85,6 +89,10 @@ scripts/   fetch_bars.py  무료 일봉 수집 (Yahoo, 표준 라이브러리)
            stage2_screen.py  트렌드 템플릿 + RS 계산, 압축 출력
            make_report.py    한글 HTML 리포트 (→ 브라우저 인쇄로 PDF)
            run_daily.sh      위 3개를 순서대로 실행
+           md_to_pdf.py      한글 리포트 → PDF (Noto Sans KR 임베딩)
+           setup-local.sh / setup-local.ps1  로컬 PC 설치 자동화
+accounts/  계좌별 보유 스냅샷·전략·IBD 등급 (STRATEGY.md 먼저 읽을 것)
+reports/   날짜별 한글 리포트(.md)와 렌더링된 PDF
 memory/    watchlist.txt  감시 종목 (30개 이내)
            lessons.md     누적 교훈 — 판단 전 반드시 읽을 것
            journal/       매매 일지 (YYYY-MM-DD.md)

@@ -1,0 +1,62 @@
+{
+  "_note": "Durable investor profile and per-position policy. Kept OUTSIDE holdings/latest.json on purpose: the nightly snapshot is overwritten from the pasted Vanguard dashboard, which would wipe anything stored in it. The morning Routine reads this file alongside the snapshot.",
+  "_updated": "2026-09-23",
+  "investor_profile": {
+    "risk_posture": "moderately aggressive",
+    "stated_by_user": "2026-09-07",
+    "what_this_means": [
+      "Prefers earlier entries (VCP pivot, early Stage 2 breakout) over waiting for full confirmation.",
+      "Tolerates deeper drawdowns and higher volatility on trend-managed positions.",
+      "Comfortable with concentration; does not want size trimmed purely for diversification.",
+      "Does NOT mean abandoning stop discipline on trend-managed positions — only that the tolerance band is wider."
+    ]
+  },
+  "policies": {
+    "trend": "Default. Fully governed by STRATEGY.md — hold/trim/pyramid rules and the 50-day sell rule all apply.",
+    "sitting": "Long-term core hold the user has explicitly exempted from the sell rules. Report its condition for information, but NEVER raise it as a trim/sell/replace action item, and do not count it as a rule violation. Pyramiding rules still apply if the user asks about adding."
+  },
+  "positions": {
+    "33171515": {
+      "QQQM": {
+        "policy": "sitting",
+        "stated_by_user": "2026-09-07",
+        "note": "Long-held legacy position, user is deliberately sitting on it. User has stated he will not sell even if price loses the 50-day moving average. Do not flag for trim on RS, on a 50-day undercut, or on the VOO/QQQM relative-strength spread — that comparison was already raised and declined."
+      }
+    },
+    "59087753": {
+      "MPC": {
+        "policy": "trend",
+        "active_plan": "73% sold on 2026-09-22 (15.02 -> 4.020), going beyond the agreed half. 4.02 shares remain.",
+        "decided_by_user": "2026-09-22",
+        "reference_close": 389.68,
+        "reference_date": "2026-09-22",
+        "levels": {
+          "sma10": 404.79,
+          "sma20": 390.76,
+          "sma50": 350.84,
+          "atr14": 15.58,
+          "atr_extension_over_sma50": 2.49,
+          "first_defense": "ALREADY BREACHED — the 09-22 close of 389.68 is below the 20-day SMA (390.76), though still above the 09-14 swing low of 388.16.",
+          "final_defense": "350.84 — the 50-day SMA, now -10.0% away. A close below it exits the remainder in full.",
+          "invalidation_upside": "a close back above the 10-day SMA (404.79) on above-average volume"
+        },
+        "sell_triggers": [
+          "Close below the 09-14 swing low of 388.16 -> close out the remaining 4.02 shares. The 20-day has already gone.",
+          "Close below the 50-day SMA (350.84) -> exit in full, no discretion.",
+          "Otherwise the 4.02-share remainder is small enough (3.5% of the account) to ride to one of those two lines."
+        ],
+        "do_not": [
+          "Do not add.",
+          "Do not re-enter until price closes back above the 10-day SMA on above-average volume."
+        ],
+        "cost_basis_caveat": "The dashboard implies an average cost near 358.00 (6,043.75 - 666.74 gain over 15.02 shares), and today that figure is internally consistent. It is still a dashboard-derived number — verify against the trade confirmation before relying on a realized-gain figure.",
+        "earnings": "2026-11-03"
+      },
+      "MRX": {
+        "policy": "exited",
+        "note": "Sold in full 2026-09-22 at 72.65 on a failed breakout — cleared the 75.40 entry on 09-21, then closed 3.6% under it the next day. Textbook failed-breakout exit. The unreconciled 78.31 implied fill from the 09-18 add is now moot for position sizing but still matters for the realized-gain figure.",
+        "exited_on": "2026-09-22"
+      }
+    }
+  }
+}
