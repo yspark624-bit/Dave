@@ -1,0 +1,97 @@
+{
+  "account_name": "Webull Individual Margin",
+  "account_number_masked": "5JF28979",
+  "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
+  "broker": "Webull",
+  "tier": "short-term swing",
+  "as_of": "2026-09-22T12:45:00Z",
+  "source": "live via Webull MCP",
+  "_price_note": "Queried pre-market Tuesday; day_profit_loss all 0.00 so last_price reflects the 2026-09-21 close. Trend Template math uses 09-21 closes.",
+  "total_net_liquidation_value_usd": 18174.08,
+  "total_market_value_usd": 17299.6,
+  "total_cash_balance_usd": 874.48,
+  "total_unrealized_profit_loss_usd": 322.03,
+  "maintenance_margin_usd": 8747.8,
+  "open_margin_calls": [],
+  "_changes_since_2026_09_18": [
+    "The account was rebuilt: AAPL and NTAP sold out, CIBR / SOXX / UPRO / ARKK opened, QLD raised 25 -> 40 shares. XP unchanged.",
+    "All six holdings are now ETFs or funds — no individual stocks. NONE carries an IBD RS rating (leveraged and actively managed funds are not rated), so the lessons.md rule 'Webull: RS 90 and above only' cannot be applied to any position.",
+    "LEVERAGE is now 40.2% of net liquidation: QLD (2x Nasdaq-100) 21.3% + UPRO (3x S&P 500) 17.0%.",
+    "Cash fell 11140.00 -> 874.48 = 4.8% of net liquidation. Maintenance margin 8747.80 is 48% of NLV.",
+    "Overlaps other accounts: SOXX duplicates V-7753's SMH (semiconductors); QLD is a 2x version of V-1515's QQQM."
+  ],
+  "holdings": [
+    {
+      "symbol": "SOXX",
+      "quantity": 7,
+      "cost_price": 557.9,
+      "cost_usd": 3905.31,
+      "last_price": 559.34,
+      "market_value_usd": 3938.76,
+      "unrealized_gain_usd": 33.45,
+      "unrealized_gain_pct": 0.86,
+      "proportion": 0.2277,
+      "note": "Semiconductor ETF. Duplicates SMH in V-7753."
+    },
+    {
+      "symbol": "QLD",
+      "quantity": 40,
+      "cost_price": 91.46,
+      "cost_usd": 3658.2,
+      "last_price": 96.27,
+      "market_value_usd": 3867.2,
+      "unrealized_gain_usd": 209.0,
+      "unrealized_gain_pct": 5.71,
+      "proportion": 0.2235,
+      "note": "2x LEVERAGED Nasdaq-100. Daily-rebalance decay; no IBD rating."
+    },
+    {
+      "symbol": "UPRO",
+      "quantity": 20,
+      "cost_price": 152.64,
+      "cost_usd": 3052.8,
+      "last_price": 154.07,
+      "market_value_usd": 3085.6,
+      "unrealized_gain_usd": 32.8,
+      "unrealized_gain_pct": 1.07,
+      "proportion": 0.1784,
+      "note": "3x LEVERAGED S&P 500. A -5% index move is -15% here."
+    },
+    {
+      "symbol": "CIBR",
+      "quantity": 29,
+      "cost_price": 102.66,
+      "cost_usd": 2977.11,
+      "last_price": 103.09,
+      "market_value_usd": 2994.54,
+      "unrealized_gain_usd": 17.43,
+      "unrealized_gain_pct": 0.59,
+      "proportion": 0.1731,
+      "note": "Cybersecurity ETF. Cleared its 102.35 pivot on 09-21."
+    },
+    {
+      "symbol": "XP",
+      "quantity": 100,
+      "cost_price": 20.27,
+      "cost_usd": 2026.5,
+      "last_price": 20.78,
+      "market_value_usd": 2050.0,
+      "unrealized_gain_usd": 23.5,
+      "unrealized_gain_pct": 1.16,
+      "proportion": 0.1185,
+      "note": "No IBD rating — RS unscored."
+    },
+    {
+      "symbol": "ARKK",
+      "quantity": 15,
+      "cost_price": 90.51,
+      "cost_usd": 1357.65,
+      "last_price": 90.72,
+      "market_value_usd": 1363.5,
+      "unrealized_gain_usd": 5.85,
+      "unrealized_gain_pct": 0.43,
+      "proportion": 0.0788,
+      "note": "Actively managed innovation fund; holdings are mostly high-beta unprofitable names. Not a trend-following instrument."
+    }
+  ]
+}

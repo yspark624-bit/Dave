@@ -1,0 +1,36 @@
+{
+  "account_name": "Webull Individual Margin",
+  "account_number_masked": "5JF28979",
+  "account_id": "4AG0U0NV0GR56EJ2GLCCMUKMQ9",
+  "broker": "Webull",
+  "tier": "short-term swing",
+  "as_of": "2026-09-23T12:25:00Z",
+  "source": "live via Webull MCP (get_account_positions + get_account_balance)",
+  "_price_note": "Queried pre-market Wednesday. day_profit_loss is non-zero, so last_price reflects pre-market drift off the 2026-09-22 close. Trend Template math below uses 09-22 daily closes from get_stock_bars, not these pre-market prints.",
+  "total_net_liquidation_value_usd": 18057.21,
+  "total_market_value_usd": 17303.60,
+  "total_cash_balance_usd": 753.61,
+  "total_unrealized_profit_loss_usd": 210.28,
+  "total_day_profit_loss_usd": -146.55,
+  "maintenance_margin_usd": 9334.76,
+  "open_margin_calls": [],
+  "_changes_since_2026_09_22": [
+    "SOLD OUT: XP, all 100 shares.",
+    "NEW POSITION: DRAM (Roundhill Memory ETF) 60 shares at cost 63.29 = 3752.40 = 20.8% of NLV, currently -1.19%.",
+    "TRIMMED: SOXX 7 -> 4 shares. Note the reported cost_price moved 557.90 -> 562.52, which a pure partial sale would not do; the basis change is recorded as observed, not explained.",
+    "UNCHANGED: QLD 40, UPRO 20, CIBR 29, ARKK 15.",
+    "Cash 874.48 -> 753.61 = 4.2% of NLV. Maintenance margin 8747.80 -> 9334.76 = 51.7% of NLV.",
+    "Explicit leverage (QLD 2x + UPRO 3x) is 6948.60 = 38.5% of NLV.",
+    "DRAM cannot be scored on the Trend Template: it listed 2026-04-01 and has only 119 trading days, so no 150-day or 200-day average exists. Criteria 1, 2, 3, 4 and 7 are uncomputable.",
+    "DRAM holds Micron through two total-return swaps totalling 25.67% of the fund, so this account now carries roughly 963 of MU-linked exposure on top of the 5480.80 of MU held directly in V-1515 — combined about 6444, with MU earnings on 2026-09-30."
+  ],
+  "holdings": [
+    {"symbol": "QLD", "quantity": 40, "cost_price": 91.46, "cost_usd": 3658.20, "last_price": 97.17, "market_value_usd": 3886.80, "unrealized_gain_usd": 228.60, "unrealized_gain_pct": 6.25, "pct_of_nlv": 21.5, "day_profit_loss_usd": -26.00, "note": "2x LEVERAGED Nasdaq-100. Daily-rebalance decay; no IBD rating. Overlaps QQQM in V-1515."},
+    {"symbol": "DRAM", "quantity": 60, "cost_price": 63.29, "cost_usd": 3797.50, "last_price": 62.54, "market_value_usd": 3752.40, "unrealized_gain_usd": -45.10, "unrealized_gain_pct": -1.19, "pct_of_nlv": 20.8, "day_profit_loss_usd": -64.80, "note": "Roundhill Memory ETF, listed 2026-04-01. Actively managed, non-diversified, swap-based. Trend Template unscoreable (119 bars). No IBD rating. Micron swaps 25.67%, Samsung 24.46%, SK hynix 22.67%, SanDisk 4.70%."},
+    {"symbol": "UPRO", "quantity": 20, "cost_price": 152.64, "cost_usd": 3052.80, "last_price": 153.09, "market_value_usd": 3061.80, "unrealized_gain_usd": 9.00, "unrealized_gain_pct": 0.29, "pct_of_nlv": 17.0, "day_profit_loss_usd": -18.40, "note": "3x LEVERAGED S&P 500. A -5% index move is -15% here."},
+    {"symbol": "CIBR", "quantity": 29, "cost_price": 102.66, "cost_usd": 2977.11, "last_price": 102.93, "market_value_usd": 2984.97, "unrealized_gain_usd": 7.86, "unrealized_gain_pct": 0.26, "pct_of_nlv": 16.5, "day_profit_loss_usd": 10.30, "note": "Cybersecurity ETF. Unleveraged, Trend Template 7/7 on the computable criteria."},
+    {"symbol": "SOXX", "quantity": 4, "cost_price": 562.52, "cost_usd": 2250.06, "last_price": 564.47, "market_value_usd": 2257.88, "unrealized_gain_usd": 7.82, "unrealized_gain_pct": 0.35, "pct_of_nlv": 12.5, "day_profit_loss_usd": -33.24, "note": "Semiconductor ETF. Duplicates SMH in V-7753. Trimmed from 7 shares on 09-23."},
+    {"symbol": "ARKK", "quantity": 15, "cost_price": 90.51, "cost_usd": 1357.65, "last_price": 90.65, "market_value_usd": 1359.75, "unrealized_gain_usd": 2.10, "unrealized_gain_pct": 0.15, "pct_of_nlv": 7.5, "day_profit_loss_usd": -14.40, "note": "Actively managed. Criterion 2 fails (150-SMA 77.15 < 200-SMA 77.44) but price is -1.1% off its 52-week high with a rising 200-SMA: a lagging average after a base, not a breakdown."}
+  ],
+  "_no_ibd_ratings": "All six holdings are ETFs or actively managed funds. None carries an IBD RS Rating, so the lessons.md rule 'Webull: RS 90 and above only' has nothing to apply to. Raised with the user 2026-09-22; awaiting a decision."
+}

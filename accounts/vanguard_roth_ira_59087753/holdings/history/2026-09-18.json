@@ -1,0 +1,28 @@
+{
+  "account_name": "Yeunshik Park — Roth IRA Brokerage Account",
+  "account_number_masked": "59087753",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-18T16:15:00-04:00",
+  "_as_of_note": "Post-close dashboard paste. Prices are 2026-09-18 closes. 09-18 was September quad-witching expiry — volume ratios that day are inflated market-wide.",
+  "total_value_usd": 44196.58,
+  "settlement_fund": {"symbol": "VMFXX", "name": "Vanguard Federal Money Market Fund", "value_usd": 17785.32},
+  "available_for_purchase_usd": 18197.41,
+  "available_to_withdraw_usd": 14029.17,
+  "total_credits_debits_usd": 412.09,
+  "total_unrealized_gain_usd": 2888.14,
+  "_changes_since_2026_09_17": [
+    "SOLD OUT: RVMD, the remaining 22 shares, on a -3.04% day with volume at 3.19x. This completes the exit the 09-16..09-18 reports asked for — it never reclaimed the 50-SMA after the half-trim and closed 1.13 ATR below it.",
+    "ADDED: MRX 35 -> 50 shares (+15, 43% of the base, within the 50% first-add cap). The add followed a low-volume pullback that held the rising 50-SMA and a three-day resumption, i.e. STRATEGY.md pyramid trigger 2b was met. The 09-16 'trim watch' call on MRX is withdrawn.",
+    "SMH still held at 10.021 shares — but it RECLAIMED its 50-SMA on 09-18 and now scores 7/8, failing only criterion 8 (RS 66). The ten-session trim case rested on price being below a FALLING 50-SMA; that condition no longer holds.",
+    "Cash available for purchase 15149.82 -> 18197.41 (41.2%); invested 58.8%, just below IBD's 60%-80% band."
+  ],
+  "holdings": [
+    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF", "price": 573.00, "day_change": 12.39, "day_change_pct": 2.21, "quantity": 10.021, "unrealized_gain_usd": 1999.68, "unrealized_gain_pct": 53.43, "current_balance_usd": 5742.03},
+    {"symbol": "XLK", "name": "Technology Select Sector SPDR ETF", "asset_type": "ETF", "price": 189.60, "day_change": 1.54, "day_change_pct": 0.82, "quantity": 7.0, "unrealized_gain_usd": 28.77, "unrealized_gain_pct": 2.22, "current_balance_usd": 1327.20},
+    {"symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock", "price": 199.39, "day_change": -0.14, "day_change_pct": -0.07, "quantity": 31.0, "unrealized_gain_usd": 18.11, "unrealized_gain_pct": 0.29, "current_balance_usd": 6181.09},
+    {"symbol": "AUGO", "name": "Aura Minerals Inc", "asset_type": "Stock", "price": 88.25, "day_change": -0.46, "day_change_pct": -0.52, "quantity": 30.0, "unrealized_gain_usd": 12.00, "unrealized_gain_pct": 0.46, "current_balance_usd": 2647.50},
+    {"symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock", "price": 424.89, "day_change": 2.93, "day_change_pct": 0.69, "quantity": 15.020, "unrealized_gain_usd": 1004.84, "unrealized_gain_pct": 18.69, "current_balance_usd": 6381.85},
+    {"symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock", "price": 74.39, "day_change": 1.12, "day_change_pct": 1.53, "quantity": 50.0, "unrealized_gain_usd": 9.80, "unrealized_gain_pct": 0.38, "current_balance_usd": 3719.50}
+  ]
+}

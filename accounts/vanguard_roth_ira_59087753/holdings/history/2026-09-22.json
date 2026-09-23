@@ -1,0 +1,36 @@
+{
+  "account_name": "Yeunshik Park — Roth IRA Brokerage Account",
+  "account_number_masked": "59087753",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-22T19:00:00-04:00",
+  "_as_of_note": "Post-close dashboard paste. Prices are 2026-09-22 closes. Day-change signs derived by diffing against the 09-21 snapshot (the paste strips arrow glyphs).",
+  "total_value_usd": 44405.76,
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 18197.43
+  },
+  "available_for_purchase_usd": 19876.03,
+  "available_to_withdraw_usd": 11920.74,
+  "total_credits_debits_usd": 1678.60,
+  "total_unrealized_gain_usd": 3241.25,
+  "_reconciliation": "holdings 24529.73 + settlement 18197.43 + credits/debits 1678.60 = 44405.76 OK",
+  "_changes_since_2026_09_21": [
+    "SOLD: MPC trimmed 15.020 -> 4.020 shares (-11). MPC closed 389.68, at the 390 stop line carried in the 09-22 action list. The remaining stub is 1566.51 = 3.5% of the account.",
+    "SOLD OUT: MRX, all 50 shares. IBD carried MRX at RS 91 / composite 99 but group rank 65, group RS B-, acc/dist D+ — the weakest group profile among the account's stocks.",
+    "Proceeds from both sales total 7955.29 (cash available for purchase 11920.74 -> 19876.03). Per-share fills are INFERRED from the cash delta, not confirmed: MRX ~72.65-73.38 and MPC ~389.68-392.98 depending on the split. Available to withdraw unchanged at 11920.74 — the new proceeds are unsettled.",
+    "Cash available for purchase now 44.8% of the account; invested 55.2%.",
+    "AUGO +4.06% to 92.77 on 2.34x volume — extension +26.0% = 4.26 ATR, past the 4-ATR no-chase line.",
+    "Three overlapping tech ETFs still held: SMH 13.7% + IYW 10.8% + XLK 6.6% = 31.1% of the account."
+  ],
+  "holdings": [
+    {"symbol": "IYW", "name": "iShares U.S. Technology ETF", "asset_type": "ETF", "price": 265.99, "day_change": 1.53, "day_change_pct": 0.58, "quantity": 18.0, "unrealized_gain_usd": 59.93, "unrealized_gain_pct": 1.27, "current_balance_usd": 4787.82, "note": "No IBD rating on file — RS unscored. Overlaps heavily with XLK."},
+    {"symbol": "SMH", "name": "VanEck Semiconductor ETF", "asset_type": "ETF", "price": 607.46, "day_change": 11.43, "day_change_pct": 1.92, "quantity": 10.021, "unrealized_gain_usd": 2345.01, "unrealized_gain_pct": 62.66, "current_balance_usd": 6087.36, "note": "IBD RS 66, acc/dist E — below the Roth IRA RS 80 floor."},
+    {"symbol": "XLK", "name": "Technology Select Sector SPDR ETF", "asset_type": "ETF", "price": 196.27, "day_change": 1.42, "day_change_pct": 0.73, "quantity": 15.0, "unrealized_gain_usd": 96.82, "unrealized_gain_pct": 3.40, "current_balance_usd": 2944.05, "note": "IBD RS 68, acc/dist D — below the Roth IRA RS 80 floor."},
+    {"symbol": "ANET", "name": "Arista Networks Inc", "asset_type": "Stock", "price": 205.19, "day_change": -0.23, "day_change_pct": -0.11, "quantity": 31.0, "unrealized_gain_usd": 197.91, "unrealized_gain_pct": 3.21, "current_balance_usd": 6360.89},
+    {"symbol": "AUGO", "name": "Aura Minerals Inc", "asset_type": "Stock", "price": 92.77, "day_change": 3.62, "day_change_pct": 4.06, "quantity": 30.0, "unrealized_gain_usd": 147.60, "unrealized_gain_pct": 5.60, "current_balance_usd": 2783.10, "note": "Earnings 2026-11-05."},
+    {"symbol": "MPC", "name": "Marathon Petroleum Corp", "asset_type": "Stock", "price": 389.68, "day_change": -12.70, "day_change_pct": -3.16, "quantity": 4.020, "unrealized_gain_usd": 475.98, "unrealized_gain_pct": 8.85, "current_balance_usd": 1566.51, "note": "Trimmed from 15.020 on 09-22. Earnings 2026-11-03."},
+    {"symbol": "MRX", "name": "Marex Group Ltd", "asset_type": "Stock", "price": 72.65, "day_change": -3.06, "day_change_pct": -4.04, "quantity": 0.0, "unrealized_gain_usd": null, "unrealized_gain_pct": null, "current_balance_usd": 0.0, "note": "Sold out 2026-09-22; row still displayed by the dashboard."}
+  ]
+}

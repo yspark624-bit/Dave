@@ -37,6 +37,11 @@ AVGO  Stage 2  7/8   88   342.10  +6.8%   -7.1%  +14.0%       RothIRA(중기)
 
 내 PC의 파일(PDF·엑셀 등)을 분석하려는 경우에도 로컬 실행이 필요합니다.
 
+다만 `accounts/`의 계좌 추적은 클라우드 세션에서도 동작합니다 — 시세를 무료
+소스가 아니라 Webull MCP로 받고, 보유 현황은 브로커 대시보드를 붙여넣는
+방식이라 네트워크 정책에 걸리지 않습니다. 토큰은 더 들지만 매일 아침
+자동 실행되는 쪽은 이 경로입니다.
+
 - **[로컬 PC 설치 가이드 (docs/LOCAL_SETUP.md)](docs/LOCAL_SETUP.md)**
 
 빠른 설치:
@@ -66,6 +71,12 @@ memory/    watchlist.txt      감시 종목 (30개 이내)
 docs/      TOKEN_COST_GUIDE.md  비용 구조와 절감 규칙
            WORKFLOW.md          매일·매주 루틴
            LOCAL_SETUP.md       로컬 PC 설치 가이드
+accounts/  STRATEGY.md        hold/trim/피라미딩 규칙과 누적 교훈
+           ibd_ratings.json   IBD 공식 등급 (RS 판정의 유일한 근거)
+           position_policy.json  투자성향·종목별 예외(`sitting` 등)
+           <계좌>/holdings/   보유 스냅샷 (latest.json + history/)
+           <계좌>/reports/    계좌별 일일 Stage2 리포트
+           reports/           계좌 통합 리포트
 ```
 
 ## 문서
@@ -77,6 +88,8 @@ docs/      TOKEN_COST_GUIDE.md  비용 구조와 절감 규칙
 | [docs/WORKFLOW.md](docs/WORKFLOW.md) | 매일·매주 루틴, 올바른 AI 호출법 |
 | [AGENTS.md](AGENTS.md) | 에이전트 운영 규칙, 폐쇄형 학습 루프 |
 | [memory/lessons.md](memory/lessons.md) | 누적된 매매 교훈 |
+| [accounts/README.md](accounts/README.md) | 계좌 구성, 티어별 검토 주기, 스냅샷 갱신 절차 |
+| [accounts/STRATEGY.md](accounts/STRATEGY.md) | hold/trim/피라미딩 규칙, 진단 지침, 실패에서 얻은 교훈 |
 
 ## 면책
 
