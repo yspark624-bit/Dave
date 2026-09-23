@@ -1,6 +1,6 @@
 {
   "_note": "Durable investor profile and per-position policy. Kept OUTSIDE holdings/latest.json on purpose: the nightly snapshot is overwritten from the pasted Vanguard dashboard, which would wipe anything stored in it. The morning Routine reads this file alongside the snapshot.",
-  "_updated": "2026-09-22",
+  "_updated": "2026-09-23",
   "investor_profile": {
     "risk_posture": "moderately aggressive",
     "stated_by_user": "2026-09-07",
@@ -26,32 +26,36 @@
     "59087753": {
       "MPC": {
         "policy": "trend",
-        "active_plan": "half-profit taken on the 2026-09-21 reversal day; the remainder is trend-managed to the levels below",
+        "active_plan": "73% sold on 2026-09-22 (15.02 -> 4.020), going beyond the agreed half. 4.02 shares remain.",
         "decided_by_user": "2026-09-22",
-        "reference_close": 402.38,
-        "reference_date": "2026-09-21",
+        "reference_close": 389.68,
+        "reference_date": "2026-09-22",
         "levels": {
-          "sma10": 405.6,
-          "sma20": 389.4,
-          "sma50": 348.96,
-          "atr14": 15.02,
-          "atr_extension_over_sma50": 3.56,
-          "first_defense": "388-389: the 20-day SMA (389.40) and the 09-14 swing low (388.16) sit on top of each other",
-          "final_defense": "348.96 — the 50-day SMA; a close below it exits the rest in full",
-          "invalidation_upside": "a CLOSE above the 431.08 high on volume at least 40% over the 50-day average (2,572,543) voids the reversal-day signal"
+          "sma10": 404.79,
+          "sma20": 390.76,
+          "sma50": 350.84,
+          "atr14": 15.58,
+          "atr_extension_over_sma50": 2.49,
+          "first_defense": "ALREADY BREACHED — the 09-22 close of 389.68 is below the 20-day SMA (390.76), though still above the 09-14 swing low of 388.16.",
+          "final_defense": "350.84 — the 50-day SMA, now -10.0% away. A close below it exits the remainder in full.",
+          "invalidation_upside": "a close back above the 10-day SMA (404.79) on above-average volume"
         },
         "sell_triggers": [
-          "Close below 388-389 (20-day SMA / 09-14 low) -> cut the remainder in half again.",
-          "Close below the 50-day SMA (348.96) -> exit the remainder in full. This is the mid-term account's final line.",
-          "Three or more high-volume down days within two weeks -> cut the remainder in half.",
-          "A second failed push at 431.08 that again closes in the lower third of its range -> cut the remainder in half."
+          "Close below the 09-14 swing low of 388.16 -> close out the remaining 4.02 shares. The 20-day has already gone.",
+          "Close below the 50-day SMA (350.84) -> exit in full, no discretion.",
+          "Otherwise the 4.02-share remainder is small enough (3.5% of the account) to ride to one of those two lines."
         ],
         "do_not": [
-          "Do not add. The reversal day stands until it is voided by the upside condition above.",
-          "Do not exit the remainder on the reversal day alone — the 50-day is rising steeply (+27.60 over ten sessions) and A/D A+ with Up/Down 2.79 still reads as accumulation."
+          "Do not add.",
+          "Do not re-enter until price closes back above the 10-day SMA on above-average volume."
         ],
         "cost_basis_caveat": "The dashboard implies an average cost near 358.00 (6,043.75 - 666.74 gain over 15.02 shares), and today that figure is internally consistent. It is still a dashboard-derived number — verify against the trade confirmation before relying on a realized-gain figure.",
         "earnings": "2026-11-03"
+      },
+      "MRX": {
+        "policy": "exited",
+        "note": "Sold in full 2026-09-22 at 72.65 on a failed breakout — cleared the 75.40 entry on 09-21, then closed 3.6% under it the next day. Textbook failed-breakout exit. The unreconciled 78.31 implied fill from the 09-18 add is now moot for position sizing but still matters for the realized-gain figure.",
+        "exited_on": "2026-09-22"
       }
     }
   }
