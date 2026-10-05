@@ -60,6 +60,12 @@ scripts/   fetch_bars.py      무료 일봉 수집 (Yahoo, 표준 라이브러�
            run_daily.sh       위 3개를 순서대로 실행
            setup-local.sh     macOS/Linux 로컬 설치 자동화
            setup-local.ps1    Windows 로컬 설치 자동화
+           md_to_pdf.py       한글 리포트 → PDF (Noto Sans KR 임베딩)
+accounts/  STRATEGY.md        보유/축소/피라미딩 규칙 — 판단 전 반드시 읽을 것
+           position_policy.json  투자 성향과 종목별 예외
+           ibd_ratings.json   IBD 공식 등급 (자체 계산 프록시보다 우선)
+           <계좌>/holdings/   저녁 스냅샷과 날짜별 이력
+reports/   날짜별 한글 리포트(.md)와 렌더링된 PDF
 memory/    watchlist.txt      감시 종목 (30개 이내)
            lessons.md         누적 교훈 — 판단 전 반드시 읽을 것
            journal/           매매 일지 (YYYY-MM-DD.md)
@@ -76,6 +82,7 @@ docs/      TOKEN_COST_GUIDE.md  비용 구조와 절감 규칙
 | [docs/TOKEN_COST_GUIDE.md](docs/TOKEN_COST_GUIDE.md) | 어떤 작업이 토큰을 먹는가, 절감 규칙 10가지 |
 | [docs/WORKFLOW.md](docs/WORKFLOW.md) | 매일·매주 루틴, 올바른 AI 호출법 |
 | [AGENTS.md](AGENTS.md) | 에이전트 운영 규칙, 폐쇄형 학습 루프 |
+| [accounts/STRATEGY.md](accounts/STRATEGY.md) | 보유·축소·피라미딩 규칙과 과거 오판정 기록 |
 | [memory/lessons.md](memory/lessons.md) | 누적된 매매 교훈 |
 
 ## 면책

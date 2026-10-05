@@ -1,0 +1,143 @@
+{
+  "account_name": "Jooyoung Park — Roth IRA Brokerage Account",
+  "account_number_masked": "33171515",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-18T16:15:00-04:00",
+  "total_value_usd": 52057.32,
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 11534.59
+  },
+  "available_for_purchase_usd": 15900.4,
+  "available_to_withdraw_usd": 8593.39,
+  "total_credits_debits_usd": 4365.81,
+  "total_unrealized_gain_usd": 2992.62,
+  "_changes_since_2026_09_17": [
+    "TRIMMED: CF 55 -> 30 (-25) into a -4.57% day that closed at 127.70, in the bottom 4% of its range on volume +88.8%. CF is now BELOW IBD's 132.54 entry, so it has fallen out of its buy zone.",
+    "TRIMMED: GH 47 -> 24 (-23, about half) on a -2.03% day, volume +55.2%. Net across two days the position went 27 -> 47 -> 24.",
+    "Both trims sold the HIGHER-cost lots: CF average cost 132.13 -> 113.39, GH 167.11 -> 155.35.",
+    "UNCHANGED: VOO, QQQM (sitting), HNGE, MU, NTAP, NVDA, TWLO.",
+    "OIH dropped from the table (was already 0 shares).",
+    "Cash: available for purchase 8,593.39 -> 15,900.40 (+7,307) from the two sales."
+  ],
+  "holdings": [
+    {
+      "symbol": "VOO",
+      "name": "Vanguard S&P 500 Index ETF",
+      "asset_type": "ETF",
+      "price": 701.78,
+      "day_change": 0.75,
+      "day_change_pct": 0.11,
+      "quantity": 4.025,
+      "unrealized_gain_usd": 260.58,
+      "unrealized_gain_pct": 10.16,
+      "current_balance_usd": 2824.66
+    },
+    {
+      "symbol": "QQQM",
+      "name": "Invesco NASDAQ 100 ETF",
+      "asset_type": "ETF",
+      "price": 296.91,
+      "day_change": 1.71,
+      "day_change_pct": 0.58,
+      "quantity": 22.156,
+      "unrealized_gain_usd": 1701.57,
+      "unrealized_gain_pct": 34.89,
+      "current_balance_usd": 6578.34,
+      "note": "policy = sitting. Never flag for trim."
+    },
+    {
+      "symbol": "CF",
+      "name": "CF Industries Holdings Inc",
+      "asset_type": "Stock",
+      "price": 127.7,
+      "day_change": -6.12,
+      "day_change_pct": -4.57,
+      "quantity": 30.0,
+      "unrealized_gain_usd": 429.3,
+      "unrealized_gain_pct": 5.76,
+      "current_balance_usd": 3831.0,
+      "note": "Trimmed 55 -> 30. Fell out of the 132.54-139.17 buy zone on a heavy-volume (+88.8%) close near the day's low. Now only +2.20% over the 50-day (124.95), down from +7.34%. IBD RS 89, Composite 99, SMR A."
+    },
+    {
+      "symbol": "GH",
+      "name": "Guardant Health Inc",
+      "asset_type": "Stock",
+      "price": 179.38,
+      "day_change": -3.72,
+      "day_change_pct": -2.03,
+      "quantity": 24.0,
+      "unrealized_gain_usd": 576.66,
+      "unrealized_gain_pct": 7.34,
+      "current_balance_usd": 4305.12,
+      "note": "Halved 47 -> 24. Still +11.37% over the 50-day. IBD fundamentals unchanged and weak: RS 95 but Composite 64, EPS Rating 15, SMR D, annual pre-tax margin -35.81. Earnings 2026-10-29."
+    },
+    {
+      "symbol": "HNGE",
+      "name": "Hinge Health Inc Cl A",
+      "asset_type": "Stock",
+      "price": 94.9,
+      "day_change": 0.18,
+      "day_change_pct": 0.19,
+      "quantity": 40.0,
+      "unrealized_gain_usd": 922.25,
+      "unrealized_gain_pct": 32.09,
+      "current_balance_usd": 3796.0,
+      "note": "Volume +163.8% on a flat day. IBD RS 97 but Composite 78, EPS Rating 38, A/D E."
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology Inc",
+      "asset_type": "Stock",
+      "price": 1015.8,
+      "day_change": 38.3,
+      "day_change_pct": 3.92,
+      "quantity": 5.0,
+      "unrealized_gain_usd": 40.98,
+      "unrealized_gain_pct": 0.8,
+      "current_balance_usd": 5079.0,
+      "note": "Closed at 98% of its range and back over 1,000, but volume only +3.5% and the real pivot is 1,255 — still a correction, not a breakout. IBD RS 81, A/D E, Up/Down 0.86. EARNINGS 2026-09-30."
+    },
+    {
+      "symbol": "NTAP",
+      "name": "NetApp Inc",
+      "asset_type": "Stock",
+      "price": 197.79,
+      "day_change": 0.87,
+      "day_change_pct": 0.44,
+      "quantity": 15.0,
+      "unrealized_gain_usd": 25.65,
+      "unrealized_gain_pct": 0.87,
+      "current_balance_usd": 2966.85,
+      "note": "INSIDE its 192.83-202.47 buy zone. Closed at 87% of range on volume +92.5%. IBD Composite 99, RS 95, EPS Rating 93, SMR A, 4 quarters of EPS acceleration."
+    },
+    {
+      "symbol": "NVDA",
+      "name": "Nvidia Corp",
+      "asset_type": "Stock",
+      "price": 222.27,
+      "day_change": 2.93,
+      "day_change_pct": 1.34,
+      "quantity": 25.0,
+      "unrealized_gain_usd": 39.11,
+      "unrealized_gain_pct": 0.7,
+      "current_balance_usd": 5556.75,
+      "note": "Closed at 90% of range on volume +51.1%. IBD RS 73 remains the weak reading against Composite 97 / EPS Rating 99."
+    },
+    {
+      "symbol": "TWLO",
+      "name": "Twilio Inc Cl A",
+      "asset_type": "Stock",
+      "price": 243.84,
+      "day_change": -2.4,
+      "day_change_pct": -0.97,
+      "quantity": 5.0,
+      "unrealized_gain_usd": 15.3,
+      "unrealized_gain_pct": 1.27,
+      "current_balance_usd": 1219.2,
+      "note": "Still inside its 238.48-250.40 buy zone but near the bottom of it; swung 249.45 -> 238.50 on volume +91.8%. IBD Leaders quarter position."
+    }
+  ]
+}

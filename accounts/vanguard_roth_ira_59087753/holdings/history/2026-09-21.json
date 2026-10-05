@@ -1,0 +1,117 @@
+{
+  "account_name": "Yeunshik Park — Roth IRA Brokerage Account",
+  "account_number_masked": "59087753",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-21T19:00:00-04:00",
+  "total_value_usd": 44448.36,
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 15149.82
+  },
+  "available_for_purchase_usd": 11920.74,
+  "available_to_withdraw_usd": 11920.74,
+  "total_credits_debits_usd": -3229.08,
+  "total_unrealized_gain_usd": 3277.76,
+  "_changes_since_2026_09_18": [
+    "NEW POSITION: IYW (iShares U.S. Technology ETF) 18 shares at 264.46 = 4,760.28. No IBD Stock Checklist on file for IYW — RS is UNSCORED until the user supplies it.",
+    "ADDED: XLK 7 -> 15 (+8 shares, about 1,559). IBD RS for XLK is 68, below the 70 threshold, with A/D D and Up/Down 0.84.",
+    "UNCHANGED: SMH, ANET, AUGO, MPC, MRX. MPC was NOT trimmed despite the reversal day.",
+    "RVMD dropped to 0 shares (exited 09-18) but still shows in the table.",
+    "Tech overlap: IYW + XLK + SMH now total 13,655.85 of 32,527.62 invested = 42.0% of this account's stock value, in three funds with heavy mutual overlap."
+  ],
+  "holdings": [
+    {
+      "symbol": "IYW",
+      "name": "iShares U.S. Technology ETF",
+      "asset_type": "ETF",
+      "price": 264.46,
+      "day_change": 7.59,
+      "day_change_pct": 2.95,
+      "quantity": 18.0,
+      "unrealized_gain_usd": null,
+      "unrealized_gain_pct": null,
+      "current_balance_usd": 4760.28,
+      "note": "IBD RS 97 — the strongest ETF rating in either account. Bought at 264.46, INSIDE the 261.01-274.06 buy zone, the same day IBD opened a full-size (10% weighting) Leaders position at 262.60. Price is +6.67% over its 50-day. Soft spots: A/D B-, Up/Down 1.04, funds owning -5%, 0 quarters of increasing fund ownership."
+    },
+    {
+      "symbol": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "asset_type": "ETF",
+      "price": 596.03,
+      "day_change": 23.03,
+      "day_change_pct": 4.02,
+      "quantity": 10.021,
+      "unrealized_gain_usd": 2230.47,
+      "unrealized_gain_pct": 59.6,
+      "current_balance_usd": 5972.82,
+      "note": "+4.02% on volume 9.88M, well above Friday's 30%-below-average reclaim. The 50-day reclaim that looked unconfirmed on 09-18 now has volume behind it. IBD RS 66 remains the weak reading."
+    },
+    {
+      "symbol": "XLK",
+      "name": "SPDR Technology Select Sector ETF",
+      "asset_type": "ETF",
+      "price": 194.85,
+      "day_change": 5.47,
+      "day_change_pct": 2.89,
+      "quantity": 15.0,
+      "unrealized_gain_usd": 65.52,
+      "unrealized_gain_pct": 5.05,
+      "current_balance_usd": 2922.75,
+      "note": "Added 8 shares on 09-21. IBD RS 68 against IYW's 97 in the same sleeve — the weaker of two overlapping holdings. Candidate to consolidate into IYW."
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks Inc",
+      "asset_type": "Stock",
+      "price": 205.42,
+      "day_change": 6.03,
+      "day_change_pct": 3.02,
+      "quantity": 31.0,
+      "unrealized_gain_usd": 205.04,
+      "unrealized_gain_pct": 3.33,
+      "current_balance_usd": 6368.02,
+      "note": "Best fundamentals held (Composite 98, EPS Rating 96, SMR A, D/E 0%). Above the 186.35 buy-zone top, so a hold."
+    },
+    {
+      "symbol": "AUGO",
+      "name": "Aura Minerals Inc",
+      "asset_type": "Stock",
+      "price": 89.15,
+      "day_change": 0.9,
+      "day_change_pct": 1.02,
+      "quantity": 30.0,
+      "unrealized_gain_usd": 39.0,
+      "unrealized_gain_pct": 1.48,
+      "current_balance_usd": 2674.5,
+      "note": "Third day below the 90.64 entry. The 09-17 breakout is still unrepaired."
+    },
+    {
+      "symbol": "MPC",
+      "name": "Marathon Petroleum Corp",
+      "asset_type": "Stock",
+      "price": 402.38,
+      "day_change": -22.51,
+      "day_change_pct": -5.3,
+      "quantity": 15.02,
+      "unrealized_gain_usd": 666.74,
+      "unrealized_gain_pct": 12.4,
+      "current_balance_usd": 6043.75,
+      "note": "REVERSAL DAY: made a NEW 52-week high at 431.08 intraday, then closed 402.38 — in the bottom 9% of the range — on volume 4.45M, the day after a +290.8% volume day. Classic climax-reversal after a 5.8-ATR extension. Open gain fell 1,004.84 -> 666.74 in one session."
+    },
+    {
+      "symbol": "MRX",
+      "name": "Marex Group Ltd",
+      "asset_type": "Stock",
+      "price": 75.71,
+      "day_change": 1.32,
+      "day_change_pct": 1.77,
+      "quantity": 50.0,
+      "unrealized_gain_usd": 71.0,
+      "unrealized_gain_pct": 1.91,
+      "current_balance_usd": 3785.5,
+      "note": "Cleared IBD's 75.40 entry and is now INSIDE the 75.40-79.17 buy zone, which validates Friday's early add. The 78.31 implied fill on that add is still unreconciled."
+    }
+  ]
+}

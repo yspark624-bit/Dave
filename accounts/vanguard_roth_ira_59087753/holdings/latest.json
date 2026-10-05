@@ -1,0 +1,102 @@
+{
+  "account_name": "Yeunshik Park — Roth IRA Brokerage Account",
+  "account_number_masked": "59087753",
+  "broker": "Vanguard",
+  "tier": "mid-term",
+  "as_of": "2026-09-22T19:00:00-04:00",
+  "total_value_usd": 44405.76,
+  "settlement_fund": {
+    "symbol": "VMFXX",
+    "name": "Vanguard Federal Money Market Fund",
+    "value_usd": 18197.43
+  },
+  "available_for_purchase_usd": 19876.03,
+  "available_to_withdraw_usd": 11920.74,
+  "total_credits_debits_usd": 1678.6,
+  "total_unrealized_gain_usd": 3241.25,
+  "_changes_since_2026_09_21": [
+    "TRIMMED: MPC 15.02 -> 4.020 (-11 shares, 73% of the position). This goes further than the agreed half and was the better call — MPC fell another 3.16% and closed below its 20-day SMA.",
+    "EXITED: MRX 50 -> 0. A failed breakout: it cleared the 75.40 entry on 09-21 at 75.71, then closed 72.65 today, 3.6% BELOW the entry, on a -4.04% day whose 71.19 low nearly tagged the 71.10 stop proposed on 09-18.",
+    "UNCHANGED: IYW, SMH, XLK, ANET, AUGO.",
+    "Cash: available for purchase 11,920.74 -> 19,876.03 (+7,955.29) from the two sales."
+  ],
+  "holdings": [
+    {
+      "symbol": "IYW",
+      "name": "iShares U.S. Technology ETF",
+      "asset_type": "ETF",
+      "price": 265.99,
+      "day_change": 1.53,
+      "day_change_pct": 0.58,
+      "quantity": 18.0,
+      "unrealized_gain_usd": 59.93,
+      "unrealized_gain_pct": 1.27,
+      "current_balance_usd": 4787.82,
+      "note": "IBD RS 97. Still inside the 261.01-274.06 buy zone (+1.91% over entry)."
+    },
+    {
+      "symbol": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "asset_type": "ETF",
+      "price": 607.46,
+      "day_change": 11.43,
+      "day_change_pct": 1.92,
+      "quantity": 10.021,
+      "unrealized_gain_usd": 2345.01,
+      "unrealized_gain_pct": 62.66,
+      "current_balance_usd": 6087.36,
+      "note": "Third straight gain since the volume-backed 50-day reclaim. IBD RS 66 is still the weak reading."
+    },
+    {
+      "symbol": "XLK",
+      "name": "SPDR Technology Select Sector ETF",
+      "asset_type": "ETF",
+      "price": 196.27,
+      "day_change": 1.42,
+      "day_change_pct": 0.73,
+      "quantity": 15.0,
+      "unrealized_gain_usd": 96.82,
+      "unrealized_gain_pct": 3.4,
+      "current_balance_usd": 2944.05,
+      "note": "RS 68 against IYW's 97 in the same sleeve — still the consolidation candidate."
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks Inc",
+      "asset_type": "Stock",
+      "price": 205.19,
+      "day_change": -0.23,
+      "day_change_pct": -0.11,
+      "quantity": 31.0,
+      "unrealized_gain_usd": 197.91,
+      "unrealized_gain_pct": 3.21,
+      "current_balance_usd": 6360.89
+    },
+    {
+      "symbol": "AUGO",
+      "name": "Aura Minerals Inc",
+      "asset_type": "Stock",
+      "price": 92.77,
+      "day_change": 3.62,
+      "day_change_pct": 4.06,
+      "quantity": 30.0,
+      "unrealized_gain_usd": 147.6,
+      "unrealized_gain_pct": 5.6,
+      "current_balance_usd": 2783.1,
+      "note": "BREAKOUT REPAIRED: reclaimed the 90.64 entry and closed at 97% of its range on volume +129.8% over the 50-day average. Back inside the 90.64-95.17 buy zone at +2.35% over the pivot. BUT it is 4.26 ATR over its 50-day, past STRATEGY.md's 4.0 ATR ceiling — so it is a hold, not an add."
+    },
+    {
+      "symbol": "MPC",
+      "name": "Marathon Petroleum Corp",
+      "asset_type": "Stock",
+      "price": 389.68,
+      "day_change": -12.7,
+      "day_change_pct": -3.16,
+      "quantity": 4.02,
+      "unrealized_gain_usd": 475.98,
+      "unrealized_gain_pct": 8.85,
+      "current_balance_usd": 1566.51,
+      "note": "Third down day off the 431.08 high. Closed at 15% of its range on volume +79.3%, and BELOW the 20-day SMA (390.76). Extension over the 50-day has fallen from 5.05 ATR to 2.49. Remainder is 4.02 shares; the 50-day at 350.84 (-10.0%) is the final line."
+    }
+  ]
+}
